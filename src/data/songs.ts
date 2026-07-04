@@ -14,7 +14,7 @@ export interface SongBlock {
   songs: Song[];
 }
 
-export const SONG_BLOCKS: SongBlock[] = [
+const ORIGINAL_SONG_BLOCKS: SongBlock[] = [
   {
     id: 'block-a',
     name: 'Bloco A',
@@ -226,7 +226,7 @@ export const SONG_BLOCKS: SongBlock[] = [
 [A]De bem com a vida, [F#m]de bem com o irmão
 [D]Cultivando flores [E7]no meu coração
 
-[Bm]Não há tristeza [E7]que resista ao amor
+[Bm]Não há tristeza [E7]que resista al amor
 [A]Não há tempestade [F#m]que vença o calor
 [D]Da fé que me guia, [Bm]da paz que me conduz
 [D]Caminho contente [E7]na senda da luz
@@ -493,3 +493,56 @@ export const SONG_BLOCKS: SongBlock[] = [
     ]
   }
 ];
+
+// Carrega as músicas combinando o catálogo inicial com as edições no localStorage
+export function loadAllSongBlocks(): SongBlock[] {
+  const storedEdits = localStorage.getItem('gep-cifras-edits');
+  if (!storedEdits) {
+    return ORIGINAL_SONG_BLOCKS;
+  }
+
+  try {
+    const edits: { [songId: string]: Partial<Song> } = JSON.parse(storedEdits);
+    return ORIGINAL_SONG_BLOCKS.map(block => ({
+      ...block,
+      songs: block.songs.map(song => {
+        if (edits[song.id]) {
+          return {
+            ...song,
+            ...edits[song.id]
+          };
+        }
+        return song;
+      })
+    }));
+  } catch (e) {
+    console.error('Erro ao ler edições do localStorage', e);
+    return ORIGINAL_SONG_BLOCKS;
+  }
+}
+
+// Salva as alterações de uma música no localStorage
+export function saveSongEdit(songId: string, updatedFields: Partial<Song>): void {
+  const storedEdits = localStorage.getItem('gep-cifras-edits');
+  let edits: { [songId: string]: Partial<Song> } = {};
+
+  if (storedEdits) {
+    try {
+      edits = JSON.parse(storedEdits);
+    } catch (e) {
+      console.error('Erro ao ler edições antigas', e);
+    }
+  }
+
+  edits[songId] = {
+    ...(edits[songId] || {}),
+    ...updatedFields
+  };
+
+  localStorage.setItem('gep-cifras-edits', JSON.stringify(edits));
+}
+
+// Restaura os padrões
+export function resetAllSongEdits(): void {
+  localStorage.removeItem('gep-cifras-edits');
+}

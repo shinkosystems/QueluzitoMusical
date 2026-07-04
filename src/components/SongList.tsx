@@ -1,12 +1,13 @@
 // @sos-edit: false
 import React from 'react';
-import { SONG_BLOCKS, Song } from '../data/songs';
+import { Song, SongBlock } from '../data/songs';
 
 interface SongListProps {
+  songBlocks: SongBlock[];
   onSelectSong: (song: Song) => void;
 }
 
-export const SongList: React.FC<SongListProps> = ({ onSelectSong }) => {
+export const SongList: React.FC<SongListProps> = ({ songBlocks, onSelectSong }) => {
   return (
     <div className="container" style={{ paddingBottom: '60px' }}>
       {/* Hero Section */}
@@ -24,7 +25,7 @@ export const SongList: React.FC<SongListProps> = ({ onSelectSong }) => {
         <h2 style={{ fontSize: '1.8rem', fontWeight: 600, marginBottom: '24px' }}>📁 Blocos Musicais</h2>
         
         <div className="block-grid">
-          {SONG_BLOCKS.map(block => (
+          {songBlocks.map(block => (
             <section key={block.id} className="block-card" aria-labelledby={`title-${block.id}`}>
               <h3 id={`title-${block.id}`}>{block.name}</h3>
               <ul className="block-songs-list">

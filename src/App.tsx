@@ -2,10 +2,34 @@
 import { useState } from 'react';
 import { SongList } from './components/SongList';
 import { SongView } from './components/SongView';
-import { Song } from './data/songs';
+import { Song, loadAllSongBlocks, saveSongEdit, resetAllSongEdits } from './data/songs';
 
 function App() {
+  const [songBlocks, setSongBlocks] = useState(() => loadAllSongBlocks());
   const [selectedSong, setSelectedSong] = useState<Song | null>(null);
+
+  // Recarrega música selecionada se o catálogo geral atualizar
+  const currentSong = selectedSong 
+    ? songBlocks.flatMap(b => b.songs).find(s => s.id === selectedSong.id) || selectedSong
+    : null;
+
+  const handleSaveSong = (songId: string, updatedContent: string, updatedKey: string) => {
+    // Persiste no localStorage
+    saveSongEdit(songId, { content: updatedContent, key: updatedKey });
+    
+    // Atualiza o estado do app
+    setSongBlocks(loadAllSongBlocks());
+  };
+
+  const handleResetAll = () => {
+    if (window.confirm("Deseja realmente apagar todas as edições e restaurar as letras e cifras padrões?")) {
+      resetAllSongEdits();
+      setSongBlocks(loadAllSongBlocks());
+      if (selectedSong) {
+        setSelectedSong(null);
+      }
+    }
+  };
 
   return (
     <div>
@@ -34,18 +58,44 @@ function App() {
             </span>
           </div>
           
-          <div style={{ display: 'flex', gap: '16px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-            <span>Acessível & Responsivo</span>
+          <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+            {/* Botão de Reset no cabeçalho */}
+            <button 
+              onClick={handleResetAll}
+              style={{
+                background: 'none',
+                border: '1px solid var(--border-color)',
+                color: 'var(--text-secondary)',
+                padding: '6px 12px',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                fontWeight: 500,
+                transition: 'all var(--transition-fast)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = '#EF4444';
+                e.currentTarget.style.color = '#EF4444';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'var(--border-color)';
+                e.currentTarget.style.color = 'var(--text-secondary)';
+              }}
+              aria-label="Restaurar músicas padrão"
+            >
+              🔄 Restaurar Padrões
+            </button>
+            <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Acessível & Responsivo</span>
           </div>
         </div>
       </header>
 
       {/* Conteúdo Principal */}
       <main style={{ minHeight: 'calc(100vh - 120px)' }}>
-        {selectedSong ? (
-          <SongView song={selectedSong} onBack={() => setSelectedSong(null)} />
+        {currentSong ? (
+          <SongView song={currentSong} onBack={() => setSelectedSong(null)} onSaveSong={handleSaveSong} />
         ) : (
-          <SongList onSelectSong={setSelectedSong} />
+          <SongList songBlocks={songBlocks} onSelectSong={setSelectedSong} />
         )}
       </main>
 
