@@ -45,18 +45,41 @@ export const SONG_BLOCKS: SongBlock[] = [
         id: 'vestes-do-amor',
         title: 'Vestes do Amor',
         artist: 'Tim e Vanessa',
-        key: 'G',
+        key: 'A',
         content: `
-[G]Ela correu por entre [Em]a multidão
-[C]Tinha a alma cheia [D7]de aflição
-[G]Se eu apenas t[Em]ocar nas suas vestes
-[C]Ficarei curada d[D7]este mal terrestre
-
-[Am]E o Mestre sentiu [D7]que dele saiu
-[G]Uma força que cura [Em]a quem nele creu
-[C]Quem me tocou? Per[Am]guntou a olhar
-[C]Fui eu, Senhor, [D7]vinde me abençoar
-        `
+[D] Quem me tocou?
+[A] Pois eu senti[Db7]saindo de mim [F#m]uma virtude[D]
+Pois eu senti saindo de mim uma virtude
+[A] Em meio [Db7]à [F#m]multidão
+Em meio à multidão
+D A
+Perdão, Senhor, me entrego a ti
+Db7 F#m D
+Pois te toquei buscando saúde
+A Db7 F#m
+E logo meu sangue estancou
+Db7 F#m
+Quem me tocou?
+Db7 F#m
+Quem me curou?
+Bm7 A E A
+A esperança nos liga ao céu
+D A Db7 F#m
+Toque divino nas vestes do amor
+D A E/G# F#m
+A ternura é o orvalho
+D A E4 E
+Ao sedento viajor
+D A E/G# F#m
+O sol da escuta é o agasalho
+D A E4 E E4 E
+A quem precisa de calor
+E A E/G# F#m
+Vai em paz minha irmã
+D A E4 E
+Foi a tua fé que te salvou...
+D D9 C# A9
+Foi a tua fé que te salvou...`
       },
       {
         id: 'zaqueu',
@@ -191,9 +214,9 @@ export const SONG_BLOCKS: SongBlock[] = [
 
 
 [Bb] O evangelho nas areias
-[Eb] Áquila e Prisca, a família[Bb][Eb] uououoooo
+[Eb] Áquila e Prisca, a família[Bb] uou[Eb]ouoooo
 [Bb] Na pureza de bondade
-[Eb] Abrem suas portas ao errante[Bb]   [Eb] uououoooo
+[Eb] Abrem suas portas ao errante[Bb] uou[Eb]ouoooo
 
 [Refrão]
 
