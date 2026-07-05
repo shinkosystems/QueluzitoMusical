@@ -15,6 +15,7 @@ export interface SongBlock {
 }
 
 export const SONG_BLOCKS: SongBlock[] = [
+
   {
     id: 'block-a',
     name: 'Bloco A',
@@ -23,22 +24,49 @@ export const SONG_BLOCKS: SongBlock[] = [
         id: 'revida',
         title: 'Re-vida',
         artist: 'Tim e Vanessa',
-        key: 'Cm',
+        key: 'Eb',
         content: `
-[Cm]Toda semente adorm[Ab]ecida clama
-[Bb]Por o ver-ter de um [Eb]raio de sol
-[Cm]Toda ferida de [Ab]amor inflamada
-[Bb]Chora a escuridão [G7]do arrebol
+Capotraste na 3ª casa
 
-[Fm]Mas a semente que [G]brota na terra
-[Cm]Cresce em direção [Ab]à luz da flor
-[Fm]E a alma que a [G]dor desespera
-[Ab]Busca o alívio nas [G7]vestes do Senhor
+[Am]Incomparável [Am9/B]escuridão, 
+[C]noite mista de tortura[Am9/B]
+[F7M]E de vazios abissais, 
+[F7M]sou todo [G]sofregui[Am]dão
 
-[Cm]Re-vida, brisa de e[Ab]sperança
-[Bb]Re-vida, canto do c[Eb]oração
-[Cm]A alma canta e [Ab]se harmoniza
-[Bb]Na luz divina [G7]da reencarnação
+[Am]Os "ais" não escutam [Am9/B]os "ais", 
+[C]o silêncio me acu[Am9/B]sa
+[F7M]Meu pensamento se esvai, 
+[F7M]um uni[G]verso sem cor[Am]
+
+[Am]Mas em meio a eter[G]nidades um[D9/F#] rumor
+[C]Ascende em prece e a[G]cende claridade
+[C]E [C]resplandece, e a[G]calma tempestades
+
+[C]          [G]      Ouô...
+
+[C]Onde [G6/B]o         [Am]gládio que nos pu[Am7/G]ne?
+[F]Onde [F7M(9)/E]o                 [Dm7] peso de gra[G]nitos?
+[C]Onde a sen[Em]tença que [Am]zune [Am/G],
+se o [F]amor é maior[F7M(9)/E] que meu fim[G]?
+
+[F]A ora[G]ção, a vi[Em]da, a espe[Am]rança, 
+[F]me aca[G]lenta,[C] Deus!
+[F]Sinto um [G]sono e um sei[Em]o me en[Am]volve, 
+
+[F]crian[G]ça se[C]rei...
+
+[C]Onde [G6/B]o         [Am]gládio que nos pu[Am7/G]ne?
+[F]Onde [F7M(9)/E]o                 [Dm7] peso de gra[G]nitos?
+[C]Onde a sen[Em]tença que [Am]zune [Am/G],
+se o [F]amor é maior[F7M(9)/E] que meu fim[G]?
+
+[F]A ora[G]ção, a [Em]vida, a esperan[Am]ça, 
+[F]me aca[G]lenta,[C] Deus!
+
+[F]Sinto um [G]sono e um sei[Em]o me en[Am]volve, 
+[F]crian[G]ça se[C]rei...
+
+[F]crian[G]ça se[C]rei...
         `
       },
       {
@@ -48,38 +76,22 @@ export const SONG_BLOCKS: SongBlock[] = [
         key: 'A',
         content: `
 [D] Quem me tocou?
-[A] Pois eu senti[Db7]saindo de mim [F#m]uma virtude[D]
-Pois eu senti saindo de mim uma virtude
+[A] Pois eu senti[Db7] saindo de mim [F#m]uma virtude[D]
 [A] Em meio [Db7]à [F#m]multidão
-Em meio à multidão
-D A
-Perdão, Senhor, me entrego a ti
-Db7 F#m D
-Pois te toquei buscando saúde
-A Db7 F#m
-E logo meu sangue estancou
-Db7 F#m
-Quem me tocou?
-Db7 F#m
-Quem me curou?
-Bm7 A E A
-A esperança nos liga ao céu
-D A Db7 F#m
-Toque divino nas vestes do amor
-D A E/G# F#m
-A ternura é o orvalho
-D A E4 E
-Ao sedento viajor
-D A E/G# F#m
-O sol da escuta é o agasalho
-D A E4 E E4 E
-A quem precisa de calor
-E A E/G# F#m
-Vai em paz minha irmã
-D A E4 E
-Foi a tua fé que te salvou...
-D D9 C# A9
-Foi a tua fé que te salvou...`
+[D] Perdão, Senhor, [A]me entrego a ti
+[Db7]Pois te toquei [F#m]buscando [D]saúde
+E [A]logo meu [Db7]sangue [F#m]estancou
+[Db7]Quem me tocou?[F#m]
+[Db7]Quem me curou?[F#m]
+[Bm7]A esperança [A]nos [E]liga [A]ao céu
+[D]Toque [A]divino nas [Db7]vestes [F#m]do amor
+[D]A ternura [A]é o [E/G#]orvalho[F#m]
+[D]Ao sedento [A]via[E4]jor[E]
+[D]O sol da [A]escuta é [E/G#]o agasalho[F#m]
+[D]A [A]quem [E4]precisa [E]de ca[E4]lor  [E]
+[E]Vai em [A]paz minha [E/G#]irmã [F#m]
+[D]Foi a tua [A]fé que [E4]te salvou... [E]
+[D]Foi a tua [D9]fé que [C#]te salvou... [A4]        `
       },
       {
         id: 'zaqueu',
@@ -210,6 +222,7 @@ Foi a tua fé que te salvou...`
         artist: 'Tim e Vanessa',
         key: 'E',
         content: `
+
 [Bb] Uo Uo Uo Uo  [Eb]Uoooooo[F]
 
 

@@ -1,6 +1,6 @@
 // @sos-edit: false
 import React, { useState, useEffect, useRef } from 'react';
-import { Song } from '../data/songs';
+import { Song, SONG_BLOCKS } from '../data/songs';
 import { transposeChord } from '../utils/music';
 import { ChordDiagram } from './ChordDiagram';
 
@@ -140,6 +140,18 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+  // Busca o bloco ao qual esta música pertence
+  const currentBlock = SONG_BLOCKS.find(b => b.songs.some(s => s.id === song.id));
+  const blockSongs = currentBlock ? currentBlock.songs : [];
+  const currentSongIdx = blockSongs.findIndex(s => s.id === song.id);
+  
+  const prevSong = currentSongIdx > 0 ? blockSongs[currentSongIdx - 1] : null;
+  const nextSong = currentSongIdx < blockSongs.length - 1 ? blockSongs[currentSongIdx + 1] : null;
+
+  const handleNavigate = (songId: string) => {
+    window.location.hash = `#/musica/${songId}`;
+  };
+
   // Processa e extrai todos os acordes únicos da cifra para exibir diagramas
   const getUniqueChords = (): string[] => {
     const regex = /\[([^\]]+)\]/g;
@@ -211,7 +223,14 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
     <div className="container" style={{ paddingBottom: '120px' }}>
       
       {/* Barra superior de navegação da música */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '20px' }}>
+      <div style={{ 
+        display: 'flex', 
+        justifyContent: 'space-between', 
+        alignItems: 'center', 
+        marginTop: '20px',
+        gap: '12px',
+        flexWrap: 'wrap'
+      }}>
         <button 
           onClick={onBack}
           className="btn-ctrl"
@@ -220,6 +239,46 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
         >
           ⬅️ Voltar ao Catálogo
         </button>
+
+        {currentBlock && (
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            <button
+              onClick={() => prevSong && handleNavigate(prevSong.id)}
+              className="btn-ctrl"
+              disabled={!prevSong}
+              style={{
+                opacity: prevSong ? 1 : 0.4,
+                cursor: prevSong ? 'pointer' : 'not-allowed',
+                padding: '10px 16px'
+              }}
+              aria-label="Música anterior do bloco"
+            >
+              ◀️ Anterior
+            </button>
+            <span style={{
+              fontFamily: 'var(--font-title)',
+              fontSize: '0.9rem',
+              color: 'var(--text-secondary)',
+              fontWeight: 600,
+              padding: '0 4px'
+            }}>
+              {currentBlock.name} ({currentSongIdx + 1}/{blockSongs.length})
+            </span>
+            <button
+              onClick={() => nextSong && handleNavigate(nextSong.id)}
+              className="btn-ctrl"
+              disabled={!nextSong}
+              style={{
+                opacity: nextSong ? 1 : 0.4,
+                cursor: nextSong ? 'pointer' : 'not-allowed',
+                padding: '10px 16px'
+              }}
+              aria-label="Próxima música do bloco"
+            >
+              Próxima ▶️
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Cabeçalho da Música */}
