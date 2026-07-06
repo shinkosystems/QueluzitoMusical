@@ -572,7 +572,7 @@ Uoooôoooô[Eb]ooo [F]
         id: 'ramas',
         title: 'Ramas',
         artist: 'Tim e Vanessa',
-        key: 'D',
+        key: 'D#',
         content: `[D]Somos ramas da [Bm]videira divina, [G]nutridas pelo amor [A]do Pai.`
       }
     ]
