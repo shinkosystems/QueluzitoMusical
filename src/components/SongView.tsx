@@ -1,7 +1,7 @@
 // @sos-edit: false
 import React, { useState, useEffect, useRef } from 'react';
 import { Song, SONG_BLOCKS } from '../data/songs';
-import { transposeChord } from '../utils/music';
+import { transposeChord, isChord, isChordLine } from '../utils/music';
 import { ChordDiagram } from './ChordDiagram';
 
 interface SongViewProps {
@@ -154,13 +154,31 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
 
   // Processa e extrai todos os acordes únicos da cifra para exibir diagramas
   const getUniqueChords = (): string[] => {
-    const regex = /\[([^\]]+)\]/g;
     const chords: string[] = [];
-    let match;
-    while ((match = regex.exec(song.content)) !== null) {
-      const transposed = transposeChord(match[1], transposeLevel);
-      if (!chords.includes(transposed)) {
-        chords.push(transposed);
+    const lines = song.content.trim().split('\n');
+
+    for (const line of lines) {
+      if (isChordLine(line)) {
+        // Formato tradicional: extrai palavras que são acordes
+        const tokens = line.trim().split(/\s+/);
+        for (const token of tokens) {
+          if (isChord(token)) {
+            const transposed = transposeChord(token, transposeLevel);
+            if (!chords.includes(transposed)) {
+              chords.push(transposed);
+            }
+          }
+        }
+      } else {
+        // Formato ChordPro: extrai o que estiver dentro de [ ]
+        const regex = /\[([^\]]+)\]/g;
+        let match;
+        while ((match = regex.exec(line)) !== null) {
+          const transposed = transposeChord(match[1], transposeLevel);
+          if (!chords.includes(transposed)) {
+            chords.push(transposed);
+          }
+        }
       }
     }
     return chords;
@@ -179,6 +197,65 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
         return <div key={lineIdx} className="comment-line">{line}</div>;
       }
 
+      // Caso 1: Linha de Cifras Tradicional (detectada automaticamente)
+      if (isChordLine(line)) {
+        if (hideChords) return null; // Oculta a linha de acordes se hideChords for true
+
+        const regex = /\S+/g;
+        let match;
+        const lineChords: { token: string; startIndex: number; length: number }[] = [];
+        
+        while ((match = regex.exec(line)) !== null) {
+          lineChords.push({
+            token: match[0],
+            startIndex: match.index,
+            length: match[0].length
+          });
+        }
+
+        const elements: React.ReactNode[] = [];
+        let lastRealEndIndex = 0;
+        let lastOriginalEndIndex = 0;
+
+        lineChords.forEach((item, idx) => {
+          const gap = item.startIndex - lastOriginalEndIndex;
+          if (gap > 0) {
+            const adjustedGap = item.startIndex - lastRealEndIndex;
+            if (adjustedGap > 0) {
+              elements.push(
+                <span key={`space-${idx}`} className="cifra-text" style={{ whiteSpace: 'pre' }}>
+                  {' '.repeat(adjustedGap)}
+                </span>
+              );
+              lastRealEndIndex += adjustedGap;
+            }
+          }
+
+          const isTokenChord = isChord(item.token);
+          const content = isTokenChord ? transposeChord(item.token, transposeLevel) : item.token;
+
+          elements.push(
+            <span 
+              key={`chord-${idx}`} 
+              className={isTokenChord ? "cifra-chord" : "comment-line"} 
+              style={{ position: 'static', display: 'inline', fontWeight: isTokenChord ? 'bold' : 'normal' }}
+            >
+              {content}
+            </span>
+          );
+
+          lastRealEndIndex += content.length;
+          lastOriginalEndIndex = item.startIndex + item.length;
+        });
+
+        return (
+          <div key={lineIdx} className="cifra-line" style={{ display: 'block', lineHeight: '1.5', fontFamily: 'var(--font-cifra)' }}>
+            {elements}
+          </div>
+        );
+      }
+
+      // Caso 2: Formato ChordPro (cifras inline [Chord]letra)
       const segments: { chord: string; text: string }[] = [];
       const segmentRegex = /(?:\[([^\]]+)\])?([^\[]*)/g;
       let match;

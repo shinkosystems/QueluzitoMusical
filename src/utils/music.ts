@@ -117,3 +117,41 @@ export function getChordKeys(chord: string): number[] {
 
   return keys;
 }
+
+// Marcadores de seção comuns que podem aparecer em linhas de cifra
+const SECTION_MARKERS = /^(?:\[?[Ií]ntro\]?|\[?[S]olo\]?|\[?[R]iff\]?|\[?[R]efr[aã]o\]?|\[?[P]onte\]?|\[?[V]erso\]?|\[?[C]horus\]?|\[?[B]ridge\]?|\[?[O]utro\]?|\[?[A]cústico\]?|\[?[P]ré-refr[aã]o\]?):?$/i;
+
+// Símbolos de tablatura ou compasso comuns
+const SYMBOLS = /^[||\-~\s+xX*]+$/;
+
+/**
+ * Verifica se um token (palavra) é uma representação válida de um acorde.
+ */
+export function isChord(token: string): boolean {
+  // Regex flexível de acordes que valida fundamentais (A-G), acidentais (#/b),
+  // qualidades/sufixos comuns, extensões em parênteses e baixos invertidos (ex: F#/Bb)
+  const chordRegex = /^[A-G](?:#|b)?(?:m|min|maj|M|maj7|maj9|maj13|min7|m7|m9|m11|m13|sus2|sus4|sus|dim|dim7|aug|add9|add11|add2|add4|5|6|7|9|11|13|M7|m7b5|6\/9|7#9|7b9|7#5|7b5)*(?:\([^)]+\))?(?:\/[A-G](?:#|b)?)?$/i;
+  
+  return chordRegex.test(token);
+}
+
+/**
+ * Verifica se uma linha é composta majoritariamente por acordes, espaços e marcadores de seção.
+ */
+export function isChordLine(line: string): boolean {
+  const trimmed = line.trim();
+  if (trimmed === '') return false;
+
+  const tokens = trimmed.split(/\s+/);
+  let validCount = 0;
+
+  for (const token of tokens) {
+    if (isChord(token) || SECTION_MARKERS.test(token) || SYMBOLS.test(token)) {
+      validCount++;
+    }
+  }
+
+  // Consideramos linha de cifra se pelo menos 85% dos tokens não-vazios forem válidos
+  return validCount / tokens.length >= 0.85;
+}
+

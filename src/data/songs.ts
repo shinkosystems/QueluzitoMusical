@@ -99,88 +99,54 @@ E [A]logo meu [Db7]sangue [F#m]estancou
         artist: 'Tim e Vanessa',
         key: 'B',
         content: `
-B    E       F#        B      E       F#
+
 [B]Quero [E]ver o [F#]esperado Ra[B]bi na mul[E]tidão.  [F#]
-B    E       F#        B      E       F#
-Quero ver o esperado Rabi na multidão
+[B]Quero [E]ver o [F#]esperado Ra[B]bi na mul[E]tidão.  [F#]
 
-G#m  G#m/G G#m/F# Eb5+
-Sei que passará por aqui
-E       B/Eb             C#m       Eb7
-Sou pequeno e não posso ver, sua estatura
-G#m    G#m/G   G#m/F#  Eb5+
-Tento à frente, procuro encontrar
-E       B/Eb             C#m      Eb7
-Um lugar de onde O veja, uma árvore ao céu
+[G#m]Sei que[G#m/G] passa[G#m/F]rá por [Eb5+]aqui
+[E]Sou peque[B/Eb]no e não posso ver[C#m], sua es[Eb7]tatura
+[G#m]Tento à [G#m/G]frente, [G#m/F#]procuro[Eb5+] encontrar
+[E]Um lugar de onde[B/Eb] O veja[C#m], uma ár[Eb7]vore ao céu
 
-G#m7 F#/A# B E F#
-Me elevarei do chão
-         G#m7  Ebm9  E    E/Eb C#m
-Meu espírito deseja retirar a escama-véu
-F#/A#                     B     E     F#    B    E    F#
-E contemplar-te a visão
+[G#m7]Me elev[F#/A#]arei[B] do[E] [F#]chão
+Meu espírito [G#m7]deseja [Ebm9] re[E]tirar [E/Eb]a es[C#m]cama-véu
+[F#/A#]E contemplar-te a visão  [B]   [E]   [F#]   [B]   [E]   [F#]
 
-B    E       F#
-Levantando Teu olhar
-B      E       F#
-Tu me vês em meu lugar
-B    E       F#
-Me convidas a cear
-    B    E       F#
-Em minha casa vais entrar
+[B]Le[E]van[F#]tando Teu[F#] olhar
+[B]Tu me [E]vês em [F#]meu lugar
+[B]Me con[E]vidas a [F#]cear
+Em [B]minha [E]casa vais[F#] entrar
 
-G#m  G#m/G G#m/F# Eb5+
-Não mereço, sou Zaqueu
-E       B/Eb         C#m      Eb7
-Mais um servo no engano, sou um publicano
-G#m G#m/G G#m/F# Eb5+
-Se destituí a quem for
-E    B/Eb     C#m      Eb7
-Pagarei com justeza quatro vezes mais
-G#m7 F#/A# B E F#
-Me elevarei do chão
-         G#m7  Ebm9  E    E/Eb C#m
-Meu espírito deseja retirar a escama-véu
-F#/A#                     B     E     F#    B    E    F#
-E contemplar-te a visão
+[G#m]Não me[G#m/G]reço, sou [G#m/F#]Za[Eb5+]queu
+[E]Mais um [B/Eb]servo no engano[C#m], sou um[Eb7] publicano
+[G#m]Se des[G#m/G]tituí[G#m/F#] a quem [Eb5+]for
+[E]Pagarei[B/Eb] com jus[C#m]teza qua[Eb7]tro vezes mais
+[G#m7]Me eleva[F#/A#]rei[B] do[E] [F#]chão
+Meu espí[G#m7]rito deseja[Ebm9] [E]retirar[E/Eb] a es[C#m]cama-véu
+[F#/A#]E contemplar-te a visão  [B]   [E]   [F#]   [B]   [E]   [F#]
 
-( G#m  G#m/G  G#m/F#  Eb5+ )
+ G#m  G#m/G  G#m/F#  Eb5+ 
+ E  B/Eb  C#m  Eb7  G#m7  F#/A#  B  E  F# 
+ G#m7  Ebm9  E  E/Eb  C#m  F#/A#  B  E  F#  B  E  F# 
 
-( E  B/Eb  C#m  Eb7  G#m7  F#/A#  B  E  F# )
-
-( G#m7  Ebm9  E  E/Eb  C#m  F#/A#  B  E  F#  B  E  F# )
-
-B    E       F#
-Hoje entrou em minha casa
-           B    E       F#
-A Verdade, a Salvação
-      B    E       F#
-E a Ti eu ofereço
-       B    E       F#
-O ofício de meu pão
+[B]Hoje [E]entrou em [F#]minha casa
+A Verdade, [B]a Sal[E]vação   [F#]
+E a Ti[B] eu [E]ofereço   [F#]
+O ofí[B]cio de [E]meu pão   [F#]
 
 G#m G#m/G G#m/F# Eb5+
-Já entendo o que queres dizer:
-E              B/Eb     C#m
- “Vinde a mim os pequenos..."
-         Eb7
-Os sicômoros galgar
+[G#m]Já en[G#m/G]tendo o[G#m/F#] que [Eb5+]queres dizer:
+[E] “Vinde a mim os[B/Eb] pequenos[C#m]..."
+Os sicômo[Eb7]ros galgar
 
-G#m7 F#/A# B E F#
-Me elevarei do chão
-         G#m7  Ebm9  E    E/Eb C#m
-Meu espírito deseja retirar a escama-véu
-F#/A#                     B
-E contemplar-te a visão
+[G#m7]Me eleva[F#/A#]rei[B] do[E] [F#]chão
+Meu espíri[G#m7]to deseja[Ebm9] re[E]tirar[E/Eb] a es[C#m]cama-véu
+[F#/A#]E contemplar-te a visão   [B]   [E]   [F#]
 
-        F#/A# B E F#
-Me elevarei do chão
-         G#m7  Ebm9  E    E/Eb C#m
-Meu espírito deseja retirar a escama-véu
-F#/A#                     B     E    F#
-E contemplar-te a visão
-B    E    F#            B  B4  B
-E contemplar-te a visão        `
+[G#m7]Me eleva[F#/A#]rei[B] do[E]   [F#]chão
+Meu espíri[G#m7]to deseja[Ebm9] re[E]tirar[E/Eb] a es[C#m]cama-véu
+[F#/A#]E contemplar-te a visão   [B]   [E]    [F#]
+[B]E contemplar-te a visão         [B]  [B4]   [B]        `
       },
       {
         id: 'cantaro',
@@ -188,53 +154,192 @@ E contemplar-te a visão        `
         artist: 'Tim e Vanessa',
         key: 'B',
         content: `
-[B]Como falas tu co[F#/Bb]migo sendo eu sa[G#m7]maritana? [B/F#]
-[E]Te revelas meu a[E/D#]migo
-[C#m]Justo eu, mulher in[F#4]sana [F#]
+Intro:  B   F#sus4/Bb    G#m7/E    F#sus4/E
 
-[B]Se soubesses quem te [F#/Bb]pede água viva da co[G#m7]mpreensão [B/F#]
-[E]Tu me pedirias [E/D#]fonte
-[C#m]Que brotasse do [F#4]coração [F#]
+   (3x)   F#7/9
 
-[G#m]Dá-me desta água, S[D#m]enhor, quero beber
-[E]Para a sede eterna [F#4]nunca mais ter [F#]
-[G#m]E o cântaro no [D#m]poço ela deixou
-[E]Pois a água da vida [F#4]ela provou [F#]
+[B]Como falas[F#sus4/Bb] tu comigo, [G#m7]sendo eu [G#m7/F#]samaritana
+[E]Te revelas [E/D#]meu amigo, [E]C#]justo eu [F#7/9]mulher 
+insana
+    
+[B]Oh, Gali[F#sus4/Bb]leu     [G#m7/E]
+Junto ao[F#sus4/E] poço busco [B]água[F#sus4/Bb]          [G#m7/E]
+E me [F#sus4/E]trazes a água[B] viva[F#sus4/Bb]          [G#m7/E]
+Tu me compree[D#m7]ndes[E], no incons[D#m7]ciente[E], tenho 
+sede [E/F]n'alma ven[F#7/9]cida
+               
+[B]Com teus [F#sus4/Bb]olhos me divi[G#m7]sas e me[G#m7/F#] livras da 
+armadilha
+[E]Onde os homens, [E/D#]os maridos, [E/C#]os altares 
+[F#7/9]deste mundo
+[B]Oh, Galileu[F#sus4/Bb]     [G#m7/E]
+Junto ao[F#sus4/E] poço busco [B]água[F#sus4/Bb]          [G#m7/E]
+E me [F#sus4/E]trazes a água[B] viva[F#sus4/Bb]          [G#m7/E]
+Tu me com[D#m7]preendes[E], no incons[D#m7]ciente[E], tenho 
+sede [E/F]n'alma ven[F#7/9]cida
+
+[G#m]Se soubes[G#m/G]ses quem te[G#m/F#] pede de [G#m7]beber     [G#m7]
+Busca[D#m7]ria [C#m7/9]água pura que [B]brota do espí[F#7/9]rito
+
+[B]Estou plena,[F#sus4/Bb] estou viva, [G#m7]Siloé já não[G#m7/F#] sacia
+[E]Me buscaste [E/D#]no mais fundo do[E/C#] meu ser eu te 
+[F#7/9]encontro
+[B]Oh, Galileu[F#sus4/Bb]          [G#m7/E]
+[F#sus4/E]Tua presença me conforta
+É verda[F#sus4/E]de que li[B]berta[F#sus4/Bb]          [G#m7/E]
+Levarei teu [D#m7]cantaro[E]
+[E]Eu direi aos [D#m7]ávidos
+[E]Já habita em nós [E/F]o Messi[F#7/9]as
+
+B  F#sus4/Bb    G#m7/E    F#sus4/E   (3x)  
+Oh Galileu
+
+[B]Junto ao poço eu te encontrei
+
         `
       },
       {
         id: 'a-casa-lar',
         title: 'A Casa-Lar',
         artist: 'Tim e Vanessa',
-        key: 'D',
+        key: 'A',
         content: `
-[D]Minha casa é [A/C#]um templo de paz
-[Bm]Onde a luz do ev[G]angelho reluz
-[Em]Toda a família se [A7]reúne feliz
-[Em]Seguindo as peg[A7]adas de Jesus
+        
+[Intro] E  E/D#  E/C#  E/B  A9
 
-[D]A casa-lar é a [A/C#]escola do amor
-[Bm]Onde aprendemos [G]a nos perdoar
-[Em]Sob a bênção [A7]do Criador
-[G]Vamos juntos e[A7]sse templo cons[D]truir
+E              A9
+O ser no corpo é um passarinho
+E   E/D#  E/C#  E/B  A9
+Na janela quer voar
+F#m7(4)/C#      C#m7          G#m7/D#
+O pensar evola, vibra harmonias pelo   
+  A9        A6(9)
+éter, pelo ar
+
+E              A9
+Sofre os olhos deita a vista
+E      E/D#  E/C#  E/B  A9
+Sobre o mar, sobre amar
+F#m7(4)/C#            C#m7      G#m7/D#  
+Cativeiro, marinheiro, marear, homem ao 
+A9  A6(9)
+mar
+
+A9
+Mas o teu corpo
+           E      E/D#     E/C#   E/B  A9
+É teu meio de cantar de sentir, de sonhar
+                  E   E/D#  E/C#  E/B  A9
+Saborear ar e mar amorear, sensorear
+                   E           
+É tua casa, casulo, testemunhos, 
+E/D#
+estremunhos
+A9                 E     E/D#     A9
+A casa-lar, a casa, a casa, a casa
         `
       },
       {
         id: 'mediuns',
         title: 'Médiuns',
         artist: 'Tim e Vanessa',
-        key: 'Am',
+        key: 'G',
         content: `
-[Am]Médiuns da vida, p[Dm]ontes da luz
-[G]Estendendo as mãos [C]ao Mestre Jesus
-[Am]Ouvindo as vozes do [Dm]além-túmulo a cantar
-[F]Consolo e paz [E7]para quem chorar
+Intro] G  B7  C  Cm
+        G  A4/G  C  D4  G
 
-[Am]Moisés no monte, E[Dm]lias a ouvir
-[G]O sussurro do vento [C]a discernir
-[F]E nos tempos de [Dm]hoje a mensagem continua
-[F]A provar que a vida [E7]jamais recua
-        `
+
+E|---2-0------------| 
+B|-------1-0--------| 
+G|-----------2-0----| 
+D|-0--------------0-| 
+A|------------------| 
+E|------------------| 
+
+G                      B7
+Em verdade eu vos digo
+             C         Cm
+Que se eles se calarem
+     G                A4/G
+As pedras é que falarão
+            C              D4
+Vossos velhos terão sonhos
+           C         D4    G
+Vossos jovens profetizarão
+G                      B7
+Em verdade eu vos digo
+             C         Cm
+Que se eles se calarem
+     G                A4/G
+As pedras é que falarão
+            C              D4
+Vossos velhos terão sonhos
+           C         D4    G
+Vossos jovens profetizarão
+Em               Bm
+Cajado de Moisés
+C                G
+O manto de Elias
+Em             Bm
+Escada de Jacó
+C                D7
+As visões de Jeremias
+G                    D
+Hoje médiuns, antes, profetas
+C               D7
+Faculdades não mais ocultas
+G                     D
+Quantos falam, quantos sentem
+C                        D7    G  D7
+Quantos ouvem, quantas línguas
+         G             B7
+Em verdade eu vos digo
+             C         Cm
+Que se eles se calarem
+     G                  A4/G
+As pedras é que falarão
+            C              D4
+Vossos velhos terão sonhos
+           C         D4    G
+Vossos jovens profetizarão
+G                      B7
+Em verdade eu vos digo
+             C         Cm
+Que se eles se calarem
+     G                A4/G
+As pedras é que falarão
+            C                D4
+Vossos velhos terão sonhos
+           C         D4    G
+Vossos jovens profetizarão
+Em                  Bm
+Nas Bodas de Caná
+C                    G
+Na cura das feridas
+Em                Bm
+Na Transfiguração
+C       C#m5-         D7
+Nos dando a água viva
+G                         D
+Sempre Mestre, sempre Profeta
+C                D7
+Ser divino, Ser o Guia
+G                       D
+Quantos calam, quantos sentem
+C                        D7    G  D7
+Quantos ouvem o médium da Vida
+G                      B7
+Em verdade eu vos digo
+             C         Cm
+Que se eles se calarem
+     G                A4/G
+As pedras é que falarão
+            C              D4
+Vossos velhos terão sonhos
+           C         D4    G
+Vossos jovens profetizarão
+
+( G  A  C  D4 )        `
       }
     ]
   },
