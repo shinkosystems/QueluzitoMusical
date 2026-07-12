@@ -12,7 +12,7 @@ export const SongList: React.FC<SongListProps> = ({ songBlocks, onSelectSong }) 
     <div className="container" style={{ paddingBottom: '60px' }}>
       {/* Hero Section */}
       <section style={{ textAlign: 'center', padding: '60px 0 40px', borderBottom: '1px solid var(--border-color)' }}>
-        <h1 style={{ fontSize: '3.5rem', fontWeight: 700, background: 'linear-gradient(135deg, #F97316 0%, #FDBA74 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '16px' }}>
+        <h1 style={{ fontSize: '3.5rem', fontWeight: 700, background: 'linear-gradient(135deg, #8C661F 0%, #F2BF5E 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '16px' }}>
           GEP Cifras
         </h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', margin: '0 auto', lineHeight: 1.6 }}>
