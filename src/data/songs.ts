@@ -97,18 +97,90 @@ E [A]logo meu [Db7]sangue [F#m]estancou
         id: 'zaqueu',
         title: 'Zaqueu',
         artist: 'Tim e Vanessa',
-        key: 'C',
+        key: 'B',
         content: `
-[C]Zaqueu subiu na f[Am]igueira para ver
-[F]O bom Jesus que e[G]stava a passar
-[C]Ele era baixo e [Am]queria conhecer
-[F]Aquele amigo que [G]veio para amar
+B    E       F#        B      E       F#
+[B]Quero [E]ver o [F#]esperado Ra[B]bi na mul[E]tidão.  [F#]
+B    E       F#        B      E       F#
+Quero ver o esperado Rabi na multidão
 
-[F]Zaqueu, desce de p[G]ressa da árvore
-[C]Hoje na tua casa [Am]vou me hospedar
-[F]E o coração de Z[G]aqueu se abriu
-[F]Toda a riqueza do [G7]bem repartiu
-        `
+G#m  G#m/G G#m/F# Eb5+
+Sei que passará por aqui
+E       B/Eb             C#m       Eb7
+Sou pequeno e não posso ver, sua estatura
+G#m    G#m/G   G#m/F#  Eb5+
+Tento à frente, procuro encontrar
+E       B/Eb             C#m      Eb7
+Um lugar de onde O veja, uma árvore ao céu
+
+G#m7 F#/A# B E F#
+Me elevarei do chão
+         G#m7  Ebm9  E    E/Eb C#m
+Meu espírito deseja retirar a escama-véu
+F#/A#                     B     E     F#    B    E    F#
+E contemplar-te a visão
+
+B    E       F#
+Levantando Teu olhar
+B      E       F#
+Tu me vês em meu lugar
+B    E       F#
+Me convidas a cear
+    B    E       F#
+Em minha casa vais entrar
+
+G#m  G#m/G G#m/F# Eb5+
+Não mereço, sou Zaqueu
+E       B/Eb         C#m      Eb7
+Mais um servo no engano, sou um publicano
+G#m G#m/G G#m/F# Eb5+
+Se destituí a quem for
+E    B/Eb     C#m      Eb7
+Pagarei com justeza quatro vezes mais
+G#m7 F#/A# B E F#
+Me elevarei do chão
+         G#m7  Ebm9  E    E/Eb C#m
+Meu espírito deseja retirar a escama-véu
+F#/A#                     B     E     F#    B    E    F#
+E contemplar-te a visão
+
+( G#m  G#m/G  G#m/F#  Eb5+ )
+
+( E  B/Eb  C#m  Eb7  G#m7  F#/A#  B  E  F# )
+
+( G#m7  Ebm9  E  E/Eb  C#m  F#/A#  B  E  F#  B  E  F# )
+
+B    E       F#
+Hoje entrou em minha casa
+           B    E       F#
+A Verdade, a Salvação
+      B    E       F#
+E a Ti eu ofereço
+       B    E       F#
+O ofício de meu pão
+
+G#m G#m/G G#m/F# Eb5+
+Já entendo o que queres dizer:
+E              B/Eb     C#m
+ “Vinde a mim os pequenos..."
+         Eb7
+Os sicômoros galgar
+
+G#m7 F#/A# B E F#
+Me elevarei do chão
+         G#m7  Ebm9  E    E/Eb C#m
+Meu espírito deseja retirar a escama-véu
+F#/A#                     B
+E contemplar-te a visão
+
+        F#/A# B E F#
+Me elevarei do chão
+         G#m7  Ebm9  E    E/Eb C#m
+Meu espírito deseja retirar a escama-véu
+F#/A#                     B     E    F#
+E contemplar-te a visão
+B    E    F#            B  B4  B
+E contemplar-te a visão        `
       },
       {
         id: 'cantaro',
