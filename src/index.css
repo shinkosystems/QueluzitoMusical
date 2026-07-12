@@ -329,26 +329,26 @@ h1, h2, h3, h4 {
     left: 0;
     right: 0;
     height: 64px;
-    background-color: #0E1626;
+    background-color: var(--bg-card);
     border-top: 1px solid var(--border-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 1000;
     padding: 0 10px;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
   }
 
   .mobile-dock-btn {
     background: none;
     border: none;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     flex: 1;
     height: 100%;
