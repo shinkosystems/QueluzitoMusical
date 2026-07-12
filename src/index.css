@@ -4,23 +4,23 @@
   --font-text: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-cifra: 'Roboto Mono', 'Courier New', monospace;
 
-  /* Cores - Tema Escuro Moderno (Premium) */
-  --bg-main: #0B0F19;
-  --bg-card: #151C2C;
-  --bg-card-hover: #1E293B;
-  --text-primary: #F8FAFC;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
+  /* Cores - Nova Paleta Clara GEP */
+  --bg-main: #F2F2F2;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #E8ECEF;
+  --text-primary: #202B40;
+  --text-secondary: #4A5568;
+  --text-muted: #718096;
   
-  --primary: #F97316; /* Laranja estilo Cifra Club moderno */
-  --primary-hover: #EA580C;
-  --primary-light: rgba(249, 115, 22, 0.1);
-  --border-color: #2D3748;
-  --focus-ring: #38BDF8;
+  --primary: #8C661F; /* Dourado Escuro GEP */
+  --primary-hover: #735319;
+  --primary-light: rgba(140, 102, 31, 0.08);
+  --border-color: rgba(44, 55, 89, 0.15);
+  --focus-ring: #8C661F;
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
   
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s ease;

@@ -48,22 +48,32 @@ function App() {
         position: 'sticky',
         top: 0,
         zIndex: 100,
-        backgroundColor: 'rgba(11, 15, 25, 0.8)',
+        backgroundColor: 'rgba(255, 255, 255, 0.85)',
         backdropFilter: 'blur(12px)',
         borderBottom: '1px solid var(--border-color)',
-        padding: '16px 0'
+        padding: '12px 0'
       }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div 
             onClick={handleBack} 
-            style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}
+            style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
             role="button"
             tabIndex={0}
             aria-label="Ir para página inicial"
             onKeyDown={(e) => { if (e.key === 'Enter') handleBack(); }}
           >
-            <span style={{ fontSize: '1.75rem' }}>🎹</span>
-            <span style={{ fontFamily: 'var(--font-title)', fontWeight: 700, fontSize: '1.25rem', letterSpacing: '0.05em' }}>
+            <img 
+              src="/logo.jpg" 
+              alt="Logo GEP 120 Anos" 
+              style={{ 
+                height: '45px', 
+                width: '45px', 
+                borderRadius: '50%', 
+                border: '2px solid var(--primary)',
+                objectFit: 'cover' 
+              }} 
+            />
+            <span style={{ fontFamily: 'var(--font-title)', fontWeight: 700, fontSize: '1.25rem', letterSpacing: '0.05em', color: 'var(--text-primary)' }}>
               GEP <span style={{ color: 'var(--primary)' }}>CIFRAS</span>
             </span>
           </div>

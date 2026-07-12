@@ -350,7 +350,7 @@ Vossos jovens profetizarão
       {
         id: 'para-sempre',
         title: 'Para sempre em meu coração',
-        artist: 'Tim e Vanessa',
+        artist: 'Meu Cantar',
         key: 'E',
         content: `
 [Primeira Parte]
@@ -448,103 +448,195 @@ Para ao Pai glorificar        `
       {
         id: 'amigo-presente',
         title: 'Amigo presente',
-        artist: 'Tim e Vanessa',
-        key: 'D',
+        artist: 'Xará - Luiz Ricardo',
+        key: 'F',
         content: `
-[D]Quando a noite ch[Bm]egar e o frio apertar
-[G]Eu sei que ao meu l[A7]ado tu vais caminhar
-[D]Amigo presente, d[Bm]e luz e bondade
-[G]Teu abraço aquece [A7]a nossa amizade
-
-[G]Jesus, companheiro [A]de toda jornada
-[D]Tua presença [Bm]ilumina a estrada
-[G]Nunca estou só, [A]posso sentir
-[G]Tua força a me [A7]conduzir
+Dm           Gm
+Vem lá do infinito
+     C               Dm
+Me amar em meio ao silêncio
+                Gm
+E pelos meus caminhos
+    C           Dm
+Se faz amigo presente
+C                     Dm
+Que Jesus te cubra de amor e luz
+A                         C
+Possa eu acompanhar teus passos
+                 Gm                Dm    C
+Pois entre teus braços me sinto feliz
+            Dm     C
+Me sinto feliz...
+            Dm     C
+me sinto feliz...
+            Dm
+me sinto feliz
         `
       },
       {
         id: 'bilha',
         title: 'Bilha',
         artist: 'Tim e Vanessa',
-        key: 'E',
+        key: 'Bb',
         content: `
 
-[Bb] Uo Uo Uo Uo  [Eb]Uoooooo[F]
+Bb          Eb     F
+Uo Uo Uo Uo Uoooooo
 
+Bb
+O evangelho nas areias
+Eb                    Bb    Eb
+Áquila e Prisca, a família  uououoooo
+Bb
+Na pureza de bondade
+Eb                      Bb    Eb
+Abrem suas portas ao errante  uououoooo
 
-[Bb] O evangelho nas areias
-[Eb] Áquila e Prisca, a família[Bb] uou[Eb]ouoooo
-[Bb] Na pureza de bondade
-[Eb] Abrem suas portas ao errante[Bb] uou[Eb]ouoooo
+[Refrão]
 
-[Refrão]
+D#
+És bem vindo à nossa casa
+Bb
+Toma a água, eis a bilha
+Eb            F      Bb
+Dessendenta nela tua vida
+Eb            F       Bb
+Vem beber do vaso que sacia
 
-[D#] És bem vindo à nossa casa
-[Bb] Toma a água, eis a bilha
-[Eb] Dessendenta ne[F]la tua [Bb]vida
-[Eb] Vem beber do [F]vaso que [Bb]sacia
-   
-[Gm]Ouço as histó[Dm]rias, tua [D#] casa, o teu pai
-[Gm]Teu passado [Dm]e minha ag[D#]onia
-[Gm]Já enxergo [Dm]agora, no t[D#]rabalho, [Eb]no tear
-[D#]Vou tecendo[Dm] meu falar e
-[D#]A nossa amizade é um [F]culto
+Gm         Dm         D#
+Ouço as histórias, tua casa, o teu pai
+Gm         Dm         D#
+Teu passado e minha agonia
+Gm         Dm         D#       Eb
+Já enxergo agora, no trabalho, no tear
+D#         Dm
+Vou tecendo meu falar e
+D#                   F
+A nossa amizade é um culto
 
-[Refrão]
+[Refrão]
 
-[D#]És bem vindo à nossa casa
-[Bb]Toma a água, eis a bilha
-[Eb]Dessendenta ne[F]la tua [Bb]vida
-[Eb]Vem beber do v[F]aso que [Bb]sacia
+D#
+És bem vindo à nossa casa
+Bb
+Toma a água, eis a bilha
+Eb           F       Bb
+Dessendenta nela tua vida
+Eb            F       Bb
+Vem beber do vaso que sacia
 
-[Gm]Sou cristão [Dm]confesso
-[D#]Digo mais, eu fui tão cego
-[Gm]Que tantos [Dm]remorsos ca[D#]rrego
-[Gm]No afã de t[Dm]er sucesso
-[D#]Inaugurei perseguições
-[Eb]São incontá[Dm]veis as ações
-[D#]Foi quando eu mergulhei o olhar em [F]Estevão
-Uo Uo Uo [D#]Uooo [F]Uooo [Bb]Uooo
-[D#]Uooo[F]ôooo[BB]ôooo
-[D#]Uooo[F]ôooo[BB]ôooo
+Gm         Dm
+Sou cristão confesso
+D#
+Digo mais, eu fui tão cego
+Gm         Dm         D#
+Que tantos remorsos carrego
+Gm         Dm
+No afã de ter sucesso
+D#
+Inaugurei perseguições
+Eb         Dm
+São incontáveis as ações
+D#                                 F
+Foi quando eu mergulhei o olhar em Estevão
+         D#   F    Bb
+Uo Uo Uo Uooo Uooo Uooo
+D#  F   Bb
+Uoooôoooôooo
+D#  F   Bb
+Uoooôoooôooo
 
-[Gm]Devo ir em[Dm]bora, tu[D#]a casa é um altar
-[Gm]Sou estorvo à [Dm] tua harmo[D#]   [Eb]   [F]nia
+Gm        Dm     D#
+Devo ir embora, tua casa é um altar
+Gm           Dm        D#  Eb  F
+Sou estorvo à tua harmonia
 
-[D#]És presente em nossa ten[F]da
-[D#]Qualquer um que se arrepen[F]da
-[Eb]E conosco s[f]irva O Bom Am[Bb]igo
-[Eb]Sois ovelha [F]que volta ao [Bb]aprisco
-[D#]Uooo[F]ôooo[BB]ôooo
-[D#]Uooo[F]ôooo[BB]ôooo
+D#                      F
+És presente em nossa tenda
+D#                        F
+Qualquer um que se arrependa
+Eb         F            Bb
+E conosco sirva O Bom Amigo
+Eb           F           Bb
+Sois ovelha que volta ao aprisco
+Bb       Eb   F
+Uoooôoooôooo
+Bb       Eb   F
+Uoooôoooôooo
 
-[Refrão]
+[Refrão]
 
-[D#]És bem vindo à nossa casa
-[Bb]Toma a água, eis a bilha
-[Eb]Dessendenta ne[F]la tua [Bb]vida
-[Eb]Vem beber do v[F]aso que sa[Bb]cia
-Uoooôoooô[Eb]ooo [F]
-[Bb]Uoooôooo
-… [Eb]Pois serás o [F]vaso que [Bb]sacia
+D#
+És bem vindo à nossa casa
+Bb
+Toma a água, eis a bilha
+Eb          F        Bb
+Dessendenta nela tua vida
+Eb            F        Bb
+Vem beber do vaso que sacia
+        Eb   F
+Uoooôoooôooo
+Bb
+Uoooôooo
+  Eb           F        Bb
+… Pois serás o vaso que sacia
         `
       },
       {
         id: 'uma-prece',
         title: 'Uma prece',
-        artist: 'Tim e Vanessa',
-        key: 'F',
+        artist: 'Cacau',
+        key: 'D',
         content: `
-[F]Eleva o pensamento [Dm]ao alto em oração
-[Bb]Abre as comportas [C7]do teu coração
-[F]Uma prece simples, [Dm]um sussurro de fé
-[Bb]Que nos sustenta [C7]e nos põe de pé
+[Intro] Bm  G  Bm  G
 
-[Gm]O Pai nos ouve, [C7]mesmo no silêncio
-[F]Tudo é resposta, [Dm]tudo é amor
-[Bb]Confia e espera, [Gm]o bálsamo da paz
-[Bb]A sua presença s[C7]empre nos traz
-        `
+  Bm                       G             
+Ó poderosa águia que há no alto do totem
+D/F#
+
+Em                  A
+Dá-me tuas asas, me ensina a voar
+   Bm                         G            
+Cruzar os horizontes, vencer montes e mares
+  D/F#
+
+      Em                     A
+Com a luz do saber, pela virtude de amar
+
+Bm                                  G    
+Com tua força tamanha, ó urso, me ajude a
+          D/F#
+ derrubar
+Em                                
+As barreiras da vida que eu venha a 
+  F#
+encontrar
+
+             Bm                           
+E eu venho pedir a ti, ó tartaruga, que o 
+         G              D/F#
+totem estás a sustentar
+Em                               F#
+Dá-me tua certeza de um dia eu poder chegar
+             Bm                 G
+A ver-te nas asas da águia, na força do 
+urso
+Em                        A
+Em todas as coisas criadas por ti
+ Bm                   G              D/F#
+Eleva minh'alma, me faz tão perfeito
+    Em                     A         F#
+Me leva a saber que estás dentro de mim
+
+Bm                        G    D/F#
+Ó Pai Nosso que estás no céu
+Em                      F#
+Santificado seja o teu nome
+                   Bm
+Em favor de todos nós
+
+[Final] Bm  G  Em  A
+        Bm  G  Em  A        `
       },
       {
         id: 'de-bem',
@@ -552,15 +644,32 @@ Uoooôoooô[Eb]ooo [F]
         artist: 'Tim e Vanessa',
         key: 'A',
         content: `
-[A]Acordar sorrindo, [F#m]ver o sol brilhar
-[D]Agradecer a Deus [E7]por poder cantar
-[A]De bem com a vida, [F#m]de bem com o irmão
-[D]Cultivando flores [E7]no meu coração
+A         Bm       A
+Qual andorinhas felizes
+D        D9/C#      E
+Bailando soltas no ar
+D      D9/C# E
+Ouve a suave música
+   D     D9/C#   E
+De Deus, melodia sem par
 
-[Bm]Não há tristeza [E7]que resista al amor
-[A]Não há tempestade [F#m]que vença o calor
-[D]Da fé que me guia, [Bm]da paz que me conduz
-[D]Caminho contente [E7]na senda da luz
+A      Bm        A
+Nela embala teus sonhos
+D       D9/C#   E
+Tua fé, tuas quimeras
+D        D9/C#  E
+Na brisa quente dos verões
+D          D9/C#    E      E7
+No perfume das primaveras
+
+D           Bm       E
+E no encantamento da vida
+  D         B7/D#  E
+Glorifica o eterno criador
+D           Bm         E
+Viverás, assim, na alegria
+D          B7/D#  E      A
+Do mais sublime e puro amor
         `
       }
     ]
@@ -573,51 +682,228 @@ Uoooôoooô[Eb]ooo [F]
         id: 'apostolo',
         title: 'Apóstolo da Samaria',
         artist: 'Tim e Vanessa',
-        key: 'C',
+        key: 'D',
         content: `
-[C]Apóstolo do amor, [Am]levando a mensagem [F]de paz e luz [G]por toda a Samaria.
-[C]Com bondade e [Am]fé constante, [F]anunciando a [G]Boa Nova cada dia.
+D                      G
+Foi assim que o Senhor derramou
+ D                        G   A
+Vinho e azeite em nossa ferida
+  D                   G
+Foi assim que o Messias fiou
+     D            G  A  Bm
+Saga santa, novelo de vida
+
+  G            A       Bm
+Salva o próximo e ti salvarás
+   G       A         Bm
+Não olvides o amor em tuas mãos
+    F#m             Bm
+Faze isso e, então, viverás
+     G         D        A
+Vê teu lume no olhar dos irmãos
+
+  D           G      A
+Pela verdade viveu Simeão
+   D          G            A
+Eis o estandarte na cruz Um ancião
+   G           D
+O apóstolo da Samaria
+   G          D
+Verbo vivo, poesia
+
+ D                   G
+Foi assim que o Senhor semeou
+ D                   G
+Grão sagrado em solo profano
+ D                   G
+Foi assim que Jesus nos legou
+   D               G  A Bm
+A bondade de um samaritano
+
+   G              A    Bm
+Pulsa o conto, conta o Mashal
+  G        A               Bm
+Fez-se um mártir Em honra do bem
+F#m                Bm
+Seu madeiro ferindo o mal
+G              D      A
+Como arado a cortar o Siquém
         `
       },
       {
         id: 'veredas',
         title: 'Veredas',
         artist: 'Tim e Vanessa',
-        key: 'D',
+        key: 'E',
         content: `
-[D]Pelas veredas da [Bm]vida vou caminhar [G]com fé no coração [A]e passos firmes.
-[D]Nas curvas do ca[Bm]minho sei que a luz do [G]Evangelho [A]vai me guiar.
+E
+Elias no Carmelo
+     A         Am
+Na defesa do Torá
+ E     B      C#m
+Ateia fogo às toras
+     F#             B    A    B
+Condenando os adoradores de Baal
+
+E
+Ei-lo, João Batista
+      A          Am
+Na aurora do Evangelho
+E       B    C#m
+Clama a todo povo
+       F#m            B
+O arrependimento dos homens
+A       B        E
+Pois já vem o Messias
+
+    A                        B
+Rejubila desde o ventre de Izabel
+        E             A        B
+Já não chora os seus filhos a Raquel
+        A                       B
+Luz que arde nos desertos de Israel
+        E
+Não se cansa
+       A          B
+O seu verbo é um bordão
+       C#m       G#m         A   G#m F#m
+Vai em peles de camelo, gafanhoto e  mel
+
+E          B          C#m
+Voz que calaram na bandeja
+        G#m        A
+Ainda estronda no Jordão
+       E          B       A
+Sob a Pena de Talião a reparação
+F#m      G#m
+Benção divina
+A      B               E
+Pedagogia da reencarnação
+
+[Refrão]
+
+E       A                  E
+Endireitai as veredas do amor
+        A                     E
+Reconduzindo o rebanho ao Pastor
+        A            E
+Água e fogo na evolução
+        A       B      E
+Na geração da Regeneração
         `
       },
       {
         id: 'parnaso',
         title: 'Parnaso de além túmulo',
         artist: 'Tim e Vanessa',
-        key: 'Em',
+        key: 'A',
         content: `
-[Em]Vozes poetas que [Am]cantam a imortalidade, [C]revelando a beleza [B7]do além-túmulo.
-[Em]Rimas de luz e [Am]consolo, [C]mostrando que a vida continua [B7]no infinito.
+A9   A9/G#     F#m7/4  E4
+Além       do túmulo
+            D           D#m5-
+O espírito canta, inda canta
+        A       Bm/A     A7+      D
+Seus ideais de paz, de amor e de luz
+            A     D    C#m7
+No ditoso país onde Jesus
+   Bm7         C#m7       D
+Impera com bondade sacrossanta
+ A9    A9/G#     F#m7/4  E4
+Nessas       mansões
+          D           D#m5-
+A lira levanta, se levanta
+        A        Bm/A       A7+   D
+Glorificando o amor que em Deus transluz
+                A       D      C#m7
+Para o bem exalçar que nos conduz
+     Bm7      E          A
+À divina alegria pura e santa
+A         E/G#   D  E
+Nessa castália eterna
+A        E/G#     D  E
+Da harmonia transborda
+   A     E/G#        D  E
+A luz excelsa da poesia
+       A     E/G#        D        E
+Que a Terra toda inunda de esplendor
+ F#m           D           A             
+Hinos das esperanças espargindo sobre os 
+ E/G#
+homens
+    D              D#m5-
+Tornando-os mais unidos
+         A          E      D
+Na ascensão para o belo e para o amor
         `
       },
       {
         id: 'juventude',
         title: 'Juventude e Vida',
         artist: 'Tim e Vanessa',
-        key: 'G',
+        key: 'C',
         content: `
-[G]Juventude dourada, [Em]tempo de plantar o bem [C]e colher a vida [D7]eterna.
-[G]Com alegria e vi[Em]gor, seguindo o [C]plano do Cri[D7]ador.
-        `
+C
+Vida na Verdade
+   G/B
+È plena Liberdade
+F                G
+Enriquecida de Amor
+F                 G            C
+Força da vida , o Bem em plenitude
+   Em             F
+Os braços da Juventude
+E                  Am       G4 G G4 G
+Garantindo uma estrada florida
+F                G               C
+Como linda borboleta que sai do casulo
+   Em            F
+De asas tão coloridas
+  D7(9)/F#     G
+Surpresa descoberta
+F              G            C    G
+É a Liberdade já quase perfeita
+      C    Em
+Juventude e Vida
+F                 G
+O Saber namora o coração
+ C          Em
+O Pai conta com a definição
+F                  G             C   G
+De quem na Verdade valoriza a vida        `
       },
       {
         id: 'patria',
         title: 'Pátria do Evangelho',
         artist: 'Tim e Vanessa',
-        key: 'C',
+        key: 'A',
         content: `
-[C]Brasil, pátria querida, [Am]coração do mundo, [F]lar do Evangelho [G]de Jesus.
-[C]Sob o manto azul do [Am]céu, semeando a [F]semente da [G]paz.
-        `
+A        Bm
+Brasil amado
+E           E7       A   A7
+És a Pátria do Evangelho
+       D  Dm       A   F#m
+És do mundo a esperança
+     Bm   E     A
+O sensível coração
+    Bm         E         A
+Teu povo tem muitas cores
+F#m             Bm     E  A
+A Das raças a perfeita união
+
+A             Bm
+Observas em silêncio
+E             E7 A A7
+A beleza do céu
+   D  Dm       A   F#m
+Estrelas cintilantes
+        Bm    E      A
+Nos lembrando o cruzeiro
+   Bm      E          A          F#m
+Sugerem refletir a bênção de Deus
+      Bm        E          A
+Na presença do Mestre Jesus
+         Bm        E    A   F#m
+Junto ao solo brasileiro        `
       },
       {
         id: 'jesus-mestre',
@@ -625,8 +911,27 @@ Uoooôoooô[Eb]ooo [F]
         artist: 'Tim e Vanessa',
         key: 'D',
         content: `
-[D]Jesus, doce Mestre, [Bm]guia meu viver [G]com o teu amor [A]infinito.
-[D]Tua palavra de [Bm]vida é o porto que [G]acalma meu [A]coração.
+A6            G6/D
+Jesus é o nosso Mestre
+A6          G6/D
+Ele veio ensinar
+Bm                F#m
+De Deus a sábia vontade
+G                    A
+E por Ele ao Pai chegar
+      G A6    G6/D
+E por Ele    chegar
+
+A6               G6/D
+Em cada passo um exemplo
+A6            G6/D
+De amor ao semelhante
+Bm                    F#m
+Deus sempre espera de nós
+G                     A
+Testemunho a todo instante
+G A6      G6/D   A6
+A todo instante
         `
       }
     ]
@@ -639,43 +944,371 @@ Uoooôoooô[Eb]ooo [F]
         id: 'caminhando-juntos',
         title: 'Caminhando Juntos',
         artist: 'Tim e Vanessa',
-        key: 'G',
-        content: `[G]Caminhando juntos [Em]na mesma direção, [C]lado a lado, [D7]como irmãos de fé.`
+        key: 'A',
+        content: `A                  A/G#
+Quando me sinto cansado
+D                                  A
+Olhando as trevas que devo enfrentar
+A                      A/G#
+Quando eu olho o passado
+D                       A
+E vejo o quanto eu já fiz sofrer
+D                A
+Quero saber quem sou eu
+         A/G#
+Saber quem me fez
+E           A
+Porque estou aqui
+D               A
+Ouço uma voz que me diz
+ A/G#            E             A
+Que trago as respostas bem junto de mim
+
+D                              A
+Quem sou eu que não vê que a chuva
+  A/G#       E         A         A7
+Não escolhe o solo que vai irrigar e 
+dessedentar
+ D                   A
+Apenas cumpre sua missão
+   A/G#   E          A
+E os ventos divinos irão te levar
+ D                            A
+Quem sou eu que não vê que ao lado
+ A/G#         E               A
+Um ser encantado me chama de irmão
+ A7         D
+E me estende a mão
+ A
+Me dizendo que juntos
+ A/G#                E           A
+Iremos mais longe que eu possa sonhar
+ D                                     A
+Quem sou eu que não vê que meu Deus
+ A/G#   E                   A
+Acima de tudo vem cuidar de mim
+ D                             A
+Quem sou eu, sou um ser tão feliz
+  A/G#          E            A
+Pois eu já descobri que eu tenho você`
       },
       {
         id: 'alivio',
         title: 'Alívio',
         artist: 'Tim e Vanessa',
-        key: 'C',
-        content: `[C]Encontro alívio [Am]nas tuas palavras de paz, [F]bálsamo doce [G]que acalma a alma.`
+        key: 'A',
+        content: `A        E/G#   F#m     A/E
+Caminheiro, no caminho
+D        D/C#    Bm      Bm/A
+Em busca da direção
+E/G#        D/F#    E
+Da expulsão do Paraíso
+D        E        A
+À Terra da Promissão
+A        E/G#     F#m     A/E
+Do suor do vosso rosto
+D       D/C#   Bm      Bm/A
+Angariareis o pão
+E/G#      D/F#          E
+Do estertor de vossos partos
+D         E      A
+O maná da evolução
+A           C#m7
+Viver é crescer
+   D6           Dm6
+E crescer é sofrido
+Bm       Bm/A
+Caridade, oração
+E/G#           D   D9   A
+Alívio do coração
+A    E/G#   F#m      A/E
+Semeador, em meio à dor
+  D        D/C#     Bm      E
+ "Vinde à mim se estais cansados
+A             C#m7     D6     Dm6
+Meu peso é leve,      jugo suave”
+Bm          Bm/A          E/G#
+Já não é sentida dor
+                D    D9    A
+Bendito Consolador`
       },
       {
         id: 'aprendiz',
         title: 'Aprendiz',
         artist: 'Tim e Vanessa',
-        key: 'D',
-        content: `[D]Sou apenas um [Bm]aprendiz do Teu amor, [G]buscando a cada dia [A]ser melhor.`
+        key: 'D (forma dos acordes no tom de C)',
+        content: `Capotraste na 2ª casa
+C                     F7M
+Como alguém que encontrasse a luz
+    Dm             Dm/C              
+Depois de andar e andar procurando o 
+ F7M   G4(6)
+caminho
+         C                 F7M
+Como alguém que enfim já pudesse ouvir
+    Dm                 Dm/C               
+Respostas que trazem consolo e sentido ao 
+ F7M   G4(6)
+destino
+
+          C        G6/B         F7M       
+Eu encontrei tuas páginas e sequei minhas 
+Fm7(13)
+lágrimas
+     C        G6/B      F7M     G4(7/9) 
+Percebi que a dor da semente é o parto  
+G7(13)(9)  C G6/B F7M     G4(7/9) G7(13)(9)
+     da vida
+
+C                    F7M
+Como alguém que já quer seguir
+    Dm                  Dm/C       
+Os passos do mestre com fé e razão 
+     F7M   G4(6)
+conscientes
+         C                   F7M
+Como alguém que em si já soubesse ouvir
+    Dm                   Dm/C           
+As vozes dos seres que habitam o espaço 
+    F7M   G4(6)
+infinito
+
+          C        G6/B         F7M       
+Eu encontrei tuas páginas e sequei minhas 
+Fm7(13)
+lágrimas
+     C        G6/B      F7M     G4(7/9) 
+Percebi que a dor da semente é o parto  
+G7(13)(9)  C G6/B F7M     G4(7/9) G7(13)(9)
+     da vida
+
+      C       G6/B   F7M     G4(7/9) 
+Minha dor me trouxe aqui pra     
+G7(13)(9)     C        G6/B   F7M
+entender       a flor que brota em mim
+G4(7/9) G7(13)(9) C  G6/B   F7M     
+Meu            amor é aprendiz      
+G4(7/9) G7(13)(9)   C      G6/B   F7M     
+    de um bem    maior que seja assim
+G4(7/9)
+
+             C   G6/B        F7M     
+Nesse vai e vem sei que voltarei
+Fm7(13)
+
+                C   G6/B           F7M     
+Pra cuidar da flor, pra acalmar a dor e ser
+G4(7/9) G7(13)(9)
+ feliz`
       },
       {
         id: 'madalena',
         title: 'História de Madalena',
         artist: 'Tim e Vanessa',
-        key: 'Am',
-        content: `[Am]Madalena chorou aos [Dm]pés da cruz, [G]mas sorriu ao ver [C]a luz do Ressurgido.`
+        key: 'F',
+        content: `   Am          Em          Fadd9
+Naquela tarde em Jerusalém
+Fadd9     G6          Am    Em
+ O céu estava tão cinzento
+      Fadd9   G6
+Até o vento
+Am            Em        Fadd9
+se escondera pra chorar
+                G6        Am    Em
+E eu também chorava amargamente
+                    Fadd9   G6
+Lembrando em minha mente
+         Am    Em
+Os teus olhos
+Fadd9            G6
+Aquela chama em teu olhar
+         Am    Em
+Os teus olhos
+Fadd9           G6  G#°
+De quem sabia amar
+Dm       Cadd9
+Meu coração de mulher
+      A#add9     Gm       Am
+Muito tempo buscou o amor
+       A#add9         Cadd9
+Que enfim em ti encontrei
+Dm      Cadd9
+Como viver sem você
+   A#add9      Gm
+Sem a tua amizade
+      Am     F7M      G
+Seu o teu cari......nho
+   Am          Em
+Naquela manhã em Jerusalém
+Fadd9    G6       Am
+A     saudade foi maior
+    Em          Faad9     G6
+E então fui em busca de ti
+      Am              Em        Fadd9
+Mas a pedra não estava no lugar
+     G6        Am
+O sepulcro era vazio
+    Em      Fadd9
+Uma voz me chamou
+      G6
+Então vi
+         Am   Em
+Os teus olhos
+Fadd9           G6
+Aquela chama em teu olhar
+         Am   Em
+Os teus olhos
+Fadd9           G6  G#°
+De quem sabia amar
+  Am  Am/G  D/F#       G
+Então,     você está aqui
+  C      G/B    Am  Am/G
+E tudo está em paz`
       },
       {
         id: 'eden',
         title: 'Eden',
         artist: 'Tim e Vanessa',
-        key: 'E',
-        content: `[E]Jardim do Eden, [C#m]relembrando a pureza [A]da alma antes [B7]de despertar.`
+        key: 'D',
+        content: `Introdução:  Bm(11)  F#m7(11)/C#  G9  
+
+A9(13)  A4(9)  A4  A4(9)  A4  A4(9)
+
+Bm11 F#m7(11)/C#  G9
+Ouve,   ó Isra.....el
+  A(9)(13)           A4(9) A4  A4(9) A4 
+A voz do Senhor, teu Deus
+A4(9)
+
+Em               D/F#    G
+Nos homens-trevas eis a luz
+                      D
+Adões e evas, sede Jesus
+Em   D/F#        G     D/F#     E  E4
+Sob a guia de Moisés deixai Ramsés
+G           D/F#           E  E4
+Ardei nos desertos vossas fés
+G   F#          Bm(11)     Bm(11)/A   
+Paradigmas em dilúvio, subi a arca de 
+G#m7(b5)
+Noé
+G     D/F#         E E4 G           F#    
+As trombetas anunciam   quedas de muralhas
+Bm(11)
+
+    Bm(11)/A  G#m7(b5)
+Nos homens-Jericó
+G                D/F#        E
+Não olheis para trás, segui Ló
+     E4            G      D/F#      E      
+Aos homens-Elias o arrebatamento em carros 
+       E4
+de fogo
+G  A6/G      D
+   Na paz de Jó
+
+D                         E/D
+Filhos de Abraão cantai o canto Salomão
+G        A6/G       D
+Sob os arpejos de Davi
+D                        E/D
+Amansai leões nos homens-Daniéis
+     G           A6/G              D   D9  
+Abri celas e grilhões de homens-Babéis
+D9/C#
+
+
+Bm(11) F#m7(11)/C#  G9
+Deus, Javé,       Eloim,
+A(9)(13)   A4(9)  A4   A4(9)   A4   A4(9)
+Bíblia,   Vedas, Sutra, Alcorão
+Em           D/F#        E  E4
+Santidade, Nirvana, Samadhi
+G           D/F#      E  E4
+Anjo, Deva, Iogue-Bakti
+G   A6/G          D
+Messias, Jesus, Rabi
+
+D                             E/D
+Vinde ver e ouvir, ninguém pregou assim
+G         A6/G          D
+Ninguém jamais viveu assim
+D                             E/D
+Vinde ver e ouvir, ninguém pregou assim
+G         A6/G          D
+Ninguém jamais viveu assim
+
+Em            D/F#  G
+Marias, Ruths, Madalenas
+  A6/G         D
+Joanas, Verônicas
+Em              D/F#     G
+Com as serpentes a seus pés
+   D/F#       E    E4 G   D/F#        E    
+Cavatinas penitentes, caridades cantilenas
+E4
+
+G   F#             Bm(11)     Bm(11)/A   
+Nem bestas, nem dragões, nem demônios, 
+   G#m7/D
+nem leões
+G      D/F#          E    E4
+Pedros, Paulos e Estevãos
+G     A6/G       D
+Josés, Lucas e Joões
+
+D                       E/D
+Terra Prometida, Éden, Shangrilá
+G      A6/G       D
+Além, Nova Jerusalém
+D                      E/D
+Alvorada Nova, Sirius, Nosso Lar
+G       A6/G        D
+Moradas da Casa do Pai`
       },
       {
         id: 'assim-seja',
         title: 'Assim seja',
         artist: 'Tim e Vanessa',
-        key: 'A',
-        content: `[A]Que a tua vontade, [F#m]Senhor, se faça em mim. [D]Assim seja [E7]para sempre.`
+        key: 'E',
+        content: `E  F#m  G#m   A     G#m    F#m
+Seja na Terra como é no céu
+A         B    G#m  C#m
+Feita a Vossa Vontade
+F#m                B
+Sem acusador, nem réu
+          A  A/F#   F#m    E
+Só justiça em      claridade
+F#m             A                E
+Se és por nós, quem será contra nós? }2x
+E          A      F#m     B             E
+A toda criatura Deus      chama pelo nome
+       A        F#m        B           E
+Pra despertar o ser     e ser um anjo-homem
+
+          A            E         A     
+Não existem potestades, não existe mal 
+     E
+algum
+            F#m        A             E
+Que nos possa apartar do amor de Deus
+
+E   F#m   G#m A  G#m   F#m
+És Pai e nosso, de todos nós
+A   B   G#m  C#m
+Bendito sejas
+F#m             B
+que ouviu nossa voz
+  A   A/F#    F#m  E
+Hosana !      Aleluia !
+F#m    A       E
+Oum ! Assim Seja !
+F#m    A       E
+Oum ! Amém!
+F#m    A       E
+Oum ! Assim Seja !
+F#m    A       E
+Oum ! Amém!`
       }
     ]
   },
@@ -687,43 +1320,348 @@ Uoooôoooô[Eb]ooo [F]
         id: 'chicos',
         title: 'Chicos',
         artist: 'Tim e Vanessa',
-        key: 'D',
-        content: `[D]Chico Xavier, [Bm]exemplo de humildade [G]e amor puro aos [A]nossos corações.`
+        key: 'E',
+        content: `E/G# E7M(9) A E 
+Duas estrelas da pobreza 
+Dbm7 Dbm7 A F#m7 E 
+Em dois paletós e um bu.....rel 
+E/G# E7M(9) A E 
+Da bondade a beleza 
+Dbm7 F#m7 A 
+A Terra espelha o céu 
+E E/D# A F#m7 E 
+O pequeno de Assis estremece o Va...ti........cano 
+F#m7/4 Abm(b6) F#m7/4 Abm(b6) 
+Toma a cruz, renega a si 
+A E E7M(9) A Am 
+O zênite franciscano 
+E/G# E7M(9) A Am E/G# E7M(9) A Am 
+Oito séculos de história, Cristianismo é caridade 
+E/G# E7M(9) A Am E/G# E7M(9) A Am 
+Lápis, pedra-preciosa, é o Chico da Mediunidade 
+E/G# E7M(9) A Am 
+São dois vasos escolhidos na estrada da humildade 
+E/G# E7M(9) A Am 
+São dois servos à serviço da luz 
+E/G# E7M(9) A Am 
+São dois pobres, são dois ricos, tamanha claridade 
+E/G# E7M(9) A Am 
+Vão trazer no corpo a história do amor 
+E F#m7/4 Abm(b6) B4 
+Pe.....lo Cris...........to, 
+A(add9) Abm(b6) F#m7/4 B7 
+são fran.............cis...............cos, 
+A(add9) Abm(b6) B7 E 
+são dois chi......cos.`
       },
       {
         id: 'aos-pes',
         title: 'Aos pés do Monte',
         artist: 'Tim e Vanessa',
-        key: 'Em',
-        content: `[Em]Aos pés do monte [Am]ouvi o sermão da montanha, [C]luz que clareia [B7]o caminho.`
+        key: 'Am',
+        content: `[Intro] Am  F7+  G  C  E7
+        Am  F7+  G  C  E7
+        Am  F7+  G  Am
+
+
+       Am             F7+                 
+E|-----------------------------------------
+B|-----1p0---0h1--------1p0---0h1---------0
+G|----2----2----2-----2-----2-----2--------
+D|------------------3----------------------
+A|--0--------------------------------------
+E|--------------------------------------3--
+  G              C        E
+E|-----0-1----0--------0---| 
+B|-1-3-----------3-1-------| 
+G|-------------------------| 
+D|-------------------------| 
+A|------------3------------| 
+E|---------------------0---| 
+
+
+         Am           F7+                 
+E|-----------------------------------------
+B|-----1p0---0h1--------1p0---0h1---------0
+G|----2----2----2-----2-----2-----2--------
+D|------------------3----------------------
+A|--0--------------------------------------
+E|--------------------------------------3--
+  G              C        E
+E|-----0-1----0--------0---| 
+B|-1-3-----------3-1-------| 
+G|-------------------------| 
+D|-------------------------| 
+A|------------3------------| 
+E|---------------------0---| 
+
+
+        Am                    F7+          
+E|--------------------------------3--------
+B|-----1p0---0h1--------1p0---0h1---------0
+G|----2----2----2-----2-----2--------------
+D|------------------3----------------------
+A|--0--------------------------------------
+E|--------------------------------------3--
+        G              Am
+E|----------------| 
+B|-1-3-1-0---1----| 
+G|----------------| 
+D|----------------| 
+A|-----------0----| 
+E|----------------| 
+
+Am                Dm
+Um sentimento me ronda
+G                      C        E
+Não sei dizer, tudo é novo pra mim
+Am               Dm
+Meu coração se renova
+  G                   C          E
+Sinto a esperança invadir o meu ser
+
+   Am      Am/C        Dm        Dm/F
+Quero ser manso, ser limpo, ser justo
+   Am         E      Am
+E pobre de espírito ser
+ Dm             G
+Tua palavra me sonda
+             C           G/B       Am
+Me conta do Reino que espera por mim
+Dm                  G
+Eu te ofereço meu pranto
+              C                 E
+As dores da alma que quer renascer
+
+    Am       Dm
+Eu ouvi tua voz
+      G         C      E7
+Teu falar me encantou
+      Am         Dm
+Quis seguir, caminhar
+      G             C
+Quis saber pra onde vou
+        Dm   Dm/F
+Eis-me aqui
+       E E/G#          Am
+Minha dor   serenou`
       },
       {
         id: 'sempre-jovens',
         title: 'Sempre jovens',
         artist: 'Tim e Vanessa',
-        key: 'G',
-        content: `[G]Sempre jovens no [Em]espírito, cantando a [C]alegria de viver [D7]com Jesus.`
+        key: 'D',
+        content: `D9               D9/C#
+ Essa energia que pulsa em nós
+ Bm                      F#m
+ Segue um farol que nos guia a Deus
+ G    G#m5-       D       Bm
+ É o Evangelho do Irmão Maior
+ Em           A7
+ Medianeiro do Pai
+ D9                 D9/C#
+ Nosso impulso de inovação
+ Bm                F#m
+ Enche a vida de emoção
+ G    G#m5-/  D    Bm
+ A Juventude espírita
+ Em       A7       D
+ Segue cantando assim:
+ A7     A/G  D9/F#
+ Sempre a__migos
+  A7       A/G      D9/F#
+ Cativando mais alguém
+ A7  A/G  D9/F#
+ Sempre  juntos
+ A7     A/G       D9/F#
+ Nessa Geração do Bem
+ A7  A/G  D9/F#
+ Sempre    Jovens
+ A7          A/G     D9/F#
+ Construindo nosso     lar
+ A7  A/G  D9/F#
+ Sempre   unidos
+ A7          A/G      D9
+ Para a vida transformar`
       },
       {
         id: 'suplica',
         title: 'Súplica de um galho',
         artist: 'Tim e Vanessa',
-        key: 'Am',
-        content: `[Am]Sou como um galho [Dm]da videira do Senhor, [F]pedindo seiva [E7]para dar frutos.`
+        key: 'D',
+        content: `Intro: D  D7M(9)  Gm/D  G6/D
+
+D           D7M(9)
+Sou um galho assustado
+G              Gm7         F#m7
+Decepado de uma árvore frondosa
+         Bm4       Bm4/A
+Que enfeitava o jardim
+G/E G/D   G6/C#    A7/4 D  A7
+De mansão rica e formosa
+
+D                D7M(9)
+Não sei o porquê da violência
+G               Gm7          F#m7
+Nem falo do susto ou da minha dor
+Bm4    Bm4/A      G/E     G/D
+Apenas trago nas fibras sensíveis
+      A7             A7/4 A7
+Uma súplica de amor
+
+   G                D(add9)
+Na ânsia de fincar raízes
+  D9/C#       Bm4 Bm4/A     G
+O solo fértil eu possa encontrar
+Em   D/F#     G   G6/Ab     D
+Para flores e frutos - só Tu sabes
+  A7               G
+A vida eu volte a doar
+
+G              D(add9)
+Mas, se por Tua vontade
+D9/C#  Bm4 Bm4/A   G
+Minha força se esgotar
+Em         D/F#    G  G6/Ab
+Permita que eu apodreça
+   D(add9) A7            G
+Tornando o solo a fertilizar
+
+D(add9)         D7M(9)
+Alimentarei os vermes, bem sei
+ G             Gm7
+Misturado ao lixo abundante
+D(add9)         D7M(9)
+Minha seiva humo se tornará
+G              Gm7      D          A7/4 A7
+Novo verde surgirá iluminado e vibrante
+
+G             D(add9)
+E as sementes novas
+  D9/C#            Bm4     Bm4/A G
+Saltando alegres das mãos do semeador
+Em      D/F#     G   G6/Ab D(add9)
+Terão da mãe natureza      a resposta
+A7          G     G#7/4(9) G#m7(9) 
+A vida renovada, a bênção         do 
+       D
+Criador`
       },
       {
         id: 'luzes',
         title: 'Luzes da Luz',
         artist: 'Tim e Vanessa',
-        key: 'C',
-        content: `[C]Luzes que emanam [Am]da Grande Luz do Universo, [F]iluminando [G]nossa jornada.`
+        key: 'D',
+        content: ` D6
+Um frêmito da Grande Luz
+          G/D
+E luzes jorraram em profusão
+       D6
+Houve tempo na eternidade
+  G/D
+Espaço na imensidão
+D6
+Sustentar a vibração divina
+   G/D
+Tornou-se o nosso afã
+        D6
+Surgiu a bipolaridade
+        G/D
+Agora há Homem e há Mulher
+Bm(11)         F#m7(11)/C#
+Presença, ausência, luz, não-luz
+G            A7
+Calor, frio, ato, inação
+Bm(11)        F#m7(11)/C#
+Dorme mineral, desperta vegetal
+G                 A7
+Segue instintos o animal
+  Em                  A7
+O Homem se ergue na figura de Adão
+Em               A7    A4        D(add9)/F# Em A7 A4
+Ama e aprende a ser o Rei da Criação
+D(add9)/F#      Em
+Queremos voltar a ti ó Pai
+   G           A7       A4     D(add9)/F#
+As luzes querem, anseiam a Mãe Luz
+D(add9)/F#    Em
+Luzes perdidas, asserenai
+G            A7      A4  D(add9)/F#
+Eis o roteiro: segue Jesus
+D(add9)/F#    Em
+A luz da Luz, a Luz das luzes
+G               A7  A4 D(add9)/F#
+Luzes da Luz, segue Jesus`
       },
       {
         id: 'aurora',
         title: 'Aurora',
         artist: 'Tim e Vanessa',
-        key: 'D',
-        content: `[D]A aurora desponta [Bm]trazendo a esperança [G]de um novo dia [A]de trabalho e paz.`
+        key: 'B',
+        content: `[[Intro] G#m  F#4  E  D#m13-  F#11
+
+Uma grande noite abate a Terra, que se abate
+Treva imensa, não sem estrelas
+Passados milênios, um abrasamento
+Tisna o horizonte clareando esperança
+Prenúncio milenar do amanhece
+
+B9   B       B9 B
+Bem vinda Aurora
+E  E/D#    E/C#    E/B    F#/A#         G#m
+A terra sofreu          noites convulsivas
+F#/A#    E7M          D#m7
+Verteu lágrimas, rangeu dentes
+   G#m          F#4
+Mas gestou-se, majestou-se
+ B4       B4  C#m/G#      E/G#
+No parto regenerativo deu-se à luz
+   F#4     F#
+Na Remissão
+
+B B9    B   B9
+Bem vinda Aurora
+E  E/D# E/C#    E/B       F#/A# G#m
+O lobo pasta   junto ao cordeiro
+F#/A#  E7M          D#m7
+Crianças brincam com a serpente
+   G#m      F#4
+E os anjos andarilham
+B4       B4
+Com os homens que volitam
+C#m/G#  E/G#     F#4    F#
+No amor    da Promissão
+
+B  B9    B   B9
+Bem vinda Alvorada
+E       E11+     E E11+
+Artefazendo o belo bom
+ F#/A#
+Entreflorindo olhar
+G#m     D#m7
+A aliança homem-Deus
+B4      B4   C#m/G#      E/G#
+Já não     é só arco-íris
+   F#4    F#
+É comunhão
+
+      B   B9 B
+Bem vindo dia
+B9     E  E11 E E11
+Bem vinda Luz
+      B B9   B
+Bem vindo dia
+B9     E  E11+   E E11+
+Bem vinda Luz
+
+        B    B9 B
+Bem vinda Aurora
+B9     E  E11 E E11
+Bem vinda Luz
+        B    B9  B
+Bem vinda Alvorada
+B9     E  E11 E E11
+Bem vinda Luz`
       }
     ]
   },
@@ -735,43 +1673,232 @@ Uoooôoooô[Eb]ooo [F]
         id: 'concepcao',
         title: 'Concepção Astral',
         artist: 'Tim e Vanessa',
-        key: 'C',
-        content: `[C]Nos planos mais [Am]altos da concepção astral, [F]desenha-se a nossa [G]jornada na Terra.`
+        key: 'A',
+        content: `Introdução: A  A9 
+
+A    A9        A     A9 
+Nebulosa implodiu 
+D9/F#                           A4/E 
+Pólens de luz floriram o céu 
+       A        A9 
+Cosmos-jardim 
+D9/F  
+Primavera de estrelas 
+                  A4/F# 
+Mundos quais borboletas 
+     A              A9 
+Cortejaram astros-reis 
+
+A         E/G#      F#m  F#m/E 
+Deus fogo e água casou 
+               B7 
+Na estação da cria 
+Gestou, se abriu 
+          D9      D9/C# 
+Concebeu crias e proles 
+D9/B       E4 
+Semen... teou 
+
+A         E/G#       F#m  F#m/E 
+Homem surgiu, vida uniu 
+        B7 
+Éter no ar 
+                        D9 
+Homem cresceu, multiplicou 
+  D9/C#  D9/B     E4 
+O bem floriu, aflorou 
+
+A         D9/B A4/E 
+Alma, animal animou 
+A      D9/B A4/E  A 
+Vida viveu, acasalou 
+D9/B       A D9/B  D9/A 
+Amor... teceu 
+A     D9/B A4/E    A       D9/B 
+Gerou vida, regerou vida de amor 
+A4/E    A      A4/E  A      A9    A 
+Homem viveu, regenerou
+`
       },
       {
         id: 'tres-horas',
         title: 'Três horas',
         artist: 'Tim e Vanessa',
-        key: 'Fm',
-        content: `[Fm]Às três horas da [Bbm]tarde, uma prece de amor [Db]envolve toda a [C7]Terra.`
+        key: 'D',
+        content: `Introdução:  G   G(5b)   D/F#   Em   G/D   
+
+A7/C#    Em   G/D   A7/C#
+
+G         G(b5)  Bm7/F#
+Primeira hora: troa a trombeta
+Em       G/D      A7/C#
+Olho por olho é a Lei
+Em       G/D      A7/C#    Bm(11)       A
+Toda justiça se fez pela clava de Moisés
+       G           A6/G
+Deus é um, Deus é o único
+   D   Em7     F#m7(11)
+Pastor que nos guia
+  G     A6/G    G  A6/G  G  A7/C#
+Nada nos faltará
+
+G       G(b5)    Bm7/F#
+Segunda hora: Clarins, Serafins
+Em G/D       A7/C#
+Murmúrios de bem
+Em  G/D    A7/C#
+Enfestam Belém
+      Bm(11)      A
+Eis a Luz na manjedoura
+       G      A6/G
+É o amor de Jesus
+     D  Em7    F#m7(11)
+Que vem de Deus-Pai
+     G     A6/G G  A6/G   G   A7/C#
+Ninguém se perderá
+
+G       G(b5) Bm7/F#
+Terceira hora: é paz na Terra
+Em    G/D   A7/C#
+Sabedoria e amor
+  Em      G/D        A7/C#
+O homem já se fez senhor
+     Bm(11)       A
+Todo véu se descortina
+      G               A6/G
+Ressurgindo em cada espírito
+  D Em7  F#m7(11)
+A vida da vida
+   G          A6/G
+De Deus e para Deus
+    G  A6/G G A6/G G A7/C# G
+O amor vencerá`
       },
       {
         id: 'perdao',
         title: 'Perdão',
         artist: 'Tim e Vanessa',
-        key: 'G',
-        content: `[G]Perdoar setenta [Em]vezes sete, [C]limpando o coração [D7]de toda mágoa.`
+        key: 'D',
+        content: `D(add9)      C/D
+Toda a luz de uma estrela
+G7M           A
+Não consegue clarear
+Em
+Como o gesto de beleza
+     A           A7
+De quem está a perdoar
+
+D(add9)    C/D
+No exemplo de amor
+G7M        A
+Se revela o cristão
+Em
+Abraçando o inimigo
+ A            A7
+Com os braços do perdão`
       },
       {
         id: 'reconciliacao',
         title: 'Reconciliação e paz',
         artist: 'Tim e Vanessa',
-        key: 'D',
-        content: `[D]Abraçar o adversário [Bm]no caminho, selando [G]a reconciliação [A]e a paz.`
+        key: 'A',
+        content: `A              Bm
+Antes mesmo da tua oferta
+E                A  E/G#     F#m
+Mostra ao Pai a tua boa intenção
+       B7               E
+Reconcilia-te com teu irmão
+  D        E7        A
+A Com um aperto de mão
+A            Bm
+Se desejas a união
+    E
+De todos os povos
+     A      E/G#  F#m
+Em paz, em comunhão
+        B7
+Ensina hoje à criança
+   E
+O bem que o amor
+ D     E7         A  A7
+Faz ao nosso coração
+
+          D
+Paz no porvir
+E/D       A
+Reconciliação
+F#m     B7
+Ensina hoje à criança
+   E
+O bem que o amor
+ D       E7       A
+Faz ao nosso coração`
       },
       {
         id: 'jesus-mestre-f',
-        title: 'Jesus, o Mestre (Bloco F)',
+        title: 'Jesus, o Mestre',
         artist: 'Tim e Vanessa',
-        key: 'C',
-        content: `[C]Mestre Jesus, [Am]guia e modelo [F]para toda a humanidade [G]sofredora.`
+        key: 'D',
+        content: `A6            G6/D
+Jesus é o nosso Mestre
+A6          G6/D
+Ele veio ensinar
+Bm                F#m
+De Deus a sábia vontade
+G                    A
+E por Ele ao Pai chegar
+      G A6    G6/D
+E por Ele    chegar
+
+A6               G6/D
+Em cada passo um exemplo
+A6            G6/D
+De amor ao semelhante
+Bm                    F#m
+Deus sempre espera de nós
+G                     A
+Testemunho a todo instante
+G A6      G6/D   A6
+A todo instante`
       },
       {
         id: 'porto-amor',
         title: 'Porto Amor',
         artist: 'Tim e Vanessa',
-        key: 'G',
-        content: `[G]Navegando no mar da [Em]vida, encontrei meu porto [C]seguro no amor [D7]do Cristo.`
+        key: 'D',
+        content: `D      A7    D
+Com Jesus no leme
+G/B              D   A7
+Meu barquinho a navegar
+D      A7     D
+Com Jesus no leme
+G/B           D   A7
+Não tememos este mar
+
+G            D/F#
+Não há tempestade
+Em         F#m
+Não há vendaval
+G             D/F#       A7  A7/G
+Nada que me impeça de chegar
+            D  A7  D  A7  D
+Ao Porto Amor
+D     A7     D
+Com Jesus no leme
+G/B               D   A7
+Meu barquinho a deslizar
+D     A7      D
+Com Jesus no leme
+G/B           D       A7
+Meu barquinho vai chegar
+G            D/F#
+Não há tempestade
+Em          F#m
+Não há vendaval
+G             D/F#         A7   A7/G
+Nada que me impeça de chegar
+            D   A7  D  A7  D
+Ao Porto Amor`
       }
     ]
   },
@@ -783,43 +1910,290 @@ Uoooôoooô[Eb]ooo [F]
         id: 'familia',
         title: 'Família Universal',
         artist: 'Tim e Vanessa',
-        key: 'C',
-        content: `[C]Todos filhos do [Am]mesmo Pai, formando a [F]grande família [G]universal.`
+        key: 'D',
+        content: `[Intro] D  D7M(9)/F#  G7M  A6/G  D
+
+D          Em
+Em nome do Pai
+G7M           A6/G           D
+Aprendo a ser forte como o sol
+           Em
+Em nome da Mãe
+G7M          A6/G            D
+Aprendo os encantos de uma lua
+              Em
+Em nome do irmão
+G7M           A6/G             D
+Aprendo as virtudes de um cristão
+
+D7M(9)/F#
+Jesus
+ G7M        D7M(9)/F# Em   Bm11
+É mãe, pai, filho, irmão celeste
+  A
+Ó Mestre
+     G7M  D7M(9)/F#
+Sou um universo
+       Em    Bm11          A
+Dentro do universo da família
+   G7M  D7M(9)/F# Em  A7   D
+A caminho do milênio do amor
+
+[Intro] ( D  D7M(9)/F#  G7M  A6/G  D )
+
+D          Em
+Em nome do Pai
+G7M           A6/G           D
+Aprendo a ser forte como o sol
+           Em
+Em nome da Mãe
+G7M          A6/G            D
+Aprendo os encantos de uma lua
+              Em
+Em nome do irmão
+G7M           A6/G             D
+Aprendo as virtudes de um cristão
+
+D7M(9)/F#
+Jesus
+ G7M        D7M(9)/F# Em   Bm11
+É mãe, pai, filho, irmão celeste
+  A
+Ó Mestre
+     G7M  D7M(9)/F#
+Sou um universo
+       Em    Bm11          A
+Dentro do universo da família
+   G7M  D7M(9)/F# Em  A7   D
+A caminho do milênio do amor
+
+[Intro] ( D  D7M(9)/F#  G7M  A6/G  D )
+`
       },
       {
         id: 'fala-com-deus',
         title: 'Fala com Deus',
         artist: 'Tim e Vanessa',
-        key: 'D',
-        content: `[D]Fala com Deus no [Bm]silêncio da alma, [G]Ele te ouve [A]e acalma.`
+        key: 'C',
+        content: `  C           Em    F           Em
+Acenda a esperança, a palavra induz
+Dm7          C   Dm7           C
+Fortalece a fé, sustentando a paz
+   C          Em     F             Em
+Espalhe a Boa Nova, plante as boas obras
+Dm7                C      Dm7     
+Multiplicando os pães pra alimentar 
+        C
+multidões
+   Dm7        G             C
+Trabalho é esforço de evolução
+
+  F                  Em
+A língua fala com os homens
+    Dm7               C
+E o coração fala com Deus
+  F                  Em
+A língua fala com os homens
+    Dm7               C
+E o coração fala com Deus
+
+C             Em        F            Em
+Respeito e justiça, bondade, compreensão
+Dm7            C       Dm7             C
+Construímos a vida que hoje temos nas mãos
+C         Em    F          Em
+Pense alegria, fale consolação
+Dm7               C  Dm7                C
+Faça um céu todo dia para abrigar seu irmão
+   Dm7       G             C
+Bendita é a voz que fala amor`
       },
       {
         id: 'duplo-eterno',
         title: 'Duplo eterno',
         artist: 'Tim e Vanessa',
-        key: 'Em',
-        content: `[Em]Ligados pelo fio [Am]invisível do afeto, [C]dois corações [B7]em sintonia eterna.`
+        key: 'A',
+        content: `Introdução: A A/G#   D/F#   D/E   A4/E   
+
+E7(11)
+
+        A  A(add9)/G#
+Sejamos um
+      F#m7          A/E        D9/B   D9/A
+E cada um de nós se sentirá melhor
+         D9/B          C#m7
+Buscando compreender a vida
+C#7           F#m  F#m/E
+Pelas mãos do Criador
+D      A         E/G#         F#m
+Ele me fez bem maior do que estou
+    Dº        D             D#º13
+Mas sinto que cresço a cada passo
+       E4           E
+A cada laço que nos une
+
+        A A(add9)/G#
+Sejamos um
+        F#m           A/E
+Na tradução do Amor Maior
+             D9/B  D9/A
+Que vibra em nós
+        D9/B       C#m7
+Com confiança e respeito
+C#7         F#m       F#m/E
+Pelo dom que Deus nos deu
+D          D#º13       A
+De sentir a vida com prazer
+    D            A
+Na comunhão dos corpos
+E/G#             F#m7
+Quando a mente é sã
+E                A
+Quando o olhar é puro
+D                  A
+Quando a voz é um canto
+D                  D#º
+Quando as mãos são formas
+      E4          E
+De dizer que te aceito
+
+        A A(add9)/G#
+Sejamos um
+      F#m7          E         A   
+E cada um de nós se sentirá maior
+A(add9)/G#
+
+        F#m7          E                 A
+Na tradução do Amor Maior que vibra em nós
+`
       },
       {
         id: 'se',
         title: 'Sê',
         artist: 'Tim e Vanessa',
-        key: 'G',
-        content: `[G]Sê paciente, [Em]sê amoroso, [C]sê a light no [D7]caminho do teu irmão.`
+        key: 'C',
+        content: `C9            F7+/13
+Olha o mundo a tua volta
+C9                     F7+/13
+Mas não te esqueças de ti
+Am               Em
+Tens a força das árvores
+Am            Em
+A beleza das flores
+F            Am7/C          G
+A pureza das águas e muito mais ...
+C9             F7+/13
+Tu tens a importância do sol
+C9             F7+/13
+E o encanto da lua
+Am              Em
+A liberdade dos pássaros
+Am             Em
+O poder das sementes
+F             Am7/C            G
+A fluidez dos ventos e muito mais...
+C                C/B
+Tu és mais que matéria
+         F          Dm7
+Que atração e sensação
+Am                Em
+Que instinto e mecânica
+     F              Dm7/G              C  Dm7  Dm7/G
+Não ignores a força que nos faz especiais
+C9            F7+/13
+Rega-te flor, acende-te sol
+C9           F7+/13
+Fortalece-te tronco
+    C9               F7+/13
+Purifica-te água, liberta-te pássaro
+C9             F7+/13
+Flui-te ó doce vento
+F      Em   Dm7  Dm7/G     C
+Voa em ti,  sê   pelos   seres
+Dm7   Dm7/G    C      Dm7          Dm7/G   C9
+Sê   deus  prá eles, quanto Deus é  para  ti`
       },
       {
         id: 'caim-abel',
         title: 'Caim e Abel',
         artist: 'Tim e Vanessa',
-        key: 'Am',
-        content: `[Am]Superando antigas [Dm]rivalidades, restaurando [F]o amor de irmãos [E7]do princípio.`
+        key: 'C',
+        content: `Dm7(13)      Em7            Csus4
+Caim, onde está teu irmão Abel?
+G7/B                 F9
+Perante a voz do Sem-Fim
+    F9(b5)   Em    Em/D Am  Am/G
+Treslouca-se o homicida-réu
+Dm7(13)          Em7 Dm7(13)            Em
+Mas o sangue de Caim será o sangue em Abel
+Csus4      C             Csus4 C
+Céu na terra, na terra do céu
+Dm7(13)      Em7
+O rangido de dentes
+Dm7(13)           Em7
+Se aquieta sob um teto
+Csus4     C  Csus4   C   Csus4 C  G4   G
+Serão parentes, parturiente, feto
+
+C    C7M/G           Am7/9       G7/B      C#4
+Pelos laços fraternos Deus reconcilia, asserena
+G7/B               F9 F9(b5)  C
+Os desafetos no altar da família
+F(add9) C/E  F(add9) C/E  F(add9) C/E F(add9) C/E
+Pai,    mãe, ir......mão, cora....ção em pe...daços
+   F(add9)   C/E         F(add9) C/E  F(add9) G4   G
+Cativa,    partilha e cria       laços
+
+Dm7(13)     Em7       C#4
+Um vagido corusca o luto
+G7/B            F9
+E a treva se reluz
+F9(b5)         C     F(add9)
+Bendito é o fruto do vosso ventre
+   C/E
+Jesus
+  F(add9)       C/E
+Do vosso ventre
+F(add9)      C/E
+Ventre de Jesus`
       },
       {
         id: 'ramas',
         title: 'Ramas',
         artist: 'Tim e Vanessa',
-        key: 'D#',
-        content: `[D]Somos ramas da [Bm]videira divina, [G]nutridas pelo amor [A]do Pai.`
+        key: 'D',
+        content: `D         D7+
+Árvore cresceu   
+    G        F#m7
+De mudas-mocidades 
+Em         A      D
+Seiva, nutriente-céu
+ D             D7+
+Galhos são as mãos
+  G         F#m7
+Ramagem de amizades
+ Em         A        D
+Flores no pomar, vergeu
+
+ F#               Bm
+Juventude, terra culta
+ A        D
+Em ti brotou
+    G     D
+Um grão-semente
+ F#   Bm    E      A
+Da vontade de ser pão
+     G        D
+Frutifica maravilhas
+ F#         Bm    E       A
+Vence os desafios da Estação
+
+ G          F#
+Que do teu chão
+       Bm         Gm
+Nasçam brotos de luz
+ D               A            G
+Para alimentar.......a todos nós`
       }
     ]
   }
