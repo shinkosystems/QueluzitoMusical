@@ -1305,66 +1305,106 @@ D  G  D  G
 `
       },
       {
-        id: 'patria',
-        title: 'Pátria do Evangelho',
-        artist: 'Tim e Vanessa',
-        key: 'A',
+        id: 'andorinhas',
+        title: 'Andorinhas',
+        artist: 'Tonico e Tinoco',
+        key: 'G',
         content: `
-A        Bm
-Brasil amado
-E           E7       A   A7
-És a Pátria do Evangelho
-       D  Dm       A   F#m
-És do mundo a esperança
-     Bm   E     A
-O sensível coração
-    Bm         E         A
-Teu povo tem muitas cores
-F#m             Bm     E  A
-A Das raças a perfeita união
+[Intro] G  D  G  D  C
 
-A             Bm
-Observas em silêncio
-E             E7 A A7
-A beleza do céu
-   D  Dm       A   F#m
-Estrelas cintilantes
-        Bm    E      A
-Nos lembrando o cruzeiro
-   Bm      E          A          F#m
-Sugerem refletir a bênção de Deus
-      Bm        E          A
-Na presença do Mestre Jesus
-         Bm        E    A   F#m
-Junto ao solo brasileiro        `
+G                  D                    G
+As andorinhas voltaram e eu também voltei
+                 D                         G
+Pousar no velho ninho que um dia aqui deixei
+
+               D                                    
+Nós somos andorinhas que vão e que vem a procura de 
+  G
+amor
+                   D                                  
+Às vezes volta cansada ferida machucada mas volta pra 
+ C                 D                G
+casa batendo suas asas com grande dor
+             D                                       G
+Igual a andorinha eu parti sonhando mas foi tudo em vão
+
+               D
+Voltei sem felicidade porque na verdade
+   C                D                 G
+Uma andorinha voando sozinha não faz verão   (repete)
+`
       },
       {
-        id: 'jesus-mestre',
-        title: 'Jesus, o Mestre',
-        artist: 'Tim e Vanessa',
-        key: 'D',
+        id: 'eu-sou-terrivel',
+        title: 'Eu sou terrível',
+        artist: 'Roberto Carlos',
+        key: 'A',
         content: `
-A6            G6/D
-Jesus é o nosso Mestre
-A6          G6/D
-Ele veio ensinar
-Bm                F#m
-De Deus a sábia vontade
-G                    A
-E por Ele ao Pai chegar
-      G A6    G6/D
-E por Ele    chegar
+Intro: A 
+          
+Eu sou terrível e é bom parar
 
-A6               G6/D
-Em cada passo um exemplo
-A6            G6/D
-De amor ao semelhante
-Bm                    F#m
-Deus sempre espera de nós
-G                     A
-Testemunho a todo instante
-G A6      G6/D   A6
-A todo instante
+De desse jeito, me provocar
+         D 
+Você não sabe, de onde eu venho 
+                          
+O que eu sou e o que tenho
+         A 
+Eu sou terrível, vou lhe dizer 
+
+E ponho mesmo, pra derreter
+  E7                     D 
+Estou com a razão no que digo 
+    E7                  D  
+Não tenho medo nem do perigo 
+  E7                    D 
+Minha caranga é máquina quente 
+         A  
+Eu sou terrível e é bom parar 
+
+Porque agora, vou decolar
+         D            
+Não é preciso, nem avião 
+
+Eu vôo mesmo, aqui no chão
+         A 
+Eu sou terrível, vou lhe contar 
+
+Não vai ser mole, me acompanhar
+  E7                    D 
+Garota que andar do meu lado 
+    E7                        D 
+Vai ver que eu ando mesmo apressado 
+  E7                    D      
+Minha caranga é máquina quente 
+         A                       E7 
+Eu sou terrível, eu sou terrível 
+
+Instrumental: A D A E7 
+D A E7 
+
+         A 
+Eu sou terrível e é bom parar 
+
+De desse jeito, me provocar
+         D 
+Você não sabe, de onde eu venho 
+                          
+O que eu sou e o que tenho
+         A 
+Eu sou terrível, vou lhe dizer 
+
+E ponho mesmo, pra derreter
+  E7                     D 
+Estou com a razão no que digo 
+    E7                  D  
+Não tenho medo nem do perigo 
+  E7                    D 
+Minha caranga é máquina quente 
+         A                        
+Eu sou terrível, eu sou terrível 
+
+Eu sou terrível...
         `
       }
     ]
