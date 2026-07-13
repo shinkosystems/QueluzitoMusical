@@ -15,6 +15,7 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
   const [transposeLevel, setTransposeLevel] = useState(0);
   const [fontSize, setFontSize] = useState(16); // px
   const [hideChords, setHideChords] = useState(false);
+  const [instrument, setInstrument] = useState<'teclado' | 'violao'>('teclado');
   
   // Estado para Gaveta Mobile (Bottom Sheet)
   const [activeSheet, setActiveSheet] = useState<MobileSheetType>('none');
@@ -444,6 +445,29 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
           </div>
         </div>
 
+        {/* Seletor de Instrumento */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span style={{ fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-secondary)' }}>Instrumento:</span>
+          <div style={{ display: 'flex', gap: '6px' }}>
+            <button 
+              onClick={() => setInstrument('teclado')} 
+              className={`btn-ctrl ${instrument === 'teclado' ? 'active' : ''}`}
+              style={{ padding: '6px 12px' }}
+              aria-label="Visualizar acordes no teclado"
+            >
+              🎹 Teclado
+            </button>
+            <button 
+              onClick={() => setInstrument('violao')} 
+              className={`btn-ctrl ${instrument === 'violao' ? 'active' : ''}`}
+              style={{ padding: '6px 12px' }}
+              aria-label="Visualizar acordes no violão"
+            >
+              🎸 Violão
+            </button>
+          </div>
+        </div>
+
         {/* Leitura Limpa */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <span style={{ fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-secondary)' }}>Cifras:</span>
@@ -474,7 +498,7 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
         {/* Coluna de Diagramas de Teclado Sticky (Direita - Omitida no mobile) */}
         <aside className="chords-sidebar desktop-only-aside" aria-label="Diagramas dos acordes">
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, borderBottom: '1px solid var(--border-color)', paddingBottom: '8px' }}>
-            🎹 Acordes no Teclado
+            {instrument === 'teclado' ? '🎹 Acordes no Teclado' : '🎸 Acordes no Violão'}
           </h2>
           <div className="chords-sidebar-scroll">
             {uniqueChords.length === 0 ? (
@@ -483,7 +507,7 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
               <div className="chords-grid" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 {uniqueChords.map(chord => (
                   <div key={chord} style={{ background: 'var(--bg-card-hover)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '12px 6px' }}>
-                    <ChordDiagram chord={chord} />
+                    <ChordDiagram chord={chord} instrument={instrument} />
                   </div>
                 ))}
               </div>
@@ -526,9 +550,9 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
         <button 
           onClick={() => setActiveSheet(activeSheet === 'chords' ? 'none' : 'chords')} 
           className={`mobile-dock-btn ${activeSheet === 'chords' ? 'active' : ''}`}
-          aria-label="Ver acordes no teclado"
+          aria-label={instrument === 'teclado' ? 'Ver acordes no teclado' : 'Ver acordes no violão'}
         >
-          <span className="icon">🎹</span>
+          <span className="icon">{instrument === 'teclado' ? '🎹' : '🎸'}</span>
           <span>Acordes ({uniqueChords.length})</span>
         </button>
       </nav>
@@ -582,6 +606,27 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
                   style={{ width: '100%', height: '10px', accentColor: 'var(--primary)', marginTop: '8px' }}
                 />
               </div>
+
+              {/* Instrumento Mobile */}
+              <div className="control-group">
+                <label>Instrumento</label>
+                <div className="control-buttons">
+                  <button 
+                    onClick={() => setInstrument('teclado')} 
+                    className={`btn-ctrl ${instrument === 'teclado' ? 'active' : ''}`}
+                    style={{ padding: '12px' }}
+                  >
+                    🎹 Teclado
+                  </button>
+                  <button 
+                    onClick={() => setInstrument('violao')} 
+                    className={`btn-ctrl ${instrument === 'violao' ? 'active' : ''}`}
+                    style={{ padding: '12px' }}
+                  >
+                    🎸 Violão
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </>
@@ -593,7 +638,7 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
           <div className="bottom-sheet-backdrop" onClick={() => setActiveSheet('none')} />
           <div className="bottom-sheet" role="dialog" aria-modal="true" aria-label="Gaveta de Acordes">
             <div className="bottom-sheet-header">
-              <h3>🎹 Acordes da Música</h3>
+              <h3>{instrument === 'teclado' ? '🎹 Acordes da Música' : '🎸 Acordes no Violão'}</h3>
               <button className="bottom-sheet-close" onClick={() => setActiveSheet('none')} aria-label="Fechar gaveta">✕</button>
             </div>
             {uniqueChords.length === 0 ? (
@@ -602,7 +647,7 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxHeight: '55vh', overflowY: 'auto', paddingRight: '5px' }}>
                 {uniqueChords.map(chord => (
                   <div key={chord} style={{ background: 'var(--bg-card-hover)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '16px 8px' }}>
-                     <ChordDiagram chord={chord} />
+                     <ChordDiagram chord={chord} instrument={instrument} />
                   </div>
                 ))}
               </div>
