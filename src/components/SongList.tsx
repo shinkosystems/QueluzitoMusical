@@ -13,7 +13,7 @@ export const SongList: React.FC<SongListProps> = ({ songBlocks, onSelectSong }) 
       {/* Hero Section */}
       <section style={{ textAlign: 'center', padding: '60px 0 40px', borderBottom: '1px solid var(--border-color)' }}>
         <h1 style={{ fontSize: '3.5rem', fontWeight: 700, background: 'linear-gradient(135deg, #8C661F 0%, #F2BF5E 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: '16px' }}>
-          GEP Cifras
+          Queluzito Musical
         </h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', margin: '0 auto', lineHeight: 1.6 }}>
           Aplicativo acessível para estudo de blocos musicais e cifras de Tim e Vanessa. Escolha uma música abaixo para ver a letra, acordes e diagramas de teclado.

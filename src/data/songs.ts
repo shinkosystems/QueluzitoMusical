@@ -21,325 +21,508 @@ export const SONG_BLOCKS: SongBlock[] = [
     name: 'Bloco A',
     songs: [
       {
-        id: 'revida',
-        title: 'Re-vida',
-        artist: 'Tim e Vanessa',
-        key: 'Eb',
-        content: `
-Capotraste na 3ª casa
-
-[Am]Incomparável [Am9/B]escuridão, 
-[C]noite mista de tortura[Am9/B]
-[F7M]E de vazios abissais, 
-[F7M]sou todo [G]sofregui[Am]dão
-
-[Am]Os "ais" não escutam [Am9/B]os "ais", 
-[C]o silêncio me acu[Am9/B]sa
-[F7M]Meu pensamento se esvai, 
-[F7M]um uni[G]verso sem cor[Am]
-
-[Am]Mas em meio a eter[G]nidades um[D9/F#] rumor
-[C]Ascende em prece e a[G]cende claridade
-[C]E [C]resplandece, e a[G]calma tempestades
-
-[C]          [G]      Ouô...
-
-[C]Onde [G6/B]o         [Am]gládio que nos pu[Am7/G]ne?
-[F]Onde [F7M(9)/E]o                 [Dm7] peso de gra[G]nitos?
-[C]Onde a sen[Em]tença que [Am]zune [Am/G],
-se o [F]amor é maior[F7M(9)/E] que meu fim[G]?
-
-[F]A ora[G]ção, a vi[Em]da, a espe[Am]rança, 
-[F]me aca[G]lenta,[C] Deus!
-[F]Sinto um [G]sono e um sei[Em]o me en[Am]volve, 
-
-[F]crian[G]ça se[C]rei...
-
-[C]Onde [G6/B]o         [Am]gládio que nos pu[Am7/G]ne?
-[F]Onde [F7M(9)/E]o                 [Dm7] peso de gra[G]nitos?
-[C]Onde a sen[Em]tença que [Am]zune [Am/G],
-se o [F]amor é maior[F7M(9)/E] que meu fim[G]?
-
-[F]A ora[G]ção, a [Em]vida, a esperan[Am]ça, 
-[F]me aca[G]lenta,[C] Deus!
-
-[F]Sinto um [G]sono e um sei[Em]o me en[Am]volve, 
-[F]crian[G]ça se[C]rei...
-
-[F]crian[G]ça se[C]rei...
-        `
-      },
-      {
-        id: 'vestes-do-amor',
-        title: 'Vestes do Amor',
-        artist: 'Tim e Vanessa',
+        id: 'menino-da-porteira',
+        title: 'Menino da Porteira',
+        artist: 'Sérgio Reis',
         key: 'A',
         content: `
-[D] Quem me tocou?
-[A] Pois eu senti[Db7] saindo de mim [F#m]uma virtude[D]
-[A] Em meio [Db7]à [F#m]multidão
-[D] Perdão, Senhor, [A]me entrego a ti
-[Db7]Pois te toquei [F#m]buscando [D]saúde
-E [A]logo meu [Db7]sangue [F#m]estancou
-[Db7]Quem me tocou?[F#m]
-[Db7]Quem me curou?[F#m]
-[Bm7]A esperança [A]nos [E]liga [A]ao céu
-[D]Toque [A]divino nas [Db7]vestes [F#m]do amor
-[D]A ternura [A]é o [E/G#]orvalho[F#m]
-[D]Ao sedento [A]via[E4]jor[E]
-[D]O sol da [A]escuta é [E/G#]o agasalho[F#m]
-[D]A [A]quem [E4]precisa [E]de ca[E4]lor  [E]
-[E]Vai em [A]paz minha [E/G#]irmã [F#m]
-[D]Foi a tua [A]fé que [E4]te salvou... [E]
-[D]Foi a tua [D9]fé que [C#]te salvou... [A4]        `
-      },
-      {
-        id: 'zaqueu',
-        title: 'Zaqueu',
-        artist: 'Tim e Vanessa',
-        key: 'B',
-        content: `
+[Intro]
+E  A  E  A 
+E  A  E  A  E  A
 
-[B]Quero [E]ver o [F#]esperado Ra[B]bi na mul[E]tidão.  [F#]
-[B]Quero [E]ver o [F#]esperado Ra[B]bi na mul[E]tidão.  [F#]
+[Primeira Parte]
 
-[G#m]Sei que[G#m/G] passa[G#m/F]rá por [Eb5+]aqui
-[E]Sou peque[B/Eb]no e não posso ver[C#m], sua es[Eb7]tatura
-[G#m]Tento à [G#m/G]frente, [G#m/F#]procuro[Eb5+] encontrar
-[E]Um lugar de onde[B/Eb] O veja[C#m], uma ár[Eb7]vore ao céu
+A
+  Toda vez que eu viajava 
+                      E
+Pela estrada de Ouro Fino
 
-[G#m7]Me elev[F#/A#]arei[B] do[E] [F#]chão
-Meu espírito [G#m7]deseja [Ebm9] re[E]tirar [E/Eb]a es[C#m]cama-véu
-[F#/A#]E contemplar-te a visão  [B]   [E]   [F#]   [B]   [E]   [F#]
+De longe eu avistava 
+                  A
+A figura de um menino
 
-[B]Le[E]van[F#]tando Teu[F#] olhar
-[B]Tu me [E]vês em [F#]meu lugar
-[B]Me con[E]vidas a [F#]cear
-Em [B]minha [E]casa vais[F#] entrar
+Que corria abrir a porteira 
+                     E
+E depois vinha me pedindo
 
-[G#m]Não me[G#m/G]reço, sou [G#m/F#]Za[Eb5+]queu
-[E]Mais um [B/Eb]servo no engano[C#m], sou um[Eb7] publicano
-[G#m]Se des[G#m/G]tituí[G#m/F#] a quem [Eb5+]for
-[E]Pagarei[B/Eb] com jus[C#m]teza qua[Eb7]tro vezes mais
-[G#m7]Me eleva[F#/A#]rei[B] do[E] [F#]chão
-Meu espí[G#m7]rito deseja[Ebm9] [E]retirar[E/Eb] a es[C#m]cama-véu
-[F#/A#]E contemplar-te a visão  [B]   [E]   [F#]   [B]   [E]   [F#]
+Toque o berrante, seu moço 
+                      A
+Que é pra eu ficar ouvindo
 
- G#m  G#m/G  G#m/F#  Eb5+ 
- E  B/Eb  C#m  Eb7  G#m7  F#/A#  B  E  F# 
- G#m7  Ebm9  E  E/Eb  C#m  F#/A#  B  E  F#  B  E  F# 
+[Segunda Parte]
 
-[B]Hoje [E]entrou em [F#]minha casa
-A Verdade, [B]a Sal[E]vação   [F#]
-E a Ti[B] eu [E]ofereço   [F#]
-O ofí[B]cio de [E]meu pão   [F#]
+       D
+Quando a boiada passava 
+                  E
+E a poeira ia baixando
+                                  A
+Eu jogava uma moeda e ele saía pulando
 
-G#m G#m/G G#m/F# Eb5+
-[G#m]Já en[G#m/G]tendo o[G#m/F#] que [Eb5+]queres dizer:
-[E] “Vinde a mim os[B/Eb] pequenos[C#m]..."
-Os sicômo[Eb7]ros galgar
+Obrigado, boiadeiro
+                        E
+Que Deus vá lhe acompanhando
 
-[G#m7]Me eleva[F#/A#]rei[B] do[E] [F#]chão
-Meu espíri[G#m7]to deseja[Ebm9] re[E]tirar[E/Eb] a es[C#m]cama-véu
-[F#/A#]E contemplar-te a visão   [B]   [E]   [F#]
+Pra aquele sertão afora 
+                   A
+Meu berrante ia tocando
 
-[G#m7]Me eleva[F#/A#]rei[B] do[E]   [F#]chão
-Meu espíri[G#m7]to deseja[Ebm9] re[E]tirar[E/Eb] a es[C#m]cama-véu
-[F#/A#]E contemplar-te a visão   [B]   [E]    [F#]
-[B]E contemplar-te a visão         [B]  [B4]   [B]        `
-      },
-      {
-        id: 'cantaro',
-        title: 'Cântaro',
-        artist: 'Tim e Vanessa',
-        key: 'B',
-        content: `
-Intro:  B   F#sus4/Bb    G#m7/E    F#sus4/E
+( E  A  E  A )
+( E  A  E  A  E  A )
 
-   (3x)   F#7/9
+[Terceira Parte]
 
-[B]Como falas[F#sus4/Bb] tu comigo, [G#m7]sendo eu [G#m7/F#]samaritana
-[E]Te revelas [E/D#]meu amigo, [E]C#]justo eu [F#7/9]mulher 
-insana
-    
-[B]Oh, Gali[F#sus4/Bb]leu     [G#m7/E]
-Junto ao[F#sus4/E] poço busco [B]água[F#sus4/Bb]          [G#m7/E]
-E me [F#sus4/E]trazes a água[B] viva[F#sus4/Bb]          [G#m7/E]
-Tu me compree[D#m7]ndes[E], no incons[D#m7]ciente[E], tenho 
-sede [E/F]n'alma ven[F#7/9]cida
-               
-[B]Com teus [F#sus4/Bb]olhos me divi[G#m7]sas e me[G#m7/F#] livras da 
-armadilha
-[E]Onde os homens, [E/D#]os maridos, [E/C#]os altares 
-[F#7/9]deste mundo
-[B]Oh, Galileu[F#sus4/Bb]     [G#m7/E]
-Junto ao[F#sus4/E] poço busco [B]água[F#sus4/Bb]          [G#m7/E]
-E me [F#sus4/E]trazes a água[B] viva[F#sus4/Bb]          [G#m7/E]
-Tu me com[D#m7]preendes[E], no incons[D#m7]ciente[E], tenho 
-sede [E/F]n'alma ven[F#7/9]cida
+A
+  Nos caminhos desta vida 
+                          E
+Muitos espinhos eu encontrei
 
-[G#m]Se soubes[G#m/G]ses quem te[G#m/F#] pede de [G#m7]beber     [G#m7]
-Busca[D#m7]ria [C#m7/9]água pura que [B]brota do espí[F#7/9]rito
+Mas nenhum calou mais fundo 
+                       A
+Do que isso que eu passei
 
-[B]Estou plena,[F#sus4/Bb] estou viva, [G#m7]Siloé já não[G#m7/F#] sacia
-[E]Me buscaste [E/D#]no mais fundo do[E/C#] meu ser eu te 
-[F#7/9]encontro
-[B]Oh, Galileu[F#sus4/Bb]          [G#m7/E]
-[F#sus4/E]Tua presença me conforta
-É verda[F#sus4/E]de que li[B]berta[F#sus4/Bb]          [G#m7/E]
-Levarei teu [D#m7]cantaro[E]
-[E]Eu direi aos [D#m7]ávidos
-[E]Já habita em nós [E/F]o Messi[F#7/9]as
+Na minha viagem de volta 
+                      E
+Qualquer coisa eu cismei
 
-B  F#sus4/Bb    G#m7/E    F#sus4/E   (3x)  
-Oh Galileu
+Vendo a porteira fechada
+                  A
+O menino não avistei
 
-[B]Junto ao poço eu te encontrei
+[Quarta Parte]
 
+   D
+Apeei do meu cavalo 
+                         E
+E no ranchinho à beira chão
+
+Vi uma mulher chorando
+                     A
+Quis saber qual a razão
+
+Boiadeiro veio tarde
+                     E
+Veja a cruz no estradão
+
+Quem matou o meu filhinho 
+                    A
+Foi um boi sem coração
+
+( E  A  E  A )
+( E  A  E  A  E  A )
+
+[Quinta Parte]
+
+A
+  Lá pras bandas de Ouro Fino 
+                 E
+Levando gado selvagem
+
+Quando passo na porteira 
+                 A
+Até vejo a sua imagem
+
+O seu rangido tão triste 
+                    E
+Mais parece uma mensagem
+
+Daquele rosto trigueiro 
+                   A
+Desejando-me boa viagem
+
+[Sexta Parte]
+
+    D
+A cruzinha no estradão 
+                   E
+Do pensamento não sai
+
+Eu já fiz um juramento 
+                   A
+Que não esqueço jamais
+
+Nem que o meu gado estoure
+                     E
+Que eu precise ir atrás
+
+Neste pedaço de chão 
+                      A
+Berrante eu não toco mais
+
+( E  A  E  A )
+( E  A  E  A  E  A )
         `
       },
       {
-        id: 'a-casa-lar',
-        title: 'A Casa-Lar',
-        artist: 'Tim e Vanessa',
+        id: 'cuitelinho',
+        title: 'Cuitelinho',
+        artist: 'Pena Branca e Xavantinho',
+        key: 'A',
+        content: `
+  A
+Cheguei na beira do porto
+                    E
+Onde as ondas se espáia
+    A
+As garça dá meia volta
+                     E
+E senta na beira da praia
+                     E7
+E o cuitelinho não gosta
+                     A
+Que o botão de rosa caia, ai, ai, ai
+
+( E  D  E  A ) 
+
+             A
+Aí quando eu vim de minha terra
+                 E
+Despedi da parentaia
+      A
+Eu entrei no Mato Grosso
+                    E
+Dei em terras paraguaia
+               E7
+Lá tinha revolução
+                   A
+Enfrentei fortes bataia, ai, ai, ai
+
+( E  D  E  A ) 
+
+   A
+A tua saudade corta
+              E
+Como aço de navaia
+      A
+O coração fica aflito
+                   E
+Bate uma, a outra faia
+                    E7
+Os óio se enche d'água
+                       A
+Que até a vista se atrapaia, ai, ai, ai
+
+[Final] E  D  E  A `
+      },
+      {
+        id: 'joao-de-barro',
+        title: 'João de Barro',
+        artist: 'Sérgio Reis',
+        key: 'A',
+        content: `
+[Intro]
+
+           E7                      A
+O João de Barro pra ser feliz como eu
+                E7                     A
+Certo dia resolveu arranjar uma companheira
+           E7        D           A
+Num vai e vem com o barro da biquinha
+               Bm          E7          A
+Ele fez uma casinha lá no galho da Paineira
+
+      E7                   A
+Toda manhã o pedreiro da floresta
+                 Bm         E7            A
+Cantava fazendo festa pra'quela que tanto amava
+           E7      D          A
+Mas quando ele ia buscar o raminho
+                    Bm          E7          A
+Para construir seu ninho, seu amor lhe enganava
+
+           E7          D            A
+Mas nesse mundo o mal feito é descoberto
+                      Bm          E7         A
+João de Barro viu de perto sua esperança perdida
+         E7            D     E7   A
+Cego de dor trancou a porta da morada
+                Bm            E7          A
+Deixando lá sua amada presa pro resto da vida
+
+          E7         D          A
+Que semelhança entre o nosso fadário
+                     Bm              E7           A
+Só que eu fiz o contrário do que o João de Barro fez
+          E7         D           A
+Nosso Senhor me deu força nesta hora
+                      Bm       E7           A
+A ingrata eu pus pra fora onde anda eu não sei
+        `
+      },
+      {
+        id: 'inhambu-xitã-e-o-xororó',
+        title: 'Inhambu-xitã e o Xororó',
+        artist: 'Élcio Dias & Amorim',
+        key: 'A',
+        content: `
+[Intro] A  E7  A  E7  A
+
+A                       E7
+Eu não troco meu ranchinho
+                 A
+Amarradinho de cipó
+                 E7
+Por'uma casa na cidade
+                   A
+Nem que seja bangalô
+        A7          D
+Eu moro lá no deserto
+                      A
+Sem vizinho, eu vivo só
+                     E7
+Só me alegra quando pia
+                    A
+Lá pr'aqueles cafundó
+
+              E7        A
+O inhambu-xintã e o xororó
+              E7        A
+É o inhambu-xintã e o xororó
+
+                     E7
+Quando rompe a madrugada
+                  A
+Canta o galo carijó
+               E7
+Pia triste a coruja
+                   A
+Na cunhera do paiól
+        A7             D
+Quando chega o entardecer
+               A
+Pia triste o jaó
+                    E7
+Só me alegra quando pia
+                    A
+Lá pr'aqueles cafundó
+
+A                        E7
+Não me dou com a terra roxa
+                      A
+Com a seca larga o pó
+                 E7
+Na baixada do areião
+                      A
+Eu sinto  prazer maior
+       A7          D
+Ver rolinha quando anda
+                   A
+No areião faz caracó
+                     E7
+Só me alegra quando pia
+                    A
+Lá pr'aqueles cafundó
+
+A                 E7
+Eu faço minha caçada
+                  A
+Bem ante de sair o sol
+                     E7
+Espingarda cartucheira
+                 A
+Patrona de tiracó
+         A7           D
+Tenho buzina e cachorro
+                 A
+Pra fazer forrobodó
+                     E7
+Só me alegra quando pia
+                    A
+Lá pr'aqueles cafundó
+
+A                       E7
+Quando eu sei de uma notícia
+                    A
+Que outro canta mió
+                     E7
+Meu coração da um balanço
+                A
+Fica meio banzaró
+          A7           D
+Suspiro sai do meu peito
+                  A
+Que nem bala joveló
+                     E7
+Só me alegra quando pia
+                    A
+Lá pr'aqueles cafundó
+               E7          A
+É o inhambu-xintã e o xororó
+               E7          A
+É o inhambu-xintã e o xororó
+        `
+      },
+      {
+        id: 'cavalo-preto',
+        title: 'Cavalo Preto',
+        artist: 'Sérgio Reis',
         key: 'A',
         content: `
         
-[Intro] E  E/D#  E/C#  E/B  A9
+[Intro] E7  A  E7  A
+        E7  A  E7  A
 
-E              A9
-O ser no corpo é um passarinho
-E   E/D#  E/C#  E/B  A9
-Na janela quer voar
-F#m7(4)/C#      C#m7          G#m7/D#
-O pensar evola, vibra harmonias pelo   
-  A9        A6(9)
-éter, pelo ar
+[Primeira Parte] 
 
-E              A9
-Sofre os olhos deita a vista
-E      E/D#  E/C#  E/B  A9
-Sobre o mar, sobre amar
-F#m7(4)/C#            C#m7      G#m7/D#  
-Cativeiro, marinheiro, marear, homem ao 
-A9  A6(9)
-mar
+                  E7
+Tenho um cavalo preto
+                  A
+Por nome de ventania
+D                E7
+Um laço de doze braças
+                   A
+No couro de uma novilha
+ D                   E7
+Tenho um cachorro bragado
+                       A
+Que é pra minha companhia
+                   Bm  E7
+Sou um caboclo folgado
+                   A
+Ai eu não tenho família
 
-A9
-Mas o teu corpo
-           E      E/D#     E/C#   E/B  A9
-É teu meio de cantar de sentir, de sonhar
-                  E   E/D#  E/C#  E/B  A9
-Saborear ar e mar amorear, sensorear
-                   E           
-É tua casa, casulo, testemunhos, 
-E/D#
-estremunhos
-A9                 E     E/D#     A9
-A casa-lar, a casa, a casa, a casa
+[Solo] E7  A  E7  A 
+
+[Segunda Parte]
+
+                   E7
+No lombo do meu cavalo
+                  A
+Eu viajo o dia inteiro
+ D                E7
+Vou dum estado pro outro
+                  A
+Eu não tenho paradeiro
+  D                    E7
+Quem quiser ser meu patrão
+                    A
+Me ofereça mais dinheiro
+                   Bm  E7
+Eu sou muito conhecido
+                   A
+Por esse Brasil inteiro
+
+[Solo] E7  A  E7  A 
+
+[Terceira parte]
+
+                 E7
+Tenho uma capa gaúcha
+                              A
+Que eu troquei com um boi carreiro
+ D                  E7
+Tenho dois pelegos grandes
+                     A
+Que é pura lã de carneiro
+D                  E7
+Um me serve de colchão
+                  A
+E outro de travesseiro
+                 Bm   E7
+Com minha capa gaúcha
+                       A
+Eu me cubro o corpo inteiro
+
+[Solo] E7  A  E7  A
+
+[Quarta Parte]
+
+                        E7
+Adeus que eu já vou partindo
+                     A
+Vou pousar noutra cidade
+ D                   E7
+Depois de amanhã bem cedo
+                   A
+Quero estar em Piedade
+ D                  Bm  E7
+Deus me deu esse destino
+               A
+E muita felicidade
+                           E7
+Quando eu passo com o meu pingo
+                       A  
+Deixo um rastro de saudade
+
+[Final] E7  A
         `
       },
       {
-        id: 'mediuns',
-        title: 'Médiuns',
-        artist: 'Tim e Vanessa',
-        key: 'G',
+        id: 'chalana',
+        title: 'Chalana',
+        artist: 'Almir Sater',
+        key: 'D',
         content: `
-Intro] G  B7  C  Cm
-        G  A4/G  C  D4  G
+[Primeira Parte]
 
+D
+  Lá vai uma chalana
+     A7(13)   D
+Bem longe se vai
 
-E|---2-0------------| 
-B|-------1-0--------| 
-G|-----------2-0----| 
-D|-0--------------0-| 
-A|------------------| 
-E|------------------| 
+Navegando no remanso
+             A7
+Do rio Paraguai
 
-G                      B7
-Em verdade eu vos digo
-             C         Cm
-Que se eles se calarem
-     G                A4/G
-As pedras é que falarão
-            C              D4
-Vossos velhos terão sonhos
-           C         D4    G
-Vossos jovens profetizarão
-G                      B7
-Em verdade eu vos digo
-             C         Cm
-Que se eles se calarem
-     G                A4/G
-As pedras é que falarão
-            C              D4
-Vossos velhos terão sonhos
-           C         D4    G
-Vossos jovens profetizarão
-Em               Bm
-Cajado de Moisés
-C                G
-O manto de Elias
-Em             Bm
-Escada de Jacó
-C                D7
-As visões de Jeremias
-G                    D
-Hoje médiuns, antes, profetas
-C               D7
-Faculdades não mais ocultas
-G                     D
-Quantos falam, quantos sentem
-C                        D7    G  D7
-Quantos ouvem, quantas línguas
-         G             B7
-Em verdade eu vos digo
-             C         Cm
-Que se eles se calarem
-     G                  A4/G
-As pedras é que falarão
-            C              D4
-Vossos velhos terão sonhos
-           C         D4    G
-Vossos jovens profetizarão
-G                      B7
-Em verdade eu vos digo
-             C         Cm
-Que se eles se calarem
-     G                A4/G
-As pedras é que falarão
-            C                D4
-Vossos velhos terão sonhos
-           C         D4    G
-Vossos jovens profetizarão
-Em                  Bm
-Nas Bodas de Caná
-C                    G
-Na cura das feridas
-Em                Bm
-Na Transfiguração
-C       C#m5-         D7
-Nos dando a água viva
-G                         D
-Sempre Mestre, sempre Profeta
-C                D7
-Ser divino, Ser o Guia
-G                       D
-Quantos calam, quantos sentem
-C                        D7    G  D7
-Quantos ouvem o médium da Vida
-G                      B7
-Em verdade eu vos digo
-             C         Cm
-Que se eles se calarem
-     G                A4/G
-As pedras é que falarão
-            C              D4
-Vossos velhos terão sonhos
-           C         D4    G
-Vossos jovens profetizarão
+[Refrão]
 
-( G  A  C  D4 )        `
+G
+Oh! Chalana sem querer
+ D
+Tu aumentas minha dor
+ A7
+Nessas águas tão serenas
+                  D
+Vai levando meu amor
+
+G
+Oh! Chalana sem querer
+ D
+Tu aumentas minha dor
+ A7(13)
+Nessas águas tão serenas
+                  D
+Vai levando meu amor
+
+[Segunda Parte]
+
+E assim ela se foi
+                    A7(13)
+Nem de mim se despediu
+  G
+A   chalana vai sumindo
+    A7          D
+Na curva lá do rio
+
+E se ela vai magoada
+                      A7
+Eu bem sei que tem razão
+
+Fui ingrato
+                         D
+Eu feri o seu meigo coração
+
+[Refrão]
+
+G
+Oh! Chalana sem querer
+ D
+Tu aumentas minha dor
+ A7(13)
+Nessas águas tão serenas
+                  D
+Vai levando meu amor
+
+G
+Oh! Chalana sem querer
+ D
+Tu aumentas minha dor
+ A7
+Nessas águas tão serenas
+                  D
+Vai levando meu amor
+
+E|---------------------------------------------------|
+        `
       }
     ]
   },
@@ -348,329 +531,538 @@ Vossos jovens profetizarão
     name: 'Bloco B',
     songs: [
       {
-        id: 'para-sempre',
-        title: 'Para sempre em meu coração',
-        artist: 'Meu Cantar',
-        key: 'E',
+        id: 'saudade-da-minha-terra',
+        title: 'Saudade da Minha Terra',
+        artist: 'Chitãozinho e Xororó',
+        key: 'C',
         content: `
+[Intro] G  C  G  F 
+        C/E  G/D  C
+
 [Primeira Parte]
 
-E                            E7M
-Nem se eu pudesse ter o pôr do sol
-   A                              Am6
-A lua ou as estrelas, toda natureza
-E                           E7M
-Nem se eu tivesse todo ouro
-   A                               Am6
-E não tivesse um amigo... Nada teria
-A                      B7            
-  Pois quando eu começasse a me sentir 
-    G#m   C#m
-sozinho
-A               B7        E  E7
-Quem é que me consolaria?
-A               B7                  G#m  
-Mas Deus é bom botou você em meu caminho
-C#m
+             C
+De que me adianta viver na cidade
+                               G
+Se a felicidade não me acompanhar
 
-                      F#m    B7
-Pra que não me falte alegria
+Adeus, paulistinha do meu coração
+                               C
+Lá pro meu sertão eu quero voltar
+            F
+Ver a madrugada quando a passarada
+             D7              G
+Fazendo alvorada começa a cantar
 
-[Refrão]
-            E        E7M                 
-Você vai estar para sempre dentro do meu 
-     A
-coração
-         Am6    E
-Vou lembrar de nós
-              E7M                     A  
-Sempre que alguém contar esta canção!
-Am6
+Com satisfação arreio o burrão
+                 F   C/E    G/D  C
+Cortando o estradão saio  a galo__par
+           F               G
+E vou escutando o gado berrando
+                            C   
+O Sabiá cantando no jequitibá
 
+[Interlúdio 1] G  C  G  F 
+               C/E  G/D  C
 
 [Segunda Parte]
 
-E                                  E7M
-Nem se eu soubesse muitas palavras
-A                                    Am6
-Nem se eu as transformasse em poesia
-E                              E7M
-Não diria tudo o que há pra dizer
-A                          Am6
-A inspiração de certo faltaria
-E               B7           G#m   C#m
-Mas se algum dia me faltar o seu abraço?
-A           B7            E  E7
-Não será triste a saudade
-A             B             G#m        C#m
-Pois sei que nos encontraremos no espaço
-       F#m           B7
-Meu amigo de verdade        `
+              C
+Por nossa senhora
+
+Meu sertão querido
+                                G
+Vivo arrependido por ter te deixado
+
+Esta nova vida aqui na cidade
+                               C
+De tanta saudade, eu tenho chorado
+             F
+Aqui tem alguém, diz que me quer bem
+               D7              G
+Mas não me convém, eu tenho pensado
+
+Eu digo com pena, mas esta morena
+               F     C/E     G/D    C
+Não sabe o sistema que    eu fui   criado
+            F                   G
+Tô aqui cantando, de longe escutando
+
+Alguém está chorando
+               C
+Com o rádio ligado
+
+[Interlúdio 2] G  C  D# C# 
+               G#/C D#/A#G# 
+
+[Terceira Parte]
+
+              G#
+Que saudade imensa do campo e do mato
+                                   D#
+Do manso regato que corta as campinas
+
+Aos domingos ia passear de canoa
+                                  G#
+Nas lindas lagoas de águas cristalinas
+              C#
+Que doce lembrança daquelas festanças
+             A#7               D#
+Onde tinham danças e lindas meninas
+
+Eu vivo hoje em dia sem ter alegria
+           C#   G#/C    D#/A#  G#
+O mundo judia, mas  também  ensina
+             C#                  D#
+Estou contrariado, mas não derrotado
+                                G#
+Eu sou bem guiado pelas mãos divinas
+
+[Interlúdio 3] D# G# G  F 
+               C/E  G/D  C
+
+[Quarta Parte]
+
+              C
+Pra minha mãezinha já telegrafei
+                            G
+E já me cansei de tanto sofrer
+
+Nesta madrugada estarei de partida
+                                 C
+Pra terra querida que me viu nascer
+            F
+Já ouço sonhando o galo cantando
+            D             G
+O inhambu piando no escurecer
+
+A lua prateada clareando a estrada
+            F    C/E   G/D   C
+A relva molhada desde o anoitecer
+           F                 G
+Eu preciso ir pra ver tudo ali
+                               C  
+Foi lá que nasci, lá quero morrer
+
+[Final] G7  C
+`
       },
       {
-        id: 'apenas-amar',
-        title: 'Apenas Amar',
-        artist: 'Denis Soares',
-        key: 'C',
+        id: 'asa-branca',
+        title: 'Asa Branca',
+        artist: 'Luiz Gonzaga',
+        key: 'G',
         content: `
-  C                F7M              
-Todo o Céu se organiza para vir nos 
- C            C7M
-transformar
-   C                F7M           G/C  
-O Cristo já nos auxilia para vida nova 
-    G
-alçar
-C                   F7M               
-Ondas de atos belos podem vir de nossas 
-    C          C7M
-próprias mãos
-C                F7M               G/C   
-Sentimentos triunfantes brotam naturais, 
-   G
-então
+Intro] 
 
-F7M           Em          F7M          Em
-Vou por dentro me preparar pra sem rebeldia
- aceitar
-F7M         Em           F7M         G
-Invencível expande o amor em fraternidade
+Parte 2 de 3
 
-F       F7M    C
-E eu desejo apenas amar, e todo um mar
-F    F7M        C
-De afetos cativar
-F    F7M                 C
-Uma luz vem pra resplandecer, dentro do ser
-F         F7M          C
-Para ao Pai glorificar        `
-      },
-      {
-        id: 'amigo-presente',
-        title: 'Amigo presente',
-        artist: 'Xará - Luiz Ricardo',
-        key: 'F',
-        content: `
-Dm           Gm
-Vem lá do infinito
-     C               Dm
-Me amar em meio ao silêncio
-                Gm
-E pelos meus caminhos
-    C           Dm
-Se faz amigo presente
-C                     Dm
-Que Jesus te cubra de amor e luz
-A                         C
-Possa eu acompanhar teus passos
-                 Gm                Dm    C
-Pois entre teus braços me sinto feliz
-            Dm     C
-Me sinto feliz...
-            Dm     C
-me sinto feliz...
-            Dm
-me sinto feliz
+[Primeira Parte] 
+
+G                        C
+  Quando oiei a terra ardendo
+         G     D7/F#   G
+Qual fogueira de São João
+          G7            C
+Eu perguntei a Deus do céu, ai
+           D7         G
+Por quê tamanha judiação
+          G7            C
+Eu perguntei a Deus do céu, ai
+           D7         G  (Passagem)
+Por quê tamanha judiação
+
+( G )
+
+[Segunda Parte]
+
+        G             C
+Que braseiro, que fornaia
+        G      D7/F#  G
+Nem um pé de prant___ção
+            G7              C
+Por farta d'água perdi meu gado
+           D7           G
+Morreu de sede, meu alazão
+            G7              C
+Por farta d'água perdi meu gado
+           D7           G  (Passagem)
+Morreu de sede, meu alazão
+
+[Terceira Parte]
+
+G                    C
+  Inté mesmo a asa branca
+        G      D7/F#  G
+Bateu asas do sert____ão
+          G7             C
+Então eu disse, adeus Rosinha
+           D7           G
+Guarda contigo meu coração
+          G7             C
+Então eu disse, adeus Rosinha
+           D7           G  (Passagem)
+Guarda contigo meu coração
+
+[Quarta Parte]
+
+G                     C
+  Hoje longe, muitas légua
+       G     D7/F#  G
+Numa triste soli___dão
+           G7           C
+Espero a chuva cair de novo
+            D7             G
+Pra mim voltar pro meu sertão
+           G7           C
+Espero a chuva cair de novo
+            D7             G  (Passagem)
+Pra mim voltar pro meu sertão
+
+[Quinta Parte]
+
+                        C
+Quando o verde dos teus óio
+       G        D7/F#  G
+Se espaiar na pranta__ção
+           G7             C
+Eu te asseguro não chore não, viu?
+           D7                  G
+Que eu voltarei, viu, meu coração
+           G7             C
+Eu te asseguro não chore não, viu?
+           D7                  G
+Que eu voltarei, viu, meu coração
+
+[Passagem]
+
+[Final] 
+
+( F/A  G )
         `
       },
       {
-        id: 'bilha',
-        title: 'Bilha',
-        artist: 'Tim e Vanessa',
-        key: 'Bb',
-        content: `
-
-Bb          Eb     F
-Uo Uo Uo Uo Uoooooo
-
-Bb
-O evangelho nas areias
-Eb                    Bb    Eb
-Áquila e Prisca, a família  uououoooo
-Bb
-Na pureza de bondade
-Eb                      Bb    Eb
-Abrem suas portas ao errante  uououoooo
-
-[Refrão]
-
-D#
-És bem vindo à nossa casa
-Bb
-Toma a água, eis a bilha
-Eb            F      Bb
-Dessendenta nela tua vida
-Eb            F       Bb
-Vem beber do vaso que sacia
-
-Gm         Dm         D#
-Ouço as histórias, tua casa, o teu pai
-Gm         Dm         D#
-Teu passado e minha agonia
-Gm         Dm         D#       Eb
-Já enxergo agora, no trabalho, no tear
-D#         Dm
-Vou tecendo meu falar e
-D#                   F
-A nossa amizade é um culto
-
-[Refrão]
-
-D#
-És bem vindo à nossa casa
-Bb
-Toma a água, eis a bilha
-Eb           F       Bb
-Dessendenta nela tua vida
-Eb            F       Bb
-Vem beber do vaso que sacia
-
-Gm         Dm
-Sou cristão confesso
-D#
-Digo mais, eu fui tão cego
-Gm         Dm         D#
-Que tantos remorsos carrego
-Gm         Dm
-No afã de ter sucesso
-D#
-Inaugurei perseguições
-Eb         Dm
-São incontáveis as ações
-D#                                 F
-Foi quando eu mergulhei o olhar em Estevão
-         D#   F    Bb
-Uo Uo Uo Uooo Uooo Uooo
-D#  F   Bb
-Uoooôoooôooo
-D#  F   Bb
-Uoooôoooôooo
-
-Gm        Dm     D#
-Devo ir embora, tua casa é um altar
-Gm           Dm        D#  Eb  F
-Sou estorvo à tua harmonia
-
-D#                      F
-És presente em nossa tenda
-D#                        F
-Qualquer um que se arrependa
-Eb         F            Bb
-E conosco sirva O Bom Amigo
-Eb           F           Bb
-Sois ovelha que volta ao aprisco
-Bb       Eb   F
-Uoooôoooôooo
-Bb       Eb   F
-Uoooôoooôooo
-
-[Refrão]
-
-D#
-És bem vindo à nossa casa
-Bb
-Toma a água, eis a bilha
-Eb          F        Bb
-Dessendenta nela tua vida
-Eb            F        Bb
-Vem beber do vaso que sacia
-        Eb   F
-Uoooôoooôooo
-Bb
-Uoooôooo
-  Eb           F        Bb
-… Pois serás o vaso que sacia
-        `
-      },
-      {
-        id: 'uma-prece',
-        title: 'Uma prece',
-        artist: 'Cacau',
-        key: 'D',
-        content: `
-[Intro] Bm  G  Bm  G
-
-  Bm                       G             
-Ó poderosa águia que há no alto do totem
-D/F#
-
-Em                  A
-Dá-me tuas asas, me ensina a voar
-   Bm                         G            
-Cruzar os horizontes, vencer montes e mares
-  D/F#
-
-      Em                     A
-Com a luz do saber, pela virtude de amar
-
-Bm                                  G    
-Com tua força tamanha, ó urso, me ajude a
-          D/F#
- derrubar
-Em                                
-As barreiras da vida que eu venha a 
-  F#
-encontrar
-
-             Bm                           
-E eu venho pedir a ti, ó tartaruga, que o 
-         G              D/F#
-totem estás a sustentar
-Em                               F#
-Dá-me tua certeza de um dia eu poder chegar
-             Bm                 G
-A ver-te nas asas da águia, na força do 
-urso
-Em                        A
-Em todas as coisas criadas por ti
- Bm                   G              D/F#
-Eleva minh'alma, me faz tão perfeito
-    Em                     A         F#
-Me leva a saber que estás dentro de mim
-
-Bm                        G    D/F#
-Ó Pai Nosso que estás no céu
-Em                      F#
-Santificado seja o teu nome
-                   Bm
-Em favor de todos nós
-
-[Final] Bm  G  Em  A
-        Bm  G  Em  A        `
-      },
-      {
-        id: 'de-bem',
-        title: 'De bem com a vida',
-        artist: 'Tim e Vanessa',
+        id: 'xote-da-alegria',
+        title: 'Xote da Alegria',
+        artist: 'Falamansa',
         key: 'A',
         content: `
-A         Bm       A
-Qual andorinhas felizes
-D        D9/C#      E
-Bailando soltas no ar
-D      D9/C# E
-Ouve a suave música
-   D     D9/C#   E
-De Deus, melodia sem par
 
-A      Bm        A
-Nela embala teus sonhos
-D       D9/C#   E
-Tua fé, tuas quimeras
-D        D9/C#  E
-Na brisa quente dos verões
-D          D9/C#    E      E7
-No perfume das primaveras
+Intro] A  E  F#m  E 
+        A  E  F#m  E
 
-D           Bm       E
-E no encantamento da vida
-  D         B7/D#  E
-Glorifica o eterno criador
-D           Bm         E
-Viverás, assim, na alegria
-D          B7/D#  E      A
-Do mais sublime e puro amor
+[Primeira Parte]
+
+A        E            F#m
+   Se um dia alguém mandou
+           C#m            D
+Ser o que sou e o que gostar
+              A          E
+Não sei quem sou e vou mudar
+                               A
+Pra ser aquilo que eu sempre quis
+
+       E        F#m
+E se acaso você diz
+              C#m          D
+Que sonha um dia em ser feliz
+            A   E  D#
+Vê se fala sério
+
+[Pré-Refrão]
+
+D             A      E    D#
+  Pra que chorar sua mágoa?
+D        A          E  D#
+  Se afogando em agonia
+D                 A            
+  Contra a tempestade 
+          E   D#
+Em copo d'água
+D          A          Bm
+  Dance o xote da alegria
+C#m   D   E
+Aaah haa hei hei
+
+[Refrão]
+
+A                     E
+   Se cum dêrum dêrum dêio
+            F#m
+Dêrum derundê um dêrum dêrum
+ C#m         D               
+Dê iô iô iê iê um dêrum dêrum
+ A        E
+Dêrum derôdô
+
+A                     E
+   Se cum dêrum dêrum dêio
+            F#m
+Dêrum derundê um dêrum dêrum
+ C#m         D               
+Dê iô iô iê iê um dêrum dêrum
+ A        E
+Dêrum derôdô
+
+( A  E  F#m  E )
+( A  E  F#m  E )
+
+[Primeira Parte]
+
+A        E            F#m
+   Se um dia alguém mandou
+           C#m            D
+Ser o que sou e o que gostar
+              A          E
+Não sei quem sou e vou mudar
+                               A
+Pra ser aquilo que eu sempre quis
+
+       E        F#m
+E se acaso você diz
+              C#m          D
+Que sonha um dia em ser feliz
+            A   E  D#
+Vê se fala sério
+
+[Pré-Refrão]
+
+D             A      E    D#
+  Pra que chorar sua mágoa?
+D        A          E  D#
+  Se afogando em agonia
+D                 A            
+  Contra a tempestade 
+          E   D#
+Em copo d'água
+D          A          Bm
+  Dance o xote da alegria
+C#m   D   E
+Aaah haa hei hei
+
+[Refrão]
+
+A                     E
+   Se cum dêrum dêrum dêio
+            F#m
+Dêrum derundê um dêrum dêrum
+ C#m         D               
+Dê iô iô iê iê um dêrum dêrum
+ A        E
+Dêrum derôdô
+
+A                     E
+   Se cum dêrum dêrum dêio
+            F#m
+Dêrum derundê um dêrum dêrum
+ C#m         D               
+Dê iô iô iê iê um dêrum dêrum
+ A        E
+Dêrum derôdô
+
+( A  E  F#m  E )
+( A  E  F#m  E )
+
+[Pré-Refrão]
+
+D             A      E    D#
+  Pra que chorar sua mágoa?
+D        A          E  D#
+  Se afogando em agonia
+D                 A           
+  Contra a tempestade 
+          E   D#
+Em copo d'água
+D          A          Bm
+  Dance o xote da alegria
+C#m   D   E
+Aaah haa hei hei
+
+[Refrão]
+
+A                     E
+   Se cum dêrum dêrum dêio
+            F#m
+Dêrum derundê um dêrum dêrum
+ C#m         D               
+Dê iô iô iê iê um dêrum dêrum
+ A        E
+Dêrum derôdô
+
+A                     E
+   Se cum dêrum dêrum dêio
+            F#m
+Dêrum derundê um dêrum dêrum
+ C#m         D               
+Dê iô iô iê iê um dêrum dêrum
+ A        E
+Dêrum derôdô
+
+A                     E
+   Se cum dêrum dêrum dêio
+            F#m
+Dêrum derundê um dêrum dêrum
+ C#m         D               
+Dê iô iô iê iê um dêrum dêrum
+ A        E  A
+Dêrum derôdô
+
         `
+      },
+      {
+        id: 'lambada-de-serpente',
+        title: 'Lambada de Serpente',
+        artist: 'Pierre Simões',
+        key: 'E',
+        content: `
+[  A           E/G#
+Cuidar do pé de milho
+      F#m   B    E
+Que demora na semente
+    A            E/G#
+Meu pai disse: "Meu filho
+      F#m     B    E
+Noite fria, tempo quente"
+  A         E/G#
+Lambada de serpente
+     F#m        E
+A traição me enfeitiçou
+     A         E/G#
+Quem tem amor ausente
+       F#m  B     E
+Já viveu a minha dor
+    F#m     B     E
+Do chão da minha terra
+      F#m    B   E
+Um lamento de corrente
+    F#m     B      E
+Um grão de pé de guerra
+    F#m     B         E
+Pra colher dente por dente
+   A           E/G#
+Lambada de serpente
+     F#m   B     E
+A traição me enfeitiçou
+     E       E/G#
+Quem tem amor ausente
+     F#m    B      E
+Já viveu a minha dor        `
+      },
+      {
+        id: 'solidao',
+        title: 'Solidão',
+        artist: 'Milionário & José Rico',
+        key: 'A',
+        content: `
+        [Intro] E  A  B  E  A  E  B
+
+               E
+Alguém me falou
+
+Que você me enganou
+             F#m
+Eu não posso acreditar
+              A
+Eu preciso saber
+              B
+Se foi mesmo você
+                  E  E7
+Que mandou me avisar
+
+( E  F#m E/G# )
+
+A           B
+Eu preciso partir
+ G#m                   C#m
+Sei que não vou resistir
+          F#m     B
+Esta solidão do amor
+            E      E7
+Para o meu coração
+
+( E  F#m E/G# )
+
+A           B
+Eu preciso partir
+ G#m                   C#m
+Sei que não vou resistir
+          F#m     B
+Esta solidão do amor
+            E      E7
+Para o meu coração
+
+( E  A  B  E  A  E  B )
+
+               E
+Alguém me falou
+
+Que você me enganou
+             F#m
+Eu não posso acreditar
+              A
+Eu preciso saber
+              B
+Se foi mesmo você
+                  E  E7
+Que mandou me avisar
+
+( E  F#m E/G# )
+
+A           B
+Eu preciso partir
+ G#m                   C#m
+Sei que não vou resistir
+          F#m     B
+Esta solidão do amor
+            E      E7
+Para o meu coração
+
+( E  F#m E/G# )
+
+A           B
+Eu preciso partir
+ G#m                   C#m
+Sei que não vou resistir
+          F#m     B
+Esta solidão do amor
+            E      B  A
+Para o meu coração
+
+( C  A  B )
+
+E      A               B
+  Amor, eu gostaria saber
+                E
+Se foi mesmo você
+Que mandou me avisar
+Porque se for verdade
+
+( E  F#m E/G# )
+
+A           B
+Eu preciso partir
+ G#m                   C#m
+Sei que não vou resistir
+          F#m     B
+Esta solidão do amor
+            E      E7
+Para o meu coração
+
+A           B
+Eu preciso partir
+ G#m                   C#m
+Sei que não vou resistir
+          F#m     B
+Esta solidão do amor
+            E
+Para o meu coração
+
+            E
+Para o meu coração
+
+            E
+Para o meu coração
+ `
       }
     ]
   },
@@ -679,197 +1071,238 @@ Do mais sublime e puro amor
     name: 'Bloco C',
     songs: [
       {
-        id: 'apostolo',
-        title: 'Apóstolo da Samaria',
-        artist: 'Tim e Vanessa',
+        id: 'cafezal',
+        title: 'Cafezal',
+        artist: 'Cascatinha e Inhana',
         key: 'D',
         content: `
-D                      G
-Foi assim que o Senhor derramou
- D                        G   A
-Vinho e azeite em nossa ferida
-  D                   G
-Foi assim que o Messias fiou
-     D            G  A  Bm
-Saga santa, novelo de vida
 
-  G            A       Bm
-Salva o próximo e ti salvarás
-   G       A         Bm
-Não olvides o amor em tuas mãos
-    F#m             Bm
-Faze isso e, então, viverás
-     G         D        A
-Vê teu lume no olhar dos irmãos
-
-  D           G      A
-Pela verdade viveu Simeão
-   D          G            A
-Eis o estandarte na cruz Um ancião
-   G           D
-O apóstolo da Samaria
-   G          D
-Verbo vivo, poesia
-
- D                   G
-Foi assim que o Senhor semeou
- D                   G
-Grão sagrado em solo profano
- D                   G
-Foi assim que Jesus nos legou
-   D               G  A Bm
-A bondade de um samaritano
-
-   G              A    Bm
-Pulsa o conto, conta o Mashal
-  G        A               Bm
-Fez-se um mártir Em honra do bem
-F#m                Bm
-Seu madeiro ferindo o mal
-G              D      A
-Como arado a cortar o Siquém
+                A7                        D 
+Meu cafezal em flor, quanta flor meu cafezal 
+                A7                        D 
+Meu cafezal em flor, quanta flor meu cafezal 
+      A          D            A          D 
+Ai menina, meu amor, branca flor do cafezal 
+      A          D            A          D 
+Ai menina, meu amor, branca flor do cafezal 
+        A           G             D 
+Era florada, lindo véu de branca renda 
+                      A7                          D 
+Se estendeu sobre a fazenda, igual a um manto nupcial 
+           A           G              D 
+E de mãos dadas fomos juntos pela estrada 
+                   A7                     D 
+Toda branca e perfumada, fina flor do cafezal 
+                A7                        D 
+Meu cafezal em flor, quanta flor meu cafezal 
+                A7                        D 
+Meu cafezal em flor, quanta flor meu cafezal 
+      A          D            A          D 
+Ai menina, meu amor, branca flor do cafezal 
+      A          D            A          D 
+Ai menina, meu amor, branca flor do cafezal 
+            A           G            D 
+Passa-se a noite vem o sol ardente bruto 
+                        A7                      D 
+Morre a flor e nasce o fruto no lugar de cada flor 
+            A              G             D 
+Passa-se o tempo em que a vida é todo encanto 
+                        A7                          D 
+Morre o amor e nasce o pranto, fruto amargo de uma dor 
+                A7                        D 
+Meu cafezal em flor, quanta flor meu cafezal 
+                A7                        D 
+Meu cafezal em flor, quanta flor meu cafezal 
         `
       },
       {
-        id: 'veredas',
-        title: 'Veredas',
-        artist: 'Tim e Vanessa',
+        id: 'viva-a-vida',
+        title: 'Viva a Vida',
+        artist: 'Milionário & José Rico',
         key: 'E',
         content: `
-E
-Elias no Carmelo
-     A         Am
-Na defesa do Torá
- E     B      C#m
-Ateia fogo às toras
-     F#             B    A    B
-Condenando os adoradores de Baal
+[Intro] A  E  B7  E  E7
+        A  E  B7  E
 
-E
-Ei-lo, João Batista
-      A          Am
-Na aurora do Evangelho
-E       B    C#m
-Clama a todo povo
-       F#m            B
-O arrependimento dos homens
-A       B        E
-Pois já vem o Messias
+     E
+Quebrei a taça da amargura
+Atirei seus pedaços ao vento
+                         B7
+Gritei bem alto: Viva a vida
+O sol que andava meio ausente
+Voltou a brilhar novamente
+       A                 E
+No sorriso da mulher querida
 
-    A                        B
-Rejubila desde o ventre de Izabel
-        E             A        B
-Já não chora os seus filhos a Raquel
-        A                       B
-Luz que arde nos desertos de Israel
-        E
-Não se cansa
-       A          B
-O seu verbo é um bordão
-       C#m       G#m         A   G#m F#m
-Vai em peles de camelo, gafanhoto e  mel
+           E
+As minhas lágrimas secaram para sempre
+Sua presença mandou a saudade embora
+           E7                  A
+Não sinto mais esta ansiedade louca
+                                E
+Quando de amor estava quase morrendo
+                                   B7
+Senti seus lábios para vida me trazendo
+                           E    E7
+Qual respiração de boca a boca
 
-E          B          C#m
-Voz que calaram na bandeja
-        G#m        A
-Ainda estronda no Jordão
-       E          B       A
-Sob a Pena de Talião a reparação
-F#m      G#m
-Benção divina
-A      B               E
-Pedagogia da reencarnação
+       A
+Só o amor vale tudo na vida
+                      E
+Só o amor é a inspiração
+                           B7
+Sem amor a esperança é perdida
+                       E
+Por amor escrevi esta canção
+       A
+Só o amor vale tudo na vida
+                      E
+Só o amor é a inspiração
+                           B7
+Sem amor a esperança é perdida
+                       E
+Por amor escrevi esta canção
+
+( A  E  B7  E  E7 )
+( A  E  B7  E )
+
+           E
+As minhas lágrimas secaram para sempre
+Sua presença mandou a saudade embora
+           E7                  A
+Não sinto mais esta ansiedade louca
+                                E
+Quando de amor estava quase morrendo
+                                   B7
+Senti seus lábios para vida me trazendo
+                           E    E7
+Qual respiração de boca a boca
+
+       A
+Só o amor vale tudo na vida
+                      E
+Só o amor é a inspiração
+                           B7
+Sem amor a esperança é perdida
+                       E
+Por amor escrevi esta canção
+       A
+Só o amor vale tudo na vida
+                      E
+Só o amor é a inspiração
+                           B7
+Sem amor a esperança é perdida
+                       E
+Por amor escrevi esta canção
+
+[Final] E  B7  E
+
+        `
+      },
+      {
+        id: 'telefone-mudo',
+        title: 'Telefone Mudo',
+        artist: 'Trio Parada Dura',
+        key: 'G',
+        content: `
+[Intro] G  F/A  G/B  
+        C  G  D  G
+        C  G  D  G
+
+[Primeira Parte]
+
+     C
+Eu quero que risque
+                    G
+O meu nome da sua agenda
+    D              C
+Esqueça o meu telefone
+           G
+Não me ligue mais
+     C
+Porque já estou cansado
+            G
+De ser o remédio
+                 D
+Pra curar o seu tédio
+                              G  
+Quando seus amores não lhe satisfaz
+
+(D/F#  C6/E)
 
 [Refrão]
 
-E       A                  E
-Endireitai as veredas do amor
-        A                     E
-Reconduzindo o rebanho ao Pastor
-        A            E
-Água e fogo na evolução
-        A       B      E
-Na geração da Regeneração
-        `
-      },
-      {
-        id: 'parnaso',
-        title: 'Parnaso de além túmulo',
-        artist: 'Tim e Vanessa',
-        key: 'A',
-        content: `
-A9   A9/G#     F#m7/4  E4
-Além       do túmulo
-            D           D#m5-
-O espírito canta, inda canta
-        A       Bm/A     A7+      D
-Seus ideais de paz, de amor e de luz
-            A     D    C#m7
-No ditoso país onde Jesus
-   Bm7         C#m7       D
-Impera com bondade sacrossanta
- A9    A9/G#     F#m7/4  E4
-Nessas       mansões
-          D           D#m5-
-A lira levanta, se levanta
-        A        Bm/A       A7+   D
-Glorificando o amor que em Deus transluz
-                A       D      C#m7
-Para o bem exalçar que nos conduz
-     Bm7      E          A
-À divina alegria pura e santa
-A         E/G#   D  E
-Nessa castália eterna
-A        E/G#     D  E
-Da harmonia transborda
-   A     E/G#        D  E
-A luz excelsa da poesia
-       A     E/G#        D        E
-Que a Terra toda inunda de esplendor
- F#m           D           A             
-Hinos das esperanças espargindo sobre os 
- E/G#
-homens
-    D              D#m5-
-Tornando-os mais unidos
-         A          E      D
-Na ascensão para o belo e para o amor
-        `
-      },
-      {
-        id: 'juventude',
-        title: 'Juventude e Vida',
-        artist: 'Tim e Vanessa',
-        key: 'C',
-        content: `
-C
-Vida na Verdade
-   G/B
-È plena Liberdade
-F                G
-Enriquecida de Amor
-F                 G            C
-Força da vida , o Bem em plenitude
-   Em             F
-Os braços da Juventude
-E                  Am       G4 G G4 G
-Garantindo uma estrada florida
-F                G               C
-Como linda borboleta que sai do casulo
-   Em            F
-De asas tão coloridas
-  D7(9)/F#     G
-Surpresa descoberta
-F              G            C    G
-É a Liberdade já quase perfeita
-      C    Em
-Juventude e Vida
-F                 G
-O Saber namora o coração
- C          Em
-O Pai conta com a definição
-F                  G             C   G
-De quem na Verdade valoriza a vida        `
+    D
+Cansei de ser o seu palhaço
+   C             G
+Fazer o que sempre quis
+                     D
+Cansei de curar sua fossa
+             C               G  
+Quando você não se sentia feliz
+
+(D/F#  C6/E)
+
+    D
+Por isso é que decidi
+   C            G
+O meu telefone cortar
+                        D
+Você vai discar várias vezes
+          C        D    G 
+Telefone mudo não pode chamar
+
+[Solo]  G  F/A  G/B  
+        C  G  D  G
+        C  G  D  G
+
+[Primeira Parte]
+
+     C
+Eu quero que risque
+                    G
+O meu nome da sua agenda
+    D              C
+Esqueça o meu telefone
+           G
+Não me ligue mais
+     C
+Porque já estou cansado
+            G
+De ser o remédio
+                 D
+Pra curar o seu tédio
+                              G  
+Quando seus amores não lhe satisfaz
+
+(D/F#  C6/E)
+
+[Refrão]
+
+    D
+Cansei de ser o seu palhaço
+   C             G
+Fazer o que sempre quis
+                     D
+Cansei de curar sua fossa
+             C               G  
+Quando você não se sentia feliz
+
+(D/F#  C6/E)
+
+    D
+Por isso é que decidi
+   C            G
+O meu telefone cortar
+                        D
+Você vai discar várias vezes
+          C        D    G 
+Telefone mudo não pode chamar
+
+[Solo final]
+
+D  G  D  G 
+`
       },
       {
         id: 'patria',

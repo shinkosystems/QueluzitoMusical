@@ -64,7 +64,7 @@ function App() {
           >
             <img 
               src="/logo.jpg" 
-              alt="Logo GEP 120 Anos" 
+              alt="Musica" 
               style={{ 
                 height: '45px', 
                 width: '45px', 
@@ -74,7 +74,7 @@ function App() {
               }} 
             />
             <span style={{ fontFamily: 'var(--font-title)', fontWeight: 700, fontSize: '1.25rem', letterSpacing: '0.05em', color: 'var(--text-primary)' }}>
-              GEP <span style={{ color: 'var(--primary)' }}>CIFRAS</span>
+              Queluzito <span style={{ color: 'var(--primary)' }}>Musical</span>
             </span>
           </div>
           
@@ -103,7 +103,7 @@ function App() {
         color: 'var(--text-muted)'
       }}>
         <div className="container">
-          <p>© {new Date().getFullYear()} GEP Cifras. Desenvolvido para acessibilidade musical.</p>
+          <p>© {new Date().getFullYear()} Queluzito Musical. Desenvolvido para acessibilidade musical.</p>
         </div>
       </footer>
     </div>
