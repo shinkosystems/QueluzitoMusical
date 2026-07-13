@@ -39,7 +39,7 @@ body {
   font-family: var(--font-text);
   line-height: 1.5;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -250,8 +250,9 @@ h1, h2, h3, h4 {
 /* Barra lateral de acordes */
 .chords-sidebar {
   position: sticky;
-  top: 80px;
-  max-height: calc(100vh - 110px);
+  top: 95px;
+  z-index: 10;
+  max-height: calc(100vh - 130px);
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 16px;

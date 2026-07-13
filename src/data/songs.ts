@@ -30,7 +30,7 @@ export const SONG_BLOCKS: SongBlock[] = [
 E  A  E  A 
 E  A  E  A  E  A
 
-[Primeira Parte]
+\Primeira Parte\
 
 A
   Toda vez que eu viajava 
@@ -49,7 +49,7 @@ Toque o berrante, seu moço
                       A
 Que é pra eu ficar ouvindo
 
-[Segunda Parte]
+\Segunda Parte\
 
        D
 Quando a boiada passava 
@@ -69,7 +69,7 @@ Meu berrante ia tocando
 ( E  A  E  A )
 ( E  A  E  A  E  A )
 
-[Terceira Parte]
+\Terceira Parte\
 
 A
   Nos caminhos desta vida 
@@ -88,7 +88,7 @@ Vendo a porteira fechada
                   A
 O menino não avistei
 
-[Quarta Parte]
+\Quarta Parte\
 
    D
 Apeei do meu cavalo 
@@ -110,7 +110,7 @@ Foi um boi sem coração
 ( E  A  E  A )
 ( E  A  E  A  E  A )
 
-[Quinta Parte]
+\Quinta Parte\
 
 A
   Lá pras bandas de Ouro Fino 
@@ -129,7 +129,7 @@ Daquele rosto trigueiro
                    A
 Desejando-me boa viagem
 
-[Sexta Parte]
+\Sexta Parte\
 
     D
 A cruzinha no estradão 

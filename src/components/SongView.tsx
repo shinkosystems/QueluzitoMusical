@@ -174,9 +174,12 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
         const regex = /\[([^\]]+)\]/g;
         let match;
         while ((match = regex.exec(line)) !== null) {
-          const transposed = transposeChord(match[1], transposeLevel);
-          if (!chords.includes(transposed)) {
-            chords.push(transposed);
+          const token = match[1];
+          if (isChord(token)) {
+            const transposed = transposeChord(token, transposeLevel);
+            if (!chords.includes(transposed)) {
+              chords.push(transposed);
+            }
           }
         }
       }
