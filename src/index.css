@@ -127,13 +127,13 @@ h1, h2, h3, h4 {
   border-bottom: none;
 }
 
-/* Layout de Cifra (Cifra Club-like) */
+/* Layout de Cifra (Duas colunas no Desktop) */
 .cifra-layout {
   display: grid;
-  grid-template-columns: 240px 1fr 280px;
-  gap: 32px;
+  grid-template-columns: 1fr 280px;
+  gap: 24px;
   align-items: start;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 
@@ -250,11 +250,21 @@ h1, h2, h3, h4 {
 /* Barra lateral de acordes */
 .chords-sidebar {
   position: sticky;
-  top: 100px;
+  top: 80px;
+  max-height: calc(100vh - 110px);
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chords-sidebar-scroll {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 16px;
+  padding-right: 4px;
 }
 
 .chords-grid {
@@ -293,9 +303,10 @@ h1, h2, h3, h4 {
   .cifra-layout {
     grid-template-columns: 1fr;
   }
-  .sidebar-controls, .chords-sidebar {
+  .chords-sidebar {
     position: relative;
     top: auto;
+    max-height: none;
   }
 }
 

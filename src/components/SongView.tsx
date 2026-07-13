@@ -299,140 +299,166 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
   return (
     <div className="container" style={{ paddingBottom: '120px' }}>
       
-      {/* Barra superior de navegação da música */}
-      <div style={{ 
+      {/* Cabeçalho da Música com Navegação Unificada */}
+      <header style={{ 
         display: 'flex', 
         justifyContent: 'space-between', 
         alignItems: 'center', 
-        marginTop: '20px',
-        gap: '12px',
+        marginTop: '24px',
+        borderBottom: '1px solid var(--border-color)',
+        paddingBottom: '16px',
+        gap: '16px',
         flexWrap: 'wrap'
       }}>
-        <button 
-          onClick={onBack}
-          className="btn-ctrl"
-          style={{ width: 'fit-content', padding: '10px 20px', gap: '8px' }}
-          aria-label="Voltar para a lista de músicas"
-        >
-          ⬅️ Voltar ao Catálogo
-        </button>
+        {/* Esquerda: Título, Artista e Tom Original */}
+        <div style={{ flex: '1 1 300px' }}>
+          <h1 style={{ fontSize: '2.2rem', fontWeight: 700, color: 'var(--text-primary)', margin: 0 }}>{song.title}</h1>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', marginTop: '4px', margin: 0 }}>
+            {song.artist} | Tom original: <strong style={{ color: 'var(--primary)' }}>{song.key}</strong>
+          </p>
+        </div>
 
-        {currentBlock && (
-          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-            <button
-              onClick={() => prevSong && handleNavigate(prevSong.id)}
-              className="btn-ctrl"
-              disabled={!prevSong}
-              style={{
-                opacity: prevSong ? 1 : 0.4,
-                cursor: prevSong ? 'pointer' : 'not-allowed',
-                padding: '10px 16px'
-              }}
-              aria-label="Música anterior do bloco"
-            >
-              ◀️ Anterior
-            </button>
-            <span style={{
-              fontFamily: 'var(--font-title)',
-              fontSize: '0.9rem',
-              color: 'var(--text-secondary)',
-              fontWeight: 600,
-              padding: '0 4px'
-            }}>
-              {currentBlock.name} ({currentSongIdx + 1}/{blockSongs.length})
-            </span>
-            <button
-              onClick={() => nextSong && handleNavigate(nextSong.id)}
-              className="btn-ctrl"
-              disabled={!nextSong}
-              style={{
-                opacity: nextSong ? 1 : 0.4,
-                cursor: nextSong ? 'pointer' : 'not-allowed',
-                padding: '10px 16px'
-              }}
-              aria-label="Próxima música do bloco"
-            >
-              Próxima ▶️
-            </button>
-          </div>
-        )}
-      </div>
+        {/* Direita: Botões de Controle e Navegação */}
+        <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+          <button 
+            onClick={onBack}
+            className="btn-ctrl"
+            style={{ width: 'fit-content', padding: '10px 16px', gap: '8px' }}
+            aria-label="Voltar para a lista de músicas"
+          >
+            ⬅️ Voltar
+          </button>
 
-      {/* Cabeçalho da Música */}
-      <header style={{ marginTop: '24px', borderBottom: '1px solid var(--border-color)', paddingBottom: '16px' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 700, color: 'var(--text-primary)' }}>{song.title}</h1>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '1.2rem', marginTop: '4px' }}>
-          {song.artist} | Tom original: <strong style={{ color: 'var(--primary)' }}>{song.key}</strong>
-        </p>
+          {currentBlock && (
+            <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+              <button
+                onClick={() => prevSong && handleNavigate(prevSong.id)}
+                className="btn-ctrl"
+                disabled={!prevSong}
+                style={{
+                  opacity: prevSong ? 1 : 0.4,
+                  cursor: prevSong ? 'pointer' : 'not-allowed',
+                  padding: '10px 12px'
+                }}
+                aria-label="Música anterior do bloco"
+              >
+                ◀️ Anterior
+              </button>
+              <span style={{
+                fontFamily: 'var(--font-title)',
+                fontSize: '0.85rem',
+                color: 'var(--text-secondary)',
+                fontWeight: 600,
+                padding: '0 4px',
+                whiteSpace: 'nowrap'
+              }}>
+                {currentBlock.name} ({currentSongIdx + 1}/{blockSongs.length})
+              </span>
+              <button
+                onClick={() => nextSong && handleNavigate(nextSong.id)}
+                className="btn-ctrl"
+                disabled={!nextSong}
+                style={{
+                  opacity: nextSong ? 1 : 0.4,
+                  cursor: nextSong ? 'pointer' : 'not-allowed',
+                  padding: '10px 12px'
+                }}
+                aria-label="Próxima música do bloco"
+              >
+                Próxima ▶️
+              </button>
+            </div>
+          )}
+        </div>
       </header>
 
-      {/* Layout de Visualização Normal */}
-      <div className="cifra-layout">
-        
-        {/* Coluna de Controles (Esquerda - Omitida no mobile) */}
-        <aside className="sidebar-controls desktop-only-aside" aria-label="Controles de exibição e rolagem">
-          <div className="control-group">
-            <label>Tamanho do Texto</label>
-            <div className="control-buttons">
-              <button onClick={() => handleZoom(-2)} className="btn-ctrl" aria-label="Diminuir fonte">-</button>
-              <button onClick={() => setFontSize(16)} className="btn-ctrl" aria-label="Restaurar tamanho padrão">A</button>
-              <button onClick={() => handleZoom(2)} className="btn-ctrl" aria-label="Aumentar fonte">+</button>
-            </div>
+      {/* Barra de Ajustes Horizontal (Desktop/Tablet) */}
+      <section className="toolbar-controls desktop-only-aside" style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: '20px',
+        background: 'var(--bg-card)',
+        border: '1px solid var(--border-color)',
+        borderRadius: '16px',
+        padding: '16px 24px',
+        marginTop: '20px',
+        boxShadow: 'var(--shadow-sm)',
+        flexWrap: 'wrap'
+      }} aria-label="Ajustes de cifragem">
+        {/* Tamanho da Fonte */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span style={{ fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-secondary)' }}>Texto:</span>
+          <div style={{ display: 'flex', gap: '6px' }}>
+            <button onClick={() => handleZoom(-2)} className="btn-ctrl" style={{ padding: '6px 12px' }} aria-label="Diminuir fonte">-</button>
+            <button onClick={() => setFontSize(16)} className="btn-ctrl" style={{ padding: '6px 12px' }} aria-label="Restaurar tamanho padrão">A</button>
+            <button onClick={() => handleZoom(2)} className="btn-ctrl" style={{ padding: '6px 12px' }} aria-label="Aumentar fonte">+</button>
           </div>
+        </div>
 
-          <div className="control-group">
-            <label>Tom / Afinação</label>
-            <div className="control-buttons">
-              <button onClick={() => handleTranspose(-1)} className="btn-ctrl" aria-label="Diminuir meio tom">♭</button>
-              <button 
-                onClick={() => setTransposeLevel(0)} 
-                className="btn-ctrl active" 
-                style={{ flex: 1.5 }}
-                aria-label={`Tom atual transposto em ${transposeLevel} semitones`}
-              >
-                {transposeLevel === 0 ? 'Original' : `${transposeLevel > 0 ? '+' : ''}${transposeLevel}`}
-              </button>
-              <button onClick={() => handleTranspose(1)} className="btn-ctrl" aria-label="Aumentar meio tom">♯</button>
-            </div>
+        {/* Tom / Transposição */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span style={{ fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-secondary)' }}>Tom:</span>
+          <div style={{ display: 'flex', gap: '6px' }}>
+            <button onClick={() => handleTranspose(-1)} className="btn-ctrl" style={{ padding: '6px 12px' }} aria-label="Diminuir meio tom">♭</button>
+            <button 
+              onClick={() => setTransposeLevel(0)} 
+              className="btn-ctrl active" 
+              style={{ padding: '6px 16px', minWidth: '80px' }}
+              aria-label={`Tom atual transposto em ${transposeLevel} semitones`}
+            >
+              {transposeLevel === 0 ? 'Original' : `${transposeLevel > 0 ? '+' : ''}${transposeLevel}`}
+            </button>
+            <button onClick={() => handleTranspose(1)} className="btn-ctrl" style={{ padding: '6px 12px' }} aria-label="Aumentar meio tom">♯</button>
           </div>
+        </div>
 
-          <div className="control-group">
-            <label>Rolagem Auto</label>
+        {/* Rolagem Automática */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span style={{ fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-secondary)' }}>Rolagem:</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <button 
               onClick={() => setIsScrolling(!isScrolling)} 
               className={`btn-ctrl ${isScrolling ? 'active' : ''}`}
+              style={{ padding: '6px 16px', gap: '8px', minWidth: '150px' }}
               aria-label={isScrolling ? 'Pausar rolagem automática' : 'Iniciar rolagem automática'}
             >
               {isScrolling ? '⏸️ Pausar (Espaço)' : '▶️ Rolar (Espaço)'}
             </button>
             {isScrolling && (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginTop: '4px' }}>
-                <label style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Velocidade: {scrollSpeed}</label>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', whiteSpace: 'nowrap' }}>Velocidade: {scrollSpeed}</span>
                 <input 
                   type="range" 
                   min="1" 
                   max="5" 
                   value={scrollSpeed} 
                   onChange={(e) => setScrollSpeed(Number(e.target.value))} 
-                  style={{ width: '100%', accentColor: 'var(--primary)' }}
+                  style={{ width: '80px', accentColor: 'var(--primary)', cursor: 'pointer' }}
                 />
               </div>
             )}
           </div>
+        </div>
 
-          <div className="control-group">
-            <label>Leitura Limpa</label>
-            <button 
-              onClick={() => setHideChords(!hideChords)} 
-              className={`btn-ctrl ${hideChords ? 'active' : ''}`}
-              aria-label={hideChords ? 'Mostrar cifras' : 'Ocultar cifras para leitura pura'}
-            >
-              {hideChords ? '👀 Mostrar Cifras' : '🔇 Ocultar Cifras'}
-            </button>
-          </div>
-        </aside>
+        {/* Leitura Limpa */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <span style={{ fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', color: 'var(--text-secondary)' }}>Cifras:</span>
+          <button 
+            onClick={() => setHideChords(!hideChords)} 
+            className={`btn-ctrl ${hideChords ? 'active' : ''}`}
+            style={{ padding: '6px 16px' }}
+            aria-label={hideChords ? 'Mostrar cifras' : 'Ocultar cifras para leitura pura'}
+          >
+            {hideChords ? '👀 Mostrar' : '🔇 Ocultar'}
+          </button>
+        </div>
+      </section>
 
-        {/* Coluna da Cifra (Centro) */}
+      {/* Layout de Cifra de Duas Colunas */}
+      <div className="cifra-layout">
+        
+        {/* Coluna da Cifra (Centro/Esquerda) */}
         <main 
           ref={cifraContainerRef}
           className="cifra-container" 
@@ -442,22 +468,24 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
           {renderCifra()}
         </main>
 
-        {/* Coluna de Diagramas de Teclado (Direita - Omitida no mobile) */}
+        {/* Coluna de Diagramas de Teclado Sticky (Direita - Omitida no mobile) */}
         <aside className="chords-sidebar desktop-only-aside" aria-label="Diagramas dos acordes">
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, borderBottom: '1px solid var(--border-color)', paddingBottom: '8px' }}>
             🎹 Acordes no Teclado
           </h2>
-          {uniqueChords.length === 0 ? (
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '12px' }}>Sem acordes para exibir.</p>
-          ) : (
-            <div className="chords-grid" style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '16px' }}>
-              {uniqueChords.map(chord => (
-                <div key={chord} style={{ background: 'var(--bg-card-hover)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '12px 6px' }}>
-                  <ChordDiagram chord={chord} />
-                </div>
-              ))}
-            </div>
-          )}
+          <div className="chords-sidebar-scroll">
+            {uniqueChords.length === 0 ? (
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Sem acordes para exibir.</p>
+            ) : (
+              <div className="chords-grid" style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                {uniqueChords.map(chord => (
+                  <div key={chord} style={{ background: 'var(--bg-card-hover)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '12px 6px' }}>
+                    <ChordDiagram chord={chord} />
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         </aside>
       </div>
 
@@ -571,7 +599,7 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxHeight: '55vh', overflowY: 'auto', paddingRight: '5px' }}>
                 {uniqueChords.map(chord => (
                   <div key={chord} style={{ background: 'var(--bg-card-hover)', border: '1px solid var(--border-color)', borderRadius: '12px', padding: '16px 8px' }}>
-                    <ChordDiagram chord={chord} />
+                     <ChordDiagram chord={chord} />
                   </div>
                 ))}
               </div>
