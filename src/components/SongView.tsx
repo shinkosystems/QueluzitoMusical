@@ -31,9 +31,30 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
   const baseFontSizeRef = useRef<number>(16);
 
   // Sincroniza estado se a música mudar
+  const [notes, setNotes] = useState<Record<number, string>>({});
+  const [editingLineIdx, setEditingLineIdx] = useState<number | null>(null);
+  const [editingText, setEditingText] = useState('');
+
+  // Carrega as anotações do localStorage para a música atual
+  useEffect(() => {
+    const savedNotes = localStorage.getItem(`notes_${song.id}`);
+    if (savedNotes) {
+      try {
+        setNotes(JSON.parse(savedNotes));
+      } catch (e) {
+        console.error("Erro ao carregar anotações", e);
+        setNotes({});
+      }
+    } else {
+      setNotes({});
+    }
+  }, [song]);
+
   useEffect(() => {
     setTransposeLevel(0);
     setActiveSheet('none');
+    setEditingLineIdx(null);
+    setEditingText('');
   }, [song]);
 
   // Transpor tom em semitones
@@ -134,12 +155,18 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
       } else if (e.key === '-') {
         e.preventDefault();
         handleZoom(-2);
+      } else if (e.key === 'ArrowRight' && isScrolling) {
+        e.preventDefault();
+        setScrollSpeed(prev => Math.min(5, prev + 1));
+      } else if (e.key === 'ArrowLeft' && isScrolling) {
+        e.preventDefault();
+        setScrollSpeed(prev => Math.max(1, prev - 1));
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [isScrolling]);
 
   // Busca o bloco ao qual esta música pertence
   const currentBlock = SONG_BLOCKS.find(b => b.songs.some(s => s.id === song.id));
@@ -188,6 +215,26 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
     return chords;
   };
 
+  const handleSaveNote = (lineIdx: number) => {
+    const updatedNotes = { ...notes };
+    if (editingText.trim()) {
+      updatedNotes[lineIdx] = editingText;
+    } else {
+      delete updatedNotes[lineIdx];
+    }
+    setNotes(updatedNotes);
+    localStorage.setItem(`notes_${song.id}`, JSON.stringify(updatedNotes));
+    setEditingLineIdx(null);
+    setEditingText('');
+  };
+
+  const handleDeleteNote = (lineIdx: number) => {
+    const updatedNotes = { ...notes };
+    delete updatedNotes[lineIdx];
+    setNotes(updatedNotes);
+    localStorage.setItem(`notes_${song.id}`, JSON.stringify(updatedNotes));
+  };
+
   // Renderiza a cifra dividida em linhas e segmentos (acordes + sílabas)
   const renderCifra = () => {
     const lines = song.content.trim().split('\n');
@@ -197,12 +244,11 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
         return <div key={lineIdx} style={{ height: '1.5em' }} aria-hidden="true" />;
       }
 
-      if (line.startsWith('#') || (line.startsWith('(') && line.endsWith(')'))) {
-        return <div key={lineIdx} className="comment-line">{line}</div>;
-      }
+      let lineElement: React.ReactNode = null;
 
-      // Caso 1: Linha de Cifras Tradicional (detectada automaticamente)
-      if (isChordLine(line)) {
+      if (line.startsWith('#') || (line.startsWith('(') && line.endsWith(')'))) {
+        lineElement = <div className="comment-line">{line}</div>;
+      } else if (isChordLine(line)) {
         if (hideChords) return null; // Oculta a linha de acordes se hideChords for true
 
         const regex = /\S+/g;
@@ -252,47 +298,119 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
           lastOriginalEndIndex = item.startIndex + item.length;
         });
 
-        return (
-          <div key={lineIdx} className="cifra-line" style={{ display: 'block', lineHeight: '1.5', fontFamily: 'var(--font-cifra)' }}>
+        lineElement = (
+          <div className="cifra-line" style={{ display: 'block', lineHeight: '1.5', fontFamily: 'var(--font-cifra)' }}>
             {elements}
+          </div>
+        );
+      } else {
+        // Caso 2: Formato ChordPro (cifras inline [Chord]letra)
+        const segments: { chord: string; text: string }[] = [];
+        const segmentRegex = /(?:\[([^\]]+)\])?([^\[]*)/g;
+        let match;
+        let hasChords = false;
+
+        while ((match = segmentRegex.exec(line)) !== null) {
+          const chord = match[1] || '';
+          const text = match[2] || '';
+          
+          if (chord || text) {
+            segments.push({
+              chord: chord ? transposeChord(chord, transposeLevel) : '',
+              text
+            });
+            if (chord) hasChords = true;
+          }
+          if (segmentRegex.lastIndex === match.index) {
+            segmentRegex.lastIndex++;
+          }
+        }
+
+        lineElement = (
+          <div className="cifra-line" style={{ marginTop: hasChords && !hideChords ? '1.2em' : '0.2em' }}>
+            {segments.map((seg, segIdx) => (
+              <span key={segIdx} className="cifra-segment">
+                {seg.chord && !hideChords && (
+                  <span className="cifra-chord" aria-hidden="true">
+                    {seg.chord}
+                  </span>
+                )}
+                <span className="cifra-text">{seg.text}</span>
+              </span>
+            ))}
           </div>
         );
       }
 
-      // Caso 2: Formato ChordPro (cifras inline [Chord]letra)
-      const segments: { chord: string; text: string }[] = [];
-      const segmentRegex = /(?:\[([^\]]+)\])?([^\[]*)/g;
-      let match;
-      let hasChords = false;
-
-      while ((match = segmentRegex.exec(line)) !== null) {
-        const chord = match[1] || '';
-        const text = match[2] || '';
-        
-        if (chord || text) {
-          segments.push({
-            chord: chord ? transposeChord(chord, transposeLevel) : '',
-            text
-          });
-          if (chord) hasChords = true;
-        }
-        if (segmentRegex.lastIndex === match.index) {
-          segmentRegex.lastIndex++;
-        }
-      }
+      const hasNote = notes[lineIdx] !== undefined;
+      const isEditing = editingLineIdx === lineIdx;
 
       return (
-        <div key={lineIdx} className="cifra-line" style={{ marginTop: hasChords && !hideChords ? '1.2em' : '0.2em' }}>
-          {segments.map((seg, segIdx) => (
-            <span key={segIdx} className="cifra-segment">
-              {seg.chord && !hideChords && (
-                <span className="cifra-chord" aria-hidden="true">
-                  {seg.chord}
-                </span>
-              )}
-              <span className="cifra-text">{seg.text}</span>
-            </span>
-          ))}
+        <div key={lineIdx} className="cifra-line-wrapper">
+          {!hasNote && !isEditing && (
+            <button
+              onClick={() => {
+                setEditingLineIdx(lineIdx);
+                setEditingText('');
+              }}
+              className="btn-add-note"
+              title="Adicionar anotação"
+              aria-label="Adicionar anotação"
+            >
+              ＋
+            </button>
+          )}
+
+          {lineElement}
+
+          {isEditing && (
+            <div className="note-input-container">
+              <input
+                type="text"
+                value={editingText}
+                onChange={(e) => setEditingText(e.target.value)}
+                placeholder="Escreva sua anotação..."
+                className="note-input"
+                autoFocus
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    handleSaveNote(lineIdx);
+                  } else if (e.key === 'Escape') {
+                    setEditingLineIdx(null);
+                  }
+                }}
+              />
+              <button onClick={() => handleSaveNote(lineIdx)} className="btn-note-save">
+                Salvar
+              </button>
+              <button onClick={() => setEditingLineIdx(null)} className="btn-note-cancel">
+                Cancelar
+              </button>
+            </div>
+          )}
+
+          {hasNote && !isEditing && (
+            <div className="note-box">
+              <span 
+                onClick={() => {
+                  setEditingLineIdx(lineIdx);
+                  setEditingText(notes[lineIdx]);
+                }}
+                style={{ cursor: 'pointer' }}
+                title="Clique para editar"
+              >
+                📝 {notes[lineIdx]}
+              </span>
+              <button 
+                onClick={() => handleDeleteNote(lineIdx)} 
+                className="btn-note-delete"
+                title="Excluir anotação"
+                aria-label="Excluir anotação"
+              >
+                🗑️
+              </button>
+            </div>
+          )}
         </div>
       );
     });

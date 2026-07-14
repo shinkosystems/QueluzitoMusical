@@ -443,3 +443,161 @@ h1, h2, h3, h4 {
 @keyframes slideUp {
   to { transform: translateY(0); }
 }
+
+/* --- Estilos para Anotações Inline --- */
+
+.cifra-line-wrapper {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  margin-left: -28px;
+  transition: background-color var(--transition-fast);
+}
+
+.cifra-line-wrapper:hover {
+  background-color: rgba(140, 102, 31, 0.03);
+  border-radius: 4px;
+}
+
+/* O botão de adicionar anotação flutuante à esquerda */
+.btn-add-note {
+  position: absolute;
+  left: 2px;
+  top: 6px; /* alinhado ao topo da linha */
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
+  color: var(--primary);
+  font-size: 13px;
+  z-index: 5;
+  box-shadow: var(--shadow-sm);
+  padding: 0;
+  line-height: 1;
+}
+
+.cifra-line-wrapper:hover .btn-add-note {
+  opacity: 1;
+}
+
+.btn-add-note:hover {
+  background: var(--primary-light);
+  transform: scale(1.1);
+}
+
+/* O box da anotação */
+.note-box {
+  background-color: #FFFDE7;
+  border-left: 4px solid #FBC02D;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin: 4px 0 10px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-text);
+  font-size: 0.85rem;
+  color: #5D4037;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.note-box span {
+  flex: 1;
+  word-break: break-word;
+}
+
+/* Edição de anotação */
+.note-input-container {
+  margin: 4px 0 10px 28px;
+  display: flex;
+  gap: 8px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.note-input {
+  flex: 1;
+  padding: 6px 12px;
+  border: 1.5px solid #FBC02D;
+  border-radius: 6px;
+  background-color: #FFFDE7;
+  font-family: var(--font-text);
+  font-size: 0.85rem;
+  color: #5D4037;
+  outline: none;
+}
+
+.note-input:focus {
+  border-color: #F57F17;
+  box-shadow: 0 0 0 2px rgba(251, 192, 45, 0.2);
+}
+
+.btn-note-save {
+  background-color: #FBC02D;
+  color: #5D4037;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.btn-note-save:hover {
+  background-color: #FBC02D;
+}
+
+.btn-note-cancel {
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.btn-note-cancel:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.btn-note-delete {
+  background: transparent;
+  border: none;
+  color: #D32F2F;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast);
+}
+
+.btn-note-delete:hover {
+  background: rgba(211, 47, 47, 0.08);
+}
+
+@media (max-width: 768px) {
+  .btn-add-note {
+    opacity: 0.6;
+    left: 2px;
+  }
+  .cifra-line-wrapper {
+    padding-left: 24px;
+    margin-left: -24px;
+  }
+  .note-box, .note-input-container {
+    margin-left: 24px;
+  }
+}
