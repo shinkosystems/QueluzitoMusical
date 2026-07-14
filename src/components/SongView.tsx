@@ -1,17 +1,18 @@
 // @sos-edit: false
 import React, { useState, useEffect, useRef } from 'react';
-import { Song, SONG_BLOCKS } from '../data/songs';
+import { Song, SongBlock } from '../data/songs';
 import { transposeChord, isChord, isChordLine } from '../utils/music';
 import { ChordDiagram } from './ChordDiagram';
 
 interface SongViewProps {
   song: Song;
+  songBlocks: SongBlock[];
   onBack: () => void;
 }
 
 type MobileSheetType = 'none' | 'tools' | 'chords';
 
-export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
+export const SongView: React.FC<SongViewProps> = ({ song, songBlocks, onBack }) => {
   const [transposeLevel, setTransposeLevel] = useState(0);
   const [fontSize, setFontSize] = useState(16); // px
   const [hideChords, setHideChords] = useState(false);
@@ -169,7 +170,7 @@ export const SongView: React.FC<SongViewProps> = ({ song, onBack }) => {
   }, [isScrolling]);
 
   // Busca o bloco ao qual esta música pertence
-  const currentBlock = SONG_BLOCKS.find(b => b.songs.some(s => s.id === song.id));
+  const currentBlock = songBlocks.find(b => b.songs.some(s => s.id === song.id));
   const blockSongs = currentBlock ? currentBlock.songs : [];
   const currentSongIdx = blockSongs.findIndex(s => s.id === song.id);
   

@@ -2,10 +2,21 @@
 import { useState, useEffect } from 'react';
 import { SongList } from './components/SongList';
 import { SongView } from './components/SongView';
-import { Song, SONG_BLOCKS } from './data/songs';
+import { Song, SongBlock, SONG_BLOCKS } from './data/songs';
 
 function App() {
   const [currentSongId, setCurrentSongId] = useState<string | null>(null);
+  const [songBlocks, setSongBlocks] = useState<SongBlock[]>(() => {
+    const saved = localStorage.getItem('custom_song_blocks');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch (e) {
+        console.error("Erro ao carregar blocos de música salvos", e);
+      }
+    }
+    return SONG_BLOCKS;
+  });
 
   // Efeito para sincronizar o estado da música selecionada com a URL (Hash)
   useEffect(() => {
@@ -28,12 +39,24 @@ function App() {
 
   // Encontra a música ativa com base no ID da URL
   const currentSong = currentSongId
-    ? SONG_BLOCKS.flatMap(b => b.songs).find(s => s.id === currentSongId) || null
+    ? songBlocks.flatMap(b => b.songs).find(s => s.id === currentSongId) || null
     : null;
 
   // Ao selecionar uma música, atualiza o hash da URL
   const handleSelectSong = (song: Song) => {
     window.location.hash = `#/musica/${song.id}`;
+  };
+
+  const handleUpdateSongBlocks = (newBlocks: SongBlock[]) => {
+    setSongBlocks(newBlocks);
+    localStorage.setItem('custom_song_blocks', JSON.stringify(newBlocks));
+  };
+
+  const handleResetSongBlocks = () => {
+    if (window.confirm("Deseja mesmo restaurar a ordem padrão dos blocos e músicas?")) {
+      setSongBlocks(SONG_BLOCKS);
+      localStorage.removeItem('custom_song_blocks');
+    }
   };
 
   // Ao voltar, limpa o hash
@@ -87,9 +110,14 @@ function App() {
       {/* Conteúdo Principal */}
       <main style={{ minHeight: 'calc(100vh - 120px)' }}>
         {currentSong ? (
-          <SongView song={currentSong} onBack={handleBack} />
+          <SongView song={currentSong} songBlocks={songBlocks} onBack={handleBack} />
         ) : (
-          <SongList songBlocks={SONG_BLOCKS} onSelectSong={handleSelectSong} />
+          <SongList 
+            songBlocks={songBlocks} 
+            onSelectSong={handleSelectSong}
+            onUpdateSongBlocks={handleUpdateSongBlocks}
+            onResetSongBlocks={handleResetSongBlocks}
+          />
         )}
       </main>
 
