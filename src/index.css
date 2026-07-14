@@ -705,3 +705,9 @@ h1, h2, h3, h4 {
   border-top: 3px solid var(--primary) !important;
   margin-top: 4px;
 }
+
+.song-drag-item.selected {
+  border: 1.5px solid var(--primary) !important;
+  background-color: var(--primary-light) !important;
+  box-shadow: 0 0 0 3px rgba(140, 102, 31, 0.2);
+}

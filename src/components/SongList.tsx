@@ -16,17 +16,23 @@ export const SongList: React.FC<SongListProps> = ({
   onResetSongBlocks,
 }) => {
   const [isOrganizeMode, setIsOrganizeMode] = useState(false);
+  const [draggedSong, setDraggedSong] = useState<{ id: string; blockId: string } | null>(null);
   const [draggingSongId, setDraggingSongId] = useState<string | null>(null);
   const [dragOverBlockId, setDragOverBlockId] = useState<string | null>(null);
   const [dragOverSongId, setDragOverSongId] = useState<string | null>(null);
+  
+  // Estado para suporte a cliques/toques (Click-to-Move) no mobile
+  const [selectedSong, setSelectedSong] = useState<{ id: string; blockId: string } | null>(null);
 
   const handleDragStart = (e: React.DragEvent, songId: string, sourceBlockId: string) => {
-    e.dataTransfer.setData('text/plain', JSON.stringify({ songId, sourceBlockId }));
+    e.dataTransfer.setData('text/plain', songId);
     e.dataTransfer.effectAllowed = 'move';
+    setDraggedSong({ id: songId, blockId: sourceBlockId });
     setDraggingSongId(songId);
   };
 
   const handleDragEnd = () => {
+    setDraggedSong(null);
     setDraggingSongId(null);
     setDragOverBlockId(null);
     setDragOverSongId(null);
@@ -52,55 +58,102 @@ export const SongList: React.FC<SongListProps> = ({
     setDragOverBlockId(null);
     setDragOverSongId(null);
 
-    try {
-      const dataStr = e.dataTransfer.getData('text/plain');
-      if (!dataStr) return;
-      const { songId, sourceBlockId } = JSON.parse(dataStr);
+    if (!draggedSong) return;
+    const { id: songId, blockId: sourceBlockId } = draggedSong;
 
-      if (!songId || !sourceBlockId) return;
+    // Se for a mesma música sobre ela mesma, não faz nada
+    if (songId === targetSongId) return;
 
-      // Se for a mesma música sobre ela mesma, não faz nada
-      if (songId === targetSongId) return;
+    // Encontra a música nos blocos atuais
+    const sourceBlock = songBlocks.find(b => b.id === sourceBlockId);
+    const songToMove = sourceBlock?.songs.find(s => s.id === songId);
 
-      // Encontra a música nos blocos atuais
-      const sourceBlock = songBlocks.find(b => b.id === sourceBlockId);
-      const songToMove = sourceBlock?.songs.find(s => s.id === songId);
+    if (!songToMove) return;
 
-      if (!songToMove) return;
+    // 1. Remove a música do bloco de origem
+    let updatedBlocks = songBlocks.map(b => {
+      if (b.id === sourceBlockId) {
+        return {
+          ...b,
+          songs: b.songs.filter(s => s.id !== songId)
+        };
+      }
+      return b;
+    });
 
-      // 1. Remove a música do bloco de origem
-      let updatedBlocks = songBlocks.map(b => {
-        if (b.id === sourceBlockId) {
-          return {
-            ...b,
-            songs: b.songs.filter(s => s.id !== songId)
-          };
+    // 2. Insere a música no bloco de destino
+    updatedBlocks = updatedBlocks.map(b => {
+      if (b.id === targetBlockId) {
+        const songsCopy = [...b.songs];
+        if (targetSongId) {
+          const idx = songsCopy.findIndex(s => s.id === targetSongId);
+          songsCopy.splice(idx, 0, songToMove);
+        } else {
+          songsCopy.push(songToMove);
         }
-        return b;
-      });
+        return {
+          ...b,
+          songs: songsCopy
+        };
+      }
+      return b;
+    });
 
-      // 2. Insere a música no bloco de destino
-      updatedBlocks = updatedBlocks.map(b => {
-        if (b.id === targetBlockId) {
-          const songsCopy = [...b.songs];
-          if (targetSongId) {
-            const idx = songsCopy.findIndex(s => s.id === targetSongId);
-            songsCopy.splice(idx, 0, songToMove);
-          } else {
-            songsCopy.push(songToMove);
-          }
-          return {
-            ...b,
-            songs: songsCopy
-          };
-        }
-        return b;
-      });
+    onUpdateSongBlocks(updatedBlocks);
+    setDraggedSong(null);
+  };
 
-      onUpdateSongBlocks(updatedBlocks);
-    } catch (err) {
-      console.error("Erro ao reorganizar música:", err);
+  // Lógica do Click-to-Move (Mobile & Acessibilidade)
+  const handleSongClick = (songId: string, blockId: string) => {
+    if (!isOrganizeMode) return;
+    if (selectedSong && selectedSong.id === songId) {
+      setSelectedSong(null);
+    } else {
+      setSelectedSong({ id: songId, blockId });
     }
+  };
+
+  const handleMoveSelectedToBlock = (targetBlockId: string) => {
+    if (!selectedSong) return;
+    const { id: songId, blockId: sourceBlockId } = selectedSong;
+
+    if (sourceBlockId === targetBlockId) return;
+
+    const sourceBlock = songBlocks.find(b => b.id === sourceBlockId);
+    const songToMove = sourceBlock?.songs.find(s => s.id === songId);
+
+    if (!songToMove) return;
+
+    // 1. Remove do bloco de origem
+    let updatedBlocks = songBlocks.map(b => {
+      if (b.id === sourceBlockId) {
+        return {
+          ...b,
+          songs: b.songs.filter(s => s.id !== songId)
+        };
+      }
+      return b;
+    });
+
+    // 2. Insere ao final do bloco de destino
+    updatedBlocks = updatedBlocks.map(b => {
+      if (b.id === targetBlockId) {
+        return {
+          ...b,
+          songs: [...b.songs, songToMove]
+        };
+      }
+      return b;
+    });
+
+    onUpdateSongBlocks(updatedBlocks);
+    setSelectedSong(null);
+  };
+
+  const handleToggleOrganizeMode = () => {
+    setIsOrganizeMode(!isOrganizeMode);
+    setSelectedSong(null);
+    setDraggedSong(null);
   };
 
   return (
@@ -118,11 +171,21 @@ export const SongList: React.FC<SongListProps> = ({
       {/* Barra de Controle de Organização */}
       <div className="organize-bar">
         <span style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', fontWeight: 500 }}>
-          {isOrganizeMode ? '🛠️ Arraste as músicas pelas alças para reordenar ou mover entre blocos.' : '📂 Organize e distribua suas músicas em blocos personalizados.'}
+          {isOrganizeMode ? (
+            selectedSong ? (
+              <span style={{ color: 'var(--primary)', fontWeight: 600 }}>
+                👉 Música selecionada! Clique no botão "[ Mover para cá ]" do bloco de destino.
+              </span>
+            ) : (
+              '🛠️ Arraste as músicas ou clique em uma delas para selecioná-la e movê-la.'
+            )
+          ) : (
+            '📂 Organize e distribua suas músicas em blocos personalizados.'
+          )}
         </span>
         <div style={{ display: 'flex', gap: '10px' }}>
           <button 
-            onClick={() => setIsOrganizeMode(!isOrganizeMode)}
+            onClick={handleToggleOrganizeMode}
             className={`btn-toggle-organize ${isOrganizeMode ? 'active' : ''}`}
             aria-label="Alternar modo de organização dos blocos"
           >
@@ -146,6 +209,8 @@ export const SongList: React.FC<SongListProps> = ({
         <div className="block-grid">
           {songBlocks.map(block => {
             const isDragOver = dragOverBlockId === block.id;
+            const canShowMoveHere = selectedSong && selectedSong.blockId !== block.id;
+            
             return (
               <section 
                 key={block.id} 
@@ -155,7 +220,26 @@ export const SongList: React.FC<SongListProps> = ({
                 onDragLeave={isOrganizeMode ? () => setDragOverBlockId(null) : undefined}
                 onDrop={(e) => isOrganizeMode && handleDrop(e, block.id, null)}
               >
-                <h3 id={`title-${block.id}`}>{block.name}</h3>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                  <h3 id={`title-${block.id}`} style={{ margin: 0 }}>{block.name}</h3>
+                  {isOrganizeMode && canShowMoveHere && (
+                    <button
+                      onClick={() => handleMoveSelectedToBlock(block.id)}
+                      className="btn-ctrl active"
+                      style={{ 
+                        padding: '4px 8px', 
+                        fontSize: '0.75rem', 
+                        borderRadius: '6px', 
+                        background: 'var(--primary)',
+                        color: '#fff',
+                        border: 'none',
+                        cursor: 'pointer'
+                      }}
+                    >
+                       colocar aqui 📥
+                    </button>
+                  )}
+                </div>
                 
                 <ul className="block-songs-list" style={{ minHeight: isOrganizeMode ? '100px' : 'auto' }}>
                   {block.songs.length === 0 && isOrganizeMode && (
@@ -166,6 +250,7 @@ export const SongList: React.FC<SongListProps> = ({
                   {block.songs.map(song => {
                     const isDragging = draggingSongId === song.id;
                     const isDragOverSong = dragOverSongId === song.id;
+                    const isSelected = selectedSong?.id === song.id;
 
                     return (
                       <li 
@@ -176,7 +261,8 @@ export const SongList: React.FC<SongListProps> = ({
                         onDragOver={(e) => isOrganizeMode && handleDragOverSong(e, song.id)}
                         onDragLeave={isOrganizeMode ? () => setDragOverSongId(null) : undefined}
                         onDrop={(e) => isOrganizeMode && handleDrop(e, block.id, song.id)}
-                        className={isOrganizeMode ? `song-drag-item ${isDragging ? 'dragging' : ''} ${isDragOverSong ? 'drag-over-song' : ''}` : ''}
+                        onClick={() => isOrganizeMode && handleSongClick(song.id, block.id)}
+                        className={isOrganizeMode ? `song-drag-item ${isDragging ? 'dragging' : ''} ${isDragOverSong ? 'drag-over-song' : ''} ${isSelected ? 'selected' : ''}` : ''}
                       >
                         {isOrganizeMode ? (
                           <>
