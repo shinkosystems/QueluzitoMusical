@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Song, SongBlock } from '../data/songs';
 import { isAuthenticated, setAuthenticated } from '../auth/credentials';
 import { LoginModal } from './LoginModal';
+import { AddSongPanel } from './AddSongPanel';
 
 interface SongListProps {
   songBlocks: SongBlock[];
@@ -32,6 +33,9 @@ export const SongList: React.FC<SongListProps> = ({
   // Estados para criação de blocos
   const [showAddBlockInput, setShowAddBlockInput] = useState(false);
   const [newBlockName, setNewBlockName] = useState('');
+
+  // Estados para adição de músicas
+  const [isAddSongPanelOpen, setIsAddSongPanelOpen] = useState(false);
 
   // Estados para edição do nome de blocos
   const [editingBlockId, setEditingBlockId] = useState<string | null>(null);
@@ -235,6 +239,36 @@ export const SongList: React.FC<SongListProps> = ({
     setEditingBlockName('');
   };
 
+  const handleAddSong = (newSong: Song, targetBlockId: string) => {
+    const updatedBlocks = songBlocks.map(b => {
+      if (b.id === targetBlockId) {
+        return {
+          ...b,
+          songs: [...b.songs, newSong]
+        };
+      }
+      return b;
+    });
+    onUpdateSongBlocks(updatedBlocks);
+  };
+
+  const handleDeleteSong = (songId: string, blockId: string, songTitle: string) => {
+    if (!window.confirm(`Deseja realmente excluir a música "${songTitle}" deste bloco?`)) return;
+    const updatedBlocks = songBlocks.map(b => {
+      if (b.id === blockId) {
+        return {
+          ...b,
+          songs: b.songs.filter(s => s.id !== songId)
+        };
+      }
+      return b;
+    });
+    onUpdateSongBlocks(updatedBlocks);
+    if (selectedSong && selectedSong.id === songId) {
+      setSelectedSong(null);
+    }
+  };
+
   const handleExportJSON = () => {
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(songBlocks, null, 2));
     const downloadAnchor = document.createElement('a');
@@ -325,6 +359,14 @@ export const SongList: React.FC<SongListProps> = ({
                 aria-label="Criar novo bloco de músicas"
               >
                 ＋ Novo Bloco
+              </button>
+              <button
+                onClick={() => setIsAddSongPanelOpen(true)}
+                className="btn-ctrl"
+                style={{ padding: '8px 16px', borderRadius: '8px', fontSize: '0.9rem', color: 'var(--primary)', borderColor: 'var(--primary)' }}
+                aria-label="Adicionar nova música"
+              >
+                ＋ Adicionar Música
               </button>
               <button
                 onClick={handleExportJSON}
@@ -519,20 +561,48 @@ export const SongList: React.FC<SongListProps> = ({
                         onDragOver={(e) => isOrganizeMode && handleDragOverSong(e, song.id)}
                         onDragLeave={isOrganizeMode ? () => setDragOverSongId(null) : undefined}
                         onDrop={(e) => isOrganizeMode && handleDrop(e, block.id, song.id)}
-                        onClick={() => isOrganizeMode && handleSongClick(song.id, block.id)}
+                onClick={() => isOrganizeMode && handleSongClick(song.id, block.id)}
                         className={isOrganizeMode ? `song-drag-item ${isDragging ? 'dragging' : ''} ${isDragOverSong ? 'drag-over-song' : ''} ${isSelected ? 'selected' : ''}` : ''}
                       >
                         {isOrganizeMode ? (
                           <>
-                            <span style={{ display: 'flex', alignItems: 'center' }}>
-                              <span className="drag-handle">☰</span>
-                              <span style={{ fontWeight: 500, color: 'var(--text-primary)', fontSize: '0.9rem' }}>
-                                {song.title}
-                              </span>
-                            </span>
-                            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                              {song.artist}
-                            </span>
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <span className="drag-handle" style={{ cursor: 'grab' }}>☰</span>
+                                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                                  <span style={{ fontWeight: 500, color: 'var(--text-primary)', fontSize: '0.9rem' }}>
+                                    {song.title}
+                                  </span>
+                                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                                    {song.artist}
+                                  </span>
+                                </div>
+                              </div>
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  handleDeleteSong(song.id, block.id, song.title);
+                                }}
+                                style={{
+                                  background: 'none',
+                                  border: 'none',
+                                  color: 'var(--text-muted)',
+                                  cursor: 'pointer',
+                                  fontSize: '0.85rem',
+                                  padding: '4px',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  justifyContent: 'center',
+                                  borderRadius: '4px',
+                                  transition: 'color var(--transition-fast)'
+                                }}
+                                title="Remover Música"
+                                onMouseEnter={(e) => e.currentTarget.style.color = '#D32F2F'}
+                                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
+                              >
+                                🗑️
+                              </button>
+                            </div>
                           </>
                         ) : (
                           <button
@@ -577,6 +647,13 @@ export const SongList: React.FC<SongListProps> = ({
         isOpen={isLoginModalOpen} 
         onClose={() => setIsLoginModalOpen(false)} 
         onSuccess={() => setIsOrganizeMode(true)}
+      />
+
+      <AddSongPanel
+        isOpen={isAddSongPanelOpen}
+        onClose={() => setIsAddSongPanelOpen(false)}
+        onAddSong={handleAddSong}
+        songBlocks={songBlocks}
       />
     </div>
   );
