@@ -33,6 +33,10 @@ export const SongList: React.FC<SongListProps> = ({
   const [showAddBlockInput, setShowAddBlockInput] = useState(false);
   const [newBlockName, setNewBlockName] = useState('');
 
+  // Estados para edição do nome de blocos
+  const [editingBlockId, setEditingBlockId] = useState<string | null>(null);
+  const [editingBlockName, setEditingBlockName] = useState('');
+
   const handleDragStart = (e: React.DragEvent, songId: string, sourceBlockId: string) => {
     e.dataTransfer.setData('text/plain', songId);
     e.dataTransfer.effectAllowed = 'move';
@@ -164,6 +168,8 @@ export const SongList: React.FC<SongListProps> = ({
       setIsOrganizeMode(false);
       setSelectedSong(null);
       setDraggedSong(null);
+      setEditingBlockId(null);
+      setEditingBlockName('');
     } else {
       if (isAuthenticated()) {
         setIsOrganizeMode(true);
@@ -180,6 +186,8 @@ export const SongList: React.FC<SongListProps> = ({
     setDraggedSong(null);
     setShowAddBlockInput(false);
     setNewBlockName('');
+    setEditingBlockId(null);
+    setEditingBlockName('');
   };
 
   const handleCreateBlock = () => {
@@ -209,6 +217,32 @@ export const SongList: React.FC<SongListProps> = ({
     if (selectedSong && selectedSong.blockId === blockId) {
       setSelectedSong(null);
     }
+  };
+
+  const handleSaveBlockName = (blockId: string) => {
+    if (!editingBlockName.trim()) return;
+    const updatedBlocks = songBlocks.map(b => {
+      if (b.id === blockId) {
+        return {
+          ...b,
+          name: editingBlockName.trim()
+        };
+      }
+      return b;
+    });
+    onUpdateSongBlocks(updatedBlocks);
+    setEditingBlockId(null);
+    setEditingBlockName('');
+  };
+
+  const handleExportJSON = () => {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(songBlocks, null, 2));
+    const downloadAnchor = document.createElement('a');
+    downloadAnchor.setAttribute("href", dataStr);
+    downloadAnchor.setAttribute("download", "custom_song_blocks.json");
+    document.body.appendChild(downloadAnchor);
+    downloadAnchor.click();
+    downloadAnchor.remove();
   };
 
   return (
@@ -283,14 +317,24 @@ export const SongList: React.FC<SongListProps> = ({
         
         <div style={{ display: 'flex', gap: '10px' }}>
           {isOrganizeMode && !showAddBlockInput && (
-            <button
-              onClick={() => setShowAddBlockInput(true)}
-              className="btn-ctrl"
-              style={{ padding: '8px 16px', borderRadius: '8px', fontSize: '0.9rem', color: 'var(--primary)', borderColor: 'var(--primary)' }}
-              aria-label="Criar novo bloco de músicas"
-            >
-              ＋ Novo Bloco
-            </button>
+            <>
+              <button
+                onClick={() => setShowAddBlockInput(true)}
+                className="btn-ctrl"
+                style={{ padding: '8px 16px', borderRadius: '8px', fontSize: '0.9rem', color: 'var(--primary)', borderColor: 'var(--primary)' }}
+                aria-label="Criar novo bloco de músicas"
+              >
+                ＋ Novo Bloco
+              </button>
+              <button
+                onClick={handleExportJSON}
+                className="btn-ctrl"
+                style={{ padding: '8px 16px', borderRadius: '8px', fontSize: '0.9rem', color: '#1B5E20', borderColor: '#A5D6A7' }}
+                aria-label="Exportar a configuração atual de blocos para JSON"
+              >
+                📥 Exportar JSON
+              </button>
+            </>
           )}
           {isAuthenticated() && (
             <button
@@ -339,31 +383,101 @@ export const SongList: React.FC<SongListProps> = ({
                 onDrop={(e) => isOrganizeMode && handleDrop(e, block.id, null)}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', width: '100%' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <h3 id={`title-${block.id}`} style={{ margin: 0 }}>{block.name}</h3>
-                    {isOrganizeMode && (
-                      <button 
-                        onClick={() => handleDeleteBlock(block.id, block.name)}
-                        style={{
-                          background: 'none',
-                          border: 'none',
-                          color: 'var(--text-muted)',
-                          cursor: 'pointer',
-                          fontSize: '0.95rem',
-                          padding: '2px 4px',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          borderRadius: '4px',
-                          transition: 'color var(--transition-fast)'
-                        }}
-                        title="Excluir Bloco"
-                        aria-label={`Excluir bloco ${block.name}`}
-                        onMouseEnter={(e) => e.currentTarget.style.color = '#D32F2F'}
-                        onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
-                      >
-                        🗑️
-                      </button>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', width: '100%' }}>
+                    {editingBlockId === block.id ? (
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', width: '100%' }}>
+                        <input
+                          type="text"
+                          value={editingBlockName}
+                          onChange={(e) => setEditingBlockName(e.target.value)}
+                          className="note-input"
+                          style={{
+                            fontSize: '1rem',
+                            fontWeight: 600,
+                            padding: '4px 8px',
+                            width: '100%',
+                            maxWidth: '150px',
+                            backgroundColor: 'var(--bg-main)',
+                            border: '1.5px solid var(--primary)',
+                            borderRadius: '6px',
+                            color: 'var(--text-primary)'
+                          }}
+                          autoFocus
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter') {
+                              handleSaveBlockName(block.id);
+                            } else if (e.key === 'Escape') {
+                              setEditingBlockId(null);
+                            }
+                          }}
+                        />
+                        <button 
+                          onClick={() => handleSaveBlockName(block.id)} 
+                          style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1rem', color: '#2E7D32' }}
+                          title="Salvar Nome"
+                        >
+                          ✓
+                        </button>
+                        <button 
+                          onClick={() => setEditingBlockId(null)} 
+                          style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1rem', color: '#C62828' }}
+                          title="Cancelar"
+                        >
+                          ✕
+                        </button>
+                      </div>
+                    ) : (
+                      <>
+                        <h3 id={`title-${block.id}`} style={{ margin: 0 }}>{block.name}</h3>
+                        {isOrganizeMode && (
+                          <div style={{ display: 'flex', gap: '4px' }}>
+                            <button 
+                              onClick={() => { setEditingBlockId(block.id); setEditingBlockName(block.name); }}
+                              style={{
+                                background: 'none',
+                                border: 'none',
+                                color: 'var(--text-muted)',
+                                cursor: 'pointer',
+                                fontSize: '0.85rem',
+                                padding: '2px 4px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                borderRadius: '4px',
+                                transition: 'color var(--transition-fast)'
+                              }}
+                              title="Editar Nome do Bloco"
+                              aria-label={`Editar nome do bloco ${block.name}`}
+                              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary)'}
+                              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
+                            >
+                              ✏️
+                            </button>
+                            <button 
+                              onClick={() => handleDeleteBlock(block.id, block.name)}
+                              style={{
+                                background: 'none',
+                                border: 'none',
+                                color: 'var(--text-muted)',
+                                cursor: 'pointer',
+                                fontSize: '0.85rem',
+                                padding: '2px 4px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                borderRadius: '4px',
+                                transition: 'color var(--transition-fast)'
+                              }}
+                              title="Excluir Bloco"
+                              aria-label={`Excluir bloco ${block.name}`}
+                              onMouseEnter={(e) => e.currentTarget.style.color = '#D32F2F'}
+                              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
+                            >
+                              🗑️
+                            </button>
+                          </div>
+                        )}
+                      </>
                     )}
                   </div>
                   {isOrganizeMode && canShowMoveHere && (
