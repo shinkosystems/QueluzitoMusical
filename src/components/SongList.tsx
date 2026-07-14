@@ -1,6 +1,8 @@
 // @sos-edit: false
 import React, { useState } from 'react';
 import { Song, SongBlock } from '../data/songs';
+import { isAuthenticated, setAuthenticated } from '../auth/credentials';
+import { LoginModal } from './LoginModal';
 
 interface SongListProps {
   songBlocks: SongBlock[];
@@ -23,6 +25,9 @@ export const SongList: React.FC<SongListProps> = ({
   
   // Estado para suporte a cliques/toques (Click-to-Move) no mobile
   const [selectedSong, setSelectedSong] = useState<{ id: string; blockId: string } | null>(null);
+
+  // Estado para o modal de Login
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 
   const handleDragStart = (e: React.DragEvent, songId: string, sourceBlockId: string) => {
     e.dataTransfer.setData('text/plain', songId);
@@ -151,7 +156,22 @@ export const SongList: React.FC<SongListProps> = ({
   };
 
   const handleToggleOrganizeMode = () => {
-    setIsOrganizeMode(!isOrganizeMode);
+    if (isOrganizeMode) {
+      setIsOrganizeMode(false);
+      setSelectedSong(null);
+      setDraggedSong(null);
+    } else {
+      if (isAuthenticated()) {
+        setIsOrganizeMode(true);
+      } else {
+        setIsLoginModalOpen(true);
+      }
+    }
+  };
+
+  const handleLogout = () => {
+    setAuthenticated(false);
+    setIsOrganizeMode(false);
     setSelectedSong(null);
     setDraggedSong(null);
   };
@@ -184,6 +204,16 @@ export const SongList: React.FC<SongListProps> = ({
           )}
         </span>
         <div style={{ display: 'flex', gap: '10px' }}>
+          {isAuthenticated() && (
+            <button
+              onClick={handleLogout}
+              className="btn-ctrl"
+              style={{ padding: '8px 16px', borderRadius: '8px', fontSize: '0.9rem', color: '#D32F2F', borderColor: '#FFCDD2' }}
+              aria-label="Sair do modo administrador"
+            >
+              Sair 🚪
+            </button>
+          )}
           <button 
             onClick={handleToggleOrganizeMode}
             className={`btn-toggle-organize ${isOrganizeMode ? 'active' : ''}`}
@@ -314,6 +344,12 @@ export const SongList: React.FC<SongListProps> = ({
           })}
         </div>
       </main>
+      
+      <LoginModal 
+        isOpen={isLoginModalOpen} 
+        onClose={() => setIsLoginModalOpen(false)} 
+        onSuccess={() => setIsOrganizeMode(true)}
+      />
     </div>
   );
 };
