@@ -22,10 +22,10 @@ function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
-      const songMatch = hash.match(/^#\/musica\/([a-zA-Z0-9_-]+)$/);
+      const songMatch = hash.match(/^#\/musica\/([^/]+)$/);
       
       if (songMatch) {
-        setCurrentSongId(songMatch[1]);
+        setCurrentSongId(decodeURIComponent(songMatch[1]));
       } else {
         setCurrentSongId(null);
       }
