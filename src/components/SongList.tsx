@@ -29,6 +29,10 @@ export const SongList: React.FC<SongListProps> = ({
   // Estado para o modal de Login
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 
+  // Estados para criação de blocos
+  const [showAddBlockInput, setShowAddBlockInput] = useState(false);
+  const [newBlockName, setNewBlockName] = useState('');
+
   const handleDragStart = (e: React.DragEvent, songId: string, sourceBlockId: string) => {
     e.dataTransfer.setData('text/plain', songId);
     e.dataTransfer.effectAllowed = 'move';
@@ -174,6 +178,37 @@ export const SongList: React.FC<SongListProps> = ({
     setIsOrganizeMode(false);
     setSelectedSong(null);
     setDraggedSong(null);
+    setShowAddBlockInput(false);
+    setNewBlockName('');
+  };
+
+  const handleCreateBlock = () => {
+    if (!newBlockName.trim()) return;
+    const newBlock: SongBlock = {
+      id: `block-${Date.now()}`,
+      name: newBlockName.trim(),
+      songs: []
+    };
+    onUpdateSongBlocks([...songBlocks, newBlock]);
+    setNewBlockName('');
+    setShowAddBlockInput(false);
+  };
+
+  const handleDeleteBlock = (blockId: string, blockName: string) => {
+    const block = songBlocks.find(b => b.id === blockId);
+    if (!block) return;
+
+    if (block.songs.length > 0) {
+      if (!window.confirm(`O bloco "${blockName}" contém ${block.songs.length} música(s). Deseja realmente excluí-lo e todas as suas músicas?`)) {
+        return;
+      }
+    }
+
+    const updatedBlocks = songBlocks.filter(b => b.id !== blockId);
+    onUpdateSongBlocks(updatedBlocks);
+    if (selectedSong && selectedSong.blockId === blockId) {
+      setSelectedSong(null);
+    }
   };
 
   return (
@@ -190,20 +225,73 @@ export const SongList: React.FC<SongListProps> = ({
 
       {/* Barra de Controle de Organização */}
       <div className="organize-bar">
-        <span style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', fontWeight: 500 }}>
-          {isOrganizeMode ? (
-            selectedSong ? (
-              <span style={{ color: 'var(--primary)', fontWeight: 600 }}>
-                👉 Música selecionada! Clique no botão "[ Mover para cá ]" do bloco de destino.
-              </span>
+        {showAddBlockInput ? (
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flex: 1 }}>
+            <input
+              type="text"
+              value={newBlockName}
+              onChange={(e) => setNewBlockName(e.target.value)}
+              placeholder="Nome do novo bloco..."
+              className="note-input"
+              style={{
+                maxWidth: '300px',
+                backgroundColor: 'var(--bg-main)',
+                border: '1px solid var(--border-color)',
+                color: 'var(--text-primary)',
+                padding: '8px 12px'
+              }}
+              autoFocus
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleCreateBlock();
+                } else if (e.key === 'Escape') {
+                  setShowAddBlockInput(false);
+                  setNewBlockName('');
+                }
+              }}
+            />
+            <button 
+              onClick={handleCreateBlock}
+              className="btn-note-save"
+              style={{ padding: '8px 16px', height: '38px' }}
+            >
+              Salvar
+            </button>
+            <button 
+              onClick={() => { setShowAddBlockInput(false); setNewBlockName(''); }}
+              className="btn-note-cancel"
+              style={{ padding: '8px 16px', height: '38px' }}
+            >
+              Cancelar
+            </button>
+          </div>
+        ) : (
+          <span style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', fontWeight: 500 }}>
+            {isOrganizeMode ? (
+              selectedSong ? (
+                <span style={{ color: 'var(--primary)', fontWeight: 600 }}>
+                  👉 Música selecionada! Clique no botão "[ Mover para cá ]" do bloco de destino.
+                </span>
+              ) : (
+                '🛠️ Arraste as músicas ou clique em uma delas para selecioná-la e movê-la.'
+              )
             ) : (
-              '🛠️ Arraste as músicas ou clique em uma delas para selecioná-la e movê-la.'
-            )
-          ) : (
-            '📂 Organize e distribua suas músicas em blocos personalizados.'
-          )}
-        </span>
+              '📂 Organize e distribua suas músicas em blocos personalizados.'
+            )}
+          </span>
+        )}
+        
         <div style={{ display: 'flex', gap: '10px' }}>
+          {isOrganizeMode && !showAddBlockInput && (
+            <button
+              onClick={() => setShowAddBlockInput(true)}
+              className="btn-ctrl"
+              style={{ padding: '8px 16px', borderRadius: '8px', fontSize: '0.9rem', color: 'var(--primary)', borderColor: 'var(--primary)' }}
+              aria-label="Criar novo bloco de músicas"
+            >
+              ＋ Novo Bloco
+            </button>
+          )}
           {isAuthenticated() && (
             <button
               onClick={handleLogout}
@@ -250,8 +338,34 @@ export const SongList: React.FC<SongListProps> = ({
                 onDragLeave={isOrganizeMode ? () => setDragOverBlockId(null) : undefined}
                 onDrop={(e) => isOrganizeMode && handleDrop(e, block.id, null)}
               >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                  <h3 id={`title-${block.id}`} style={{ margin: 0 }}>{block.name}</h3>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', width: '100%' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <h3 id={`title-${block.id}`} style={{ margin: 0 }}>{block.name}</h3>
+                    {isOrganizeMode && (
+                      <button 
+                        onClick={() => handleDeleteBlock(block.id, block.name)}
+                        style={{
+                          background: 'none',
+                          border: 'none',
+                          color: 'var(--text-muted)',
+                          cursor: 'pointer',
+                          fontSize: '0.95rem',
+                          padding: '2px 4px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          borderRadius: '4px',
+                          transition: 'color var(--transition-fast)'
+                        }}
+                        title="Excluir Bloco"
+                        aria-label={`Excluir bloco ${block.name}`}
+                        onMouseEnter={(e) => e.currentTarget.style.color = '#D32F2F'}
+                        onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-muted)'}
+                      >
+                        🗑️
+                      </button>
+                    )}
+                  </div>
                   {isOrganizeMode && canShowMoveHere && (
                     <button
                       onClick={() => handleMoveSelectedToBlock(block.id)}
